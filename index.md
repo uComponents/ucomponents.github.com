@@ -4,7 +4,7 @@ description: "uComponents - DataTypes and more for Umbraco"
 ---
 
 <div class="page-header">
-  <h1>uComponents <small>DataTypes and more for Umbraco</small></h1>
+  <h1 style="background:url(/apple-touch-icon-57x57-precomposed.png) no-repeat;line-height:57px;padding-left:67px;">uComponents <small>DataTypes and more for Umbraco</small></h1>
 </div>
 
 [uComponents](http://our.umbraco.org/projects/backoffice-extensions/ucomponents) is an open and collaborative project for creating components for Umbraco including data types, XSLT extensions, controls and more.

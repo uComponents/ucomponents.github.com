@@ -6,7 +6,8 @@ This is the GitHub Pages repository for the _uComponents_ project.
 
 * This website is a Jekyll project.
 * Each section is a sub-folder and individual pages is a Markdown file.
-* The navigation and page structure are automatically generated.
+* The navigation and page structure will be automatically generated.
+* Mark-up and styling is applied using [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html)
 
 ## How to Contribute
 

@@ -46,11 +46,11 @@
 							<li class="nav-header">Documentation</li>
 							<li class="active"><a href="/">About uComponents</a></li>
 							<li><a href="/contribution/">How to contribute and develop</a></li>
-{% for rootpage in site.pages sort_by:title order:ascending %}{% if rootpage.category == 'root' %}
+{% for rootpage in site.pages | sort %}{% if rootpage.category == 'root' %}
 							<li>
 								<a href="{{ rootpage.url | replace:'index.html','' }}">{{ rootpage.title }}</a>
 								<ul>
-								{% for subpage in site.pages sort_by:title order:ascending %}{% if subpage.category == rootpage.title %}
+								{% for subpage in site.pages | sort %}{% if subpage.category == rootpage.title %}
 									<li>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 									</li>

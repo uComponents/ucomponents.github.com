@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Dates
+title: Dates
+category: XSLT Extensions
 ---
 

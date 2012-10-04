@@ -1,6 +1,7 @@
 ---
 layout: default
-title: DataTypes
+title: Data Types
+category: root
 ---
 
 <div class="page-header">

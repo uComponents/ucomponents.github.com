@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Members
+title: Members
+category: XSLT Extensions
 ---
 

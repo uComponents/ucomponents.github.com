@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - CMS
+title: CMS
+category: XSLT Extensions
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Random
+title: Random
+category: XSLT Extensions
 ---
 

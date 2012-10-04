@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - IO
+title: IO
+category: XSLT Extensions
 ---
 

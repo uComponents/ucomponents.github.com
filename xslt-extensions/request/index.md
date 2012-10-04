@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Request
+title: Request
+category: XSLT Extensions
 ---
 

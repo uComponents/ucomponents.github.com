@@ -1,6 +1,7 @@
 ---
 layout: datatype
 title: Auto Complete
+category: Data Types
 since_version: 1.0
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: XSLT Extensions
+category: root
 ---
 
 <div class="page-header">

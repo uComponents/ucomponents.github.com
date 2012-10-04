@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - URLs
+title: URLs
+category: XSLT Extensions
 ---
 

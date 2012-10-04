@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Media
+title: Media
+category: XSLT Extensions
 ---
 

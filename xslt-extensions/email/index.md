@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Email
+title: Email
+category: XSLT Extensions
 ---
 

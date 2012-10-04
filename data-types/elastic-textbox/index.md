@@ -2,6 +2,7 @@
 layout: datatype
 title: Elastic TextBox
 since_version: 1.0
+category: Data Types
 has_video: true
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: extension
-title: Extension - Search
+title: Search
+category: XSLT Extensions
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: datatype
 title: SQL AutoComplete
+category: Data Types
 since_version: 5.1.0
 ---
 

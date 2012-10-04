@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{% if page.title %}{{ page.title }} - {% endif %}uComponents</title>
+		<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ page.description }}">
 		
@@ -27,7 +27,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="/"><img src="/favicon.png" alt="[favicon]"> uComponents</a>
+					<a class="brand" href="/"><img src="/favicon.png" alt="[favicon]"> {{ site.title }}</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li><a href="/contribution.html">Contribution</a></li>
@@ -46,83 +46,18 @@
 							<li class="nav-header">Documentation</li>
 							<li class="active"><a href="/">About uComponents</a></li>
 							<li><a href="/contribution.html">How to contribute and develop</a></li>
+{% for page in site.pages %}{% if page.category == 'root' %}
 							<li>
-								<a href="/controls/">Controls</a>
-								<!--<ul>
-									<li><a href="/controls/">EditProperty</a></li>
-									<li><a href="/controls/">GetMedia</a></li>
-									<li><a href="/controls/">RenderTemplate</a></li>
-								</ul>-->
-							</li>
-							<li>
-								<a href="/data-types/">Data Types</a>
+								<a href="{{ page.url | replace:'index.html','' }}">{{ page.title }}</a>
 								<ul>
-									<li><a href="/data-types/auto-complete/">Auto Complete</a></li>
-									<li><a href="/data-types/character-limit/">Character Limit</a></li>
-									<!--<li><a href="/data-types/">CheckBoxTree</a></li>         -->
-									<!--<li><a href="/data-types/">CountryPicker</a></li>        -->
-									<!--<li><a href="/data-types/">DataTypeGrid</a></li>         -->
-									<li><a href="/data-types/dropdown-checklist/">DropDown CheckList</a></li>
-									<li><a href="/data-types/elastic-textbox/">Elastic TextBox</a></li>
-									<!--<li><a href="/data-types/">EnumCheckBoxList</a></li>     -->
-									<!--<li><a href="/data-types/">EnumDropDownList</a></li>     -->
-									<!--<li><a href="/data-types/">FileDropDownList</a></li>     -->
-									<li><a href="/data-types/file-picker/">FilePicker</a></li>
-									<!--<li><a href="/data-types/">IncrementalTextBox</a></li>   -->
-									<!--<li><a href="/data-types/">MultiPickerRelations</a></li> -->
-									<!--<li><a href="/data-types/">MultipleDates</a></li>        -->
-									<!--<li><a href="/data-types/">MultiUrlPicker</a></li>       -->
-									<!--<li><a href="/data-types/">Notes</a></li>                -->
-									<!--<li><a href="/data-types/">PropertyPicker</a></li>       -->
-									<!--<li><a href="/data-types/">RelationLinks</a></li>        -->
-									<!--<li><a href="/data-types/">RenderMacro</a></li>          -->
-									<!--<li><a href="/data-types/">Similarity</a></li>           -->
-									<li><a href="/data-types/sql-auto-complete/">SQL Auto Complete</a></li>
-									<!--<li><a href="/data-types/">SqlCheckBoxList</a></li>      -->
-									<!--<li><a href="/data-types/">SqlDropDownList</a></li>      -->
-									<!--<li><a href="/data-types/">SubTabs</a></li>              -->
-									<!--<li><a href="/data-types/">TextImage</a></li>            -->
-									<!--<li><a href="/data-types/">TextstringArray</a></li>      -->
-									<!--<li><a href="/data-types/">ToggleBox</a></li>            -->
-									<!--<li><a href="/data-types/">UrlPicker</a></li>            -->
-									<!--<li><a href="/data-types/">UserPicker</a></li>           -->
-									<!--<li><a href="/data-types/">XPathAutoComplete</a></li>    -->
+								{% for subpage in site.pages %}{% if subpage.category == page.title %}
+									<li>
+										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
+									</li>
+								{% endif %}{% endfor %}
 								</ul>
 							</li>
-							<li>
-								<a href="/macro-engines/">Macro Engines</a>
-								<!--<ul>
-									<li><a href="/macro-engines/">StaticFileMacroEngine</a></li>
-									<li><a href="/macro-engines/">XsltMacroEngine</a></li>
-								</ul>-->
-							</li>
-							<li>
-								<a href="/not-found-handlers/">Not Found Handlers</a>
-								<!--<ul>
-									<li><a href="/not-found-handlers/">MultiSitePageNotFoundHandler</a></li>
-									<li><a href="/not-found-handlers/">SearchFor301MovedPermanently</a></li>
-									<li><a href="/not-found-handlers/">SearchForPageNotFound</a></li>
-								</ul>-->
-							</li>
-							<li><a href="/ui-modules/">UI Modules</a></li>
-							<li>
-								<a href="/xslt-extensions/">XSLT Extensions</a>
-								<ul>
-									<li><a href="/xslt-extensions/cms/">CMS</a></li>
-									<li><a href="/xslt-extensions/dates/">Dates</a></li>
-									<li><a href="/xslt-extensions/email/">Email</a></li>
-									<li><a href="/xslt-extensions/io/">IO</a></li>
-									<li><a href="/xslt-extensions/media/">Media</a></li>
-									<li><a href="/xslt-extensions/members/">Members</a></li>
-									<li><a href="/xslt-extensions/nodes/">Nodes</a></li>
-									<li><a href="/xslt-extensions/random/">Random</a></li>
-									<li><a href="/xslt-extensions/request/">Request</a></li>
-									<li><a href="/xslt-extensions/search/">Search</a></li>
-									<li><a href="/xslt-extensions/strings/">Strings</a></li>
-									<li><a href="/xslt-extensions/urls/">URLs</a></li>
-									<li><a href="/xslt-extensions/xml/">XML</a></li>
-								</ul>
-							</li>
+{% endif %}{% endfor %}
 						</ul>
 					</div>
 				</div>
@@ -134,7 +69,8 @@
 			<hr>
 			
 			<footer>
-				<p>uComponents &copy; The Umbraco Community 2012</p>
+				<p>{{ site.title }} &copy; The Umbraco Community 2012</p>
+				<p style="float: right;">Last updated on: {{ site.time }}</p>
 			</footer>
 		</div>
 		

@@ -9,11 +9,11 @@ AJAX enabled AutoComplete suggestions for a TextBox that polls data from a SQL s
 ![Content Editor](DataEditor.gif)
 
 ## Example XML
-  <SqlAutoComplete>
-    <Item Text="member1@anywhere.com" Value="1062" />
-    <Item Text="member2@anywhere.com" Value="1063" />
-    <Item Text="member1002@anywhere.com" Value="2063" />
-  </SqlAutoComplete>
+	<SqlAutoComplete>
+		<Item Text="member1@anywhere.com" Value="1062" />
+		<Item Text="member2@anywhere.com" Value="1063" />
+		<Item Text="member1002@anywhere.com" Value="2063" />
+	</SqlAutoComplete>
 
 ## Configuration
 
@@ -23,11 +23,11 @@ The SQL Expression must return two columns: a 'Text' field that's used for the v
 
 The Connection string is configured via a drop down selection, which defaults to the current Umbraco database. If there are connection strings defined in the web.config, these become selectable options. (The connection string name is stored, so migration between environments can all be controlled via the web.config).
 
-  <configuration>
-    <connectionStrings>
-      <add name="" connectionString="server=;database=;user id=;password=" />
-    </connectionStrings>
-  </configuration>
+	<configuration>
+		<connectionStrings>
+			<add name="" connectionString="server=;database=;user id=;password=" />
+		</connectionStrings>
+	</configuration>
 
 The Min Length setting dictates how many characters are required in the textbox before any requests for data are made. (This value coupled with a TOP x statement in the sql expression, can allow the fine tuning of the number of requests made and the amount of data transferred).
 

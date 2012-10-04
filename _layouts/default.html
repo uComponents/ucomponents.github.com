@@ -30,7 +30,7 @@
 					<a class="brand" href="/"><img src="/favicon.png" alt="[favicon]"> {{ site.title }}</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li><a href="/contribution.html">Contribution</a></li>
+							<li><a href="/contribution/">Contribution</a></li>
 							<li><a href="http://our.umbraco.org/projects/backoffice-extensions/ucomponents">Our Umbraco</a></li>
 							<li><a href="http://ucomponents.codeplex.com/">CodePlex</a></li>
 						</ul>
@@ -45,12 +45,12 @@
 						<ul class="nav nav-list">
 							<li class="nav-header">Documentation</li>
 							<li class="active"><a href="/">About uComponents</a></li>
-							<li><a href="/contribution.html">How to contribute and develop</a></li>
-{% for page in site.pages %}{% if page.category == 'root' %}
+							<li><a href="/contribution/">How to contribute and develop</a></li>
+{% for rootpage in site.pages sort_by:title order:ascending %}{% if rootpage.category == 'root' %}
 							<li>
-								<a href="{{ page.url | replace:'index.html','' }}">{{ page.title }}</a>
+								<a href="{{ rootpage.url | replace:'index.html','' }}">{{ rootpage.title }}</a>
 								<ul>
-								{% for subpage in site.pages %}{% if subpage.category == page.title %}
+								{% for subpage in site.pages sort_by:title order:ascending %}{% if subpage.category == rootpage.title %}
 									<li>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 									</li>

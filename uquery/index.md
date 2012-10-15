@@ -1,6 +1,7 @@
 ---
 layout: default
 title: uQuery
+category: root
 ---
 
 <div class="page-header">

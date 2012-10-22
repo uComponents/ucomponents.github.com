@@ -76,4 +76,7 @@ uMapper.CreateMap<Artist>()
 ### Removing the default mapping for a property ###
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
 ### Mapping without populating relationships ###
-`uMapper.Get<Artist>(1063, false);`
+{% highlight c# %}
+// The second parameter includes relationships.  By default it is true.
+var artist = uMapper.Get<Artist>(1063, false); // artist.Genres == null
+{% endhighlight %} 

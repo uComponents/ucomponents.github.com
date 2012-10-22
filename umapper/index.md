@@ -60,6 +60,7 @@ public partial class Site : System.Web.UI.MasterPage
 * Using a collection of `int` will map node IDs rather than models.
 * Properties with the same name as properties on `umbraco.NodeFactory.Node` will map automagically.
 * Custom collections which implement `IEnumerable<>` and take a single argument constructor of `IEnumerable<>` can be used.
+
 ## Advanced ##
 ### Overriding the node type alias ###
 `uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`

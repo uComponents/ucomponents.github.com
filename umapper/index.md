@@ -14,7 +14,7 @@ uMapper lets .NET developers map nodes to strongly typed objects with minimal co
 
 I've put together an [example project](https://bitbucket.org/JamesDiacono/umapperexample/src) with Umbraco 4.9.0 which shows example usage of uMapper. The username and password to the Umbraco back office are both "admin".
 
-## Usage (minimal configuration)
+## Usage (minimal configuration) ##
 1. Add a reference to uComponents.Mapping.dll in your web project (this should already be added if you used NuGet to install uComponents).
 2. Create your document types in Umbraco:
 ![Example tree](ExampleTree.png)
@@ -60,10 +60,10 @@ public partial class Site : System.Web.UI.MasterPage
 * Using a collection of `int` will map node IDs rather than models.
 * Properties with the same name as properties on `umbraco.NodeFactory.Node` will map automagically.
 * Custom collections which implement `IEnumerable<>` and take a single argument constructor of `IEnumerable<>` can be used.
-## Advanced
-### Overriding the node type alias
+## Advanced ##
+### Overriding the node type alias ###
 `uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`
-### Overriding the default property mapping
+### Overriding the default property mapping ###
 {% highlight c# %}
 uMapper.CreateMap<Artist>()
     .ForProperty(
@@ -72,7 +72,7 @@ uMapper.CreateMap<Artist>()
         false // Decide if this mapping counts as a relationship
         );
 {% endhighlight %} 
-### Removing the default mapping for a property
+### Removing the default mapping for a property ###
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
-### Mapping without populating relationships
+### Mapping without populating relationships ###
 `uMapper.Get<Artist>(1063, false);`

@@ -12,13 +12,13 @@ then this datatype is the answer to that very annoying demand.
 ## User facing ##
 It allows the user to select where they want the URL to come from, either a
 
-### hand typed URL ###
+### Hand typed URL ###
 ![URL](URL.PNG)
-### content node ###
+### Content node ###
 ![Content](Content.PNG)
-### media node ###
+### Media node ###
 ![Media](Media.PNG)
-### or a file upload ###
+### File upload ###
 ![Upload before](Upload-before.PNG)
 ![Upload after](Upload-after.PNG)
 
@@ -29,7 +29,7 @@ Through the settings, the user can be given a very small subset of options:
 ![Restricted](Restricted.PNG)
 
 ## Developer facing ##
-A URL is always returned when possible, if a node is selected then that node ID is returned also, and the user can specify a title and whether the link opens in a new window.
+A URL is always returned when possible, if a node is selected then that node ID is returned also, and the user can specify a title and whether the link opens in a new window.  It also supports Razor Model Binding.
 
 The data can be saved in CSV, XML or JSON format (the future!), the three looking like this respectively:
     Content,False,1061,/homeorawaytest4.aspx,Home Or Away Quiz

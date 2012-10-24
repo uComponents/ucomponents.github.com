@@ -51,6 +51,8 @@ public partial class Site : System.Web.UI.MasterPage
         this.Artists = uMapper.GetAll<Artist>()
             .OrderBy(artist => artist.Name);
         this.Genres = uMapper.GetAll<Genre>();
+		
+		var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
     }
 }
 {% endhighlight %} 
@@ -78,5 +80,12 @@ uMapper.CreateMap<Artist>()
 ### Mapping without populating relationships ###
 {% highlight c# %}
 // The second parameter includes relationships.  By default it is true.
-var artist = uMapper.Get<Artist>(1063, false); // artist.Genres == null
+var artist = uMapper.GetSingle<Artist>(1063, false); // artist.Genres == null
+{% endhighlight %} 
+### Mapping with specific relationships ###
+{% highlight c# %}
+var homepage = uMapper.GetCurrent<Homepage>(
+	x => x.Artists,
+	x => x.Genres
+); // loads only Artists and Genres relationships
 {% endhighlight %} 

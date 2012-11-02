@@ -89,3 +89,32 @@ var homepage = uMapper.GetCurrent<Homepage>(
 	x => x.Genres
 ); // loads only Artists and Genres relationships
 {% endhighlight %} 
+### Inheritance ###
+{% highlight c# %}
+// You can structure your model classes to reflect the inheritance
+// in the document type tree.
+
+// Create your base map first.
+uMapper.CreateMap<Artist>() // maps from "Artist" node type
+	.ForProperty(x => x.Name, n => "Hello", false);
+
+// Create your derived maps later.
+//
+// The model SoloArtist inherits from Artist.
+//
+// This creates a map from the "SoloArtist" node type, 
+// which inherits from the "Artist" node type.
+uMapper.CreateMap<SoloArtist>(); 
+
+var soloArtist = uMapper.GetSingle<SoloArtist>(1061);
+// soloArtist.Name == "Hello"
+
+// You can map a node to a base model.
+var artist = uMapper.GetSingle<Artist>(1061); 
+
+// And cast it back: 
+(artist as SoloArtist).Name // "Hello"
+
+// Or get every node which maps to a base model:
+List<Artist> allArtists = uMapper.GetAll<Artist>(); // contains Artist and SoloArtist items
+{% endhighlight %} 

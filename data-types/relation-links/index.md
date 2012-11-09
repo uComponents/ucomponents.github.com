@@ -1,6 +1,7 @@
 ---
 layout: datatype
 title: Relation Links
+category: Data Types
 since_version: 
 ---
 

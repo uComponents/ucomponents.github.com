@@ -36,7 +36,7 @@ protected void Application_Start(object sender, EventArgs e)
     uMapper.CreateMap<Artist>();
 }
 {% endhighlight %} 
-5. Start mapping!
+5. Get some nice data!
 {% highlight c# %}
 public partial class Site : System.Web.UI.MasterPage
 {
@@ -46,17 +46,20 @@ public partial class Site : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Model = uMapper.GetCurrent<Homepage>();
+        this.Model = uMapper.Query<Homepage>().Current();
 
-        this.Artists = uMapper.GetAll<Artist>()
+        this.Artists = uMapper.Query<Artist>()
+            .All()
             .OrderBy(artist => artist.Name);
-        this.Genres = uMapper.GetAll<Genre>();
+            
+        this.Genres = uMapper.Query<Genre>().All();
 		
-		var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
+		var featuredGenre = uMapper.Query<Genre>().Single(1234); // node ID is 1234
     }
 }
 {% endhighlight %} 
-## Default mapping behaviour for model properties ##
+## Default mapping behaviour for model property types ##
+* System types and enums are mapped via `Node.GetProperty<TDestination>()` (including nullables)
 * A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.
 * A `TDestination` (without a corresponding node property) will map the closest ancestor node which maps to `TDestination`.
 * Using a collection of `int` will map node IDs rather than models.
@@ -71,7 +74,7 @@ public partial class Site : System.Web.UI.MasterPage
 uMapper.CreateMap<Artist>()
     .ForProperty(
         x => x.Name, // Choose the model property
-        node => node.GetProperty<string>("AlternateName"), // Specify a custom mapping
+        (node, paths) => node.GetProperty<string>("AlternateName"), // Specify a custom mapping
         false // Decide if this mapping counts as a relationship
         );
 {% endhighlight %} 
@@ -79,15 +82,19 @@ uMapper.CreateMap<Artist>()
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
 ### Mapping without populating relationships ###
 {% highlight c# %}
-// The second parameter includes relationships.  By default it is true.
-var artist = uMapper.GetSingle<Artist>(1063, false); // artist.Genres == null
+// By default relationships are not mapped
+var artist = uMapper.Query<Artist>().Single(1063); // artist.Genres == null
 {% endhighlight %} 
-### Mapping with specific relationships ###
+### Mapping relationships with paths ###
 {% highlight c# %}
-var homepage = uMapper.GetCurrent<Homepage>(
-	x => x.Artists,
-	x => x.Genres
-); // loads only Artists and Genres relationships
+var homepage = uMapper.Query<Homepage>()
+    .Include(x => x.Artists) // Single level path
+    .Include(x => x.Artists.Select(y => y.Genres)) // Syntax for multi-level paths
+    .Current(); // Maps the current node
+
+    homepage.Artists // populated
+    homepage.Genres // null, as it was not included
+    homepage.Artists.First().Genres // populated
 {% endhighlight %} 
 ### Inheritance ###
 {% highlight c# %}
@@ -110,11 +117,14 @@ var soloArtist = uMapper.GetSingle<SoloArtist>(1061);
 // soloArtist.Name == "Hello"
 
 // You can map a node to a base model.
-var artist = uMapper.GetSingle<Artist>(1061); 
+var artist = uMapper.Query<Artist>().Single(1061); 
 
 // And cast it back: 
 (artist as SoloArtist).Name // "Hello"
 
 // Or get every node which maps to a base model:
-List<Artist> allArtists = uMapper.GetAll<Artist>(); // contains Artist and SoloArtist items
+List<Artist> allArtists = uMapper.Query<Artist>().All(); // contains Artist and SoloArtist items
+
+// Or get every node which is explicitly mapped to the base model:
+List<Artist> baseArtists = uMapper.Query<Artist>().AllExplicit(); // contains only Artist
 {% endhighlight %} 

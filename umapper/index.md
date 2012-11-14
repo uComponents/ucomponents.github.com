@@ -46,15 +46,14 @@ public partial class Site : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Model = uMapper.Query<Homepage>().Current();
+        this.Model = uMapper.GetCurrent<Homepage>();
 
-        this.Artists = uMapper.Query<Artist>()
-            .All()
+        this.Artists = uMapper.GetAll<Artist>
             .OrderBy(artist => artist.Name);
             
-        this.Genres = uMapper.Query<Genre>().All();
+        this.Genres = uMapper.GetAll<Genre>();
 		
-		var featuredGenre = uMapper.Query<Genre>().Single(1234); // node ID is 1234
+		var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
     }
 }
 {% endhighlight %} 
@@ -83,7 +82,7 @@ uMapper.CreateMap<Artist>()
 ### Mapping without populating relationships ###
 {% highlight c# %}
 // By default relationships are not mapped
-var artist = uMapper.Query<Artist>().Single(1063); // artist.Genres == null
+var artist = uMapper.GetSingle<Artist>(1063); // artist.Genres == null
 {% endhighlight %} 
 ### Querying ###
 Calling the `uMapper.Query<TDestination>()` methods gets you a fluent interface to 'query' nodes.

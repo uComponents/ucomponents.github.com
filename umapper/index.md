@@ -85,17 +85,43 @@ uMapper.CreateMap<Artist>()
 // By default relationships are not mapped
 var artist = uMapper.Query<Artist>().Single(1063); // artist.Genres == null
 {% endhighlight %} 
-### Mapping relationships with paths ###
+### Querying ###
+Calling the `uMapper.Query<TDestination>()` methods gets you a fluent interface to 'query' nodes.
+I say 'query' because it doesn't implement `IQueryable` (probably never will).
+If you hunger for more query methods, you can write your own extension methods for `INodeQuery<TDestination>`.
+{% highlight c# %}
+// Maps the current node
+var a = uMapper.Query<Artist>().Current();
+    
+// Maps a node by ID (returns null if it doesn't exist)
+var b = uMapper.Query<Artist>().Single(1234);
+    
+// Maps many nodes
+var c = uMapper.Query<Artist>().Many(new[] { 1111, 2222, 3333 });
+    
+// Maps all nodes which can be mapped to 'Artist'
+var d = uMapper.Query<Artist>().All();
+    
+// Maps all nodes which were explicitly mapped to 'Artist'
+var e = uMapper.Query<Artist>().AllExplicit();
+{% endhighlight %}
+#### Mapping relationships with paths ####
 {% highlight c# %}
 var homepage = uMapper.Query<Homepage>()
-    .Include(x => x.Artists) // Single level path
+    .Include(x => x.Genres) // Single level path
     .Include(x => x.Artists.Select(y => y.Genres)) // Syntax for multi-level paths
     .Current(); // Maps the current node
 
+    homepage.Genres // populated
+    homepage.FeaturedArtist // null, as it was not included
     homepage.Artists // populated
-    homepage.Genres // null, as it was not included
     homepage.Artists.First().Genres // populated
-{% endhighlight %} 
+    
+// You can also use string paths (as deep as you like):
+var otherHomepage = uMapper.Query<Homepage>()
+    .Include("Artists.Genres")
+    .Current();
+{% endhighlight %}  
 ### Inheritance ###
 {% highlight c# %}
 // You can structure your model classes to reflect the inheritance
@@ -103,7 +129,7 @@ var homepage = uMapper.Query<Homepage>()
 
 // Create your base map first.
 uMapper.CreateMap<Artist>() // maps from "Artist" node type
-	.ForProperty(x => x.Name, n => "Hello", false);
+	.ForProperty(x => x.Name, (node, paths) => "Hello", false);
 
 // Create your derived maps later.
 //

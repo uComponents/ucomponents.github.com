@@ -26,7 +26,7 @@ public class Artist
     public string Name { get; set; }
     public List<Genre> Genres { get; set; }
 }
-{% endhighlight %} 
+{% endhighlight %}
 4. Create a `Global.asax` file and on `Application_Start()` create your maps:
 {% highlight c# %}
 protected void Application_Start(object sender, EventArgs e)
@@ -35,7 +35,7 @@ protected void Application_Start(object sender, EventArgs e)
     uMapper.CreateMap<Genre>();
     uMapper.CreateMap<Artist>();
 }
-{% endhighlight %} 
+{% endhighlight %}
 5. Start mapping!
 {% highlight c# %}
 public partial class Site : System.Web.UI.MasterPage
@@ -51,11 +51,11 @@ public partial class Site : System.Web.UI.MasterPage
         this.Artists = uMapper.GetAll<Artist>()
             .OrderBy(artist => artist.Name);
         this.Genres = uMapper.GetAll<Genre>();
-		
+
 		var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
     }
 }
-{% endhighlight %} 
+{% endhighlight %}
 ## Default mapping behaviour for model properties ##
 * A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.
 * A `TDestination` (without a corresponding node property) will map the closest ancestor node which maps to `TDestination`.
@@ -74,21 +74,21 @@ uMapper.CreateMap<Artist>()
         node => node.GetProperty<string>("AlternateName"), // Specify a custom mapping
         false // Decide if this mapping counts as a relationship
         );
-{% endhighlight %} 
+{% endhighlight %}
 ### Removing the default mapping for a property ###
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
 ### Mapping without populating relationships ###
 {% highlight c# %}
 // The second parameter includes relationships.  By default it is true.
 var artist = uMapper.GetSingle<Artist>(1063, false); // artist.Genres == null
-{% endhighlight %} 
+{% endhighlight %}
 ### Mapping with specific relationships ###
 {% highlight c# %}
 var homepage = uMapper.GetCurrent<Homepage>(
 	x => x.Artists,
 	x => x.Genres
 ); // loads only Artists and Genres relationships
-{% endhighlight %} 
+{% endhighlight %}
 ### Inheritance ###
 {% highlight c# %}
 // You can structure your model classes to reflect the inheritance
@@ -102,19 +102,19 @@ uMapper.CreateMap<Artist>() // maps from "Artist" node type
 //
 // The model SoloArtist inherits from Artist.
 //
-// This creates a map from the "SoloArtist" node type, 
+// This creates a map from the "SoloArtist" node type,
 // which inherits from the "Artist" node type.
-uMapper.CreateMap<SoloArtist>(); 
+uMapper.CreateMap<SoloArtist>();
 
 var soloArtist = uMapper.GetSingle<SoloArtist>(1061);
 // soloArtist.Name == "Hello"
 
-// You can map a node to a base model.
-var artist = uMapper.GetSingle<Artist>(1061); 
+// You can map a node to a base model
+var artist = uMapper.GetSingle<Artist>(1061);
 
-// And cast it back: 
+// And cast it back:
 (artist as SoloArtist).Name // "Hello"
 
 // Or get every node which maps to a base model:
 List<Artist> allArtists = uMapper.GetAll<Artist>(); // contains Artist and SoloArtist items
-{% endhighlight %} 
+{% endhighlight %}

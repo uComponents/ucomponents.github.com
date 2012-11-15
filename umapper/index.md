@@ -87,6 +87,8 @@ var artist = uMapper.GetSingle<Artist>(1063); // artist.Genres == null
 ### Querying ###
 Calling the `uMapper.Query<TDestination>()` methods gets you a fluent interface to 'query' nodes.
 I say 'query' because it doesn't implement `IQueryable` (probably never will).
+Enumerating the query gives you back all nodes which can be mapped to `TDestination` (which means
+models which inherit from `TDestination` will be included).
 If you hunger for more query methods, you can write your own extension methods for `INodeQuery<TDestination>`.
 {% highlight c# %}
 // Maps the current node
@@ -99,10 +101,10 @@ var b = uMapper.Query<Artist>().Single(1234);
 var c = uMapper.Query<Artist>().Many(new[] { 1111, 2222, 3333 });
     
 // Maps all nodes which can be mapped to 'Artist'
-var d = uMapper.Query<Artist>().All();
+var d = uMapper.Query<Artist>();
     
 // Maps all nodes which were explicitly mapped to 'Artist'
-var e = uMapper.Query<Artist>().AllExplicit();
+var e = uMapper.Query<Artist>().Explicit();
 {% endhighlight %}
 #### Mapping relationships with paths ####
 {% highlight c# %}
@@ -148,8 +150,8 @@ var artist = uMapper.Query<Artist>().Single(1061);
 (artist as SoloArtist).Name // "Hello"
 
 // Or get every node which maps to a base model:
-List<Artist> allArtists = uMapper.Query<Artist>().All(); // contains Artist and SoloArtist items
+List<Artist> allArtists = uMapper.Query<Artist>(); // contains Artist and SoloArtist items
 
 // Or get every node which is explicitly mapped to the base model:
-List<Artist> baseArtists = uMapper.Query<Artist>().AllExplicit(); // contains only Artist
+List<Artist> baseArtists = uMapper.Query<Artist>().Explicit(); // contains only Artist
 {% endhighlight %} 

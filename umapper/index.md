@@ -16,9 +16,11 @@ I've put together an [example project](https://bitbucket.org/JamesDiacono/umappe
 
 ## Usage (minimal configuration) ##
 1. Add a reference to uComponents.Mapping.dll in your web project (this should already be added if you used NuGet to install uComponents).
+
 2. Create your document types in Umbraco:
 ![Example tree](ExampleTree.png)
 Make sure you use CSV as the data format for any multi-node pickers you use.
+
 3. Create your corresponding models as .NET classes in your project, naming the classes the same as the document type aliases:
 {% highlight c# %}
 public class Artist
@@ -27,6 +29,7 @@ public class Artist
     public List<Genre> Genres { get; set; }
 }
 {% endhighlight %} 
+
 4. Create a `Global.asax` file and on `Application_Start()` create your maps:
 {% highlight c# %}
 protected void Application_Start(object sender, EventArgs e)
@@ -36,6 +39,7 @@ protected void Application_Start(object sender, EventArgs e)
     uMapper.CreateMap<Artist>();
 }
 {% endhighlight %} 
+
 5. Get some nice data!
 {% highlight c# %}
 public partial class Site : System.Web.UI.MasterPage
@@ -53,10 +57,11 @@ public partial class Site : System.Web.UI.MasterPage
             
         this.Genres = uMapper.GetAll<Genre>();
 		
-		var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
+        var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
     }
 }
 {% endhighlight %} 
+
 ## Default mapping behaviour for model property types ##
 * System types and enums are mapped via `Node.GetProperty<TDestination>()` (including nullables)
 * A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.

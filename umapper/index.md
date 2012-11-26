@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: datatype
 title: uMapper
 category: root
+since_version: 5.1.0
 ---
 
 <div class="page-header">

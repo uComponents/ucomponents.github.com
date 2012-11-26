@@ -5,12 +5,6 @@ category: root
 since_version: 5.1.0
 ---
 
-<div class="page-header">
-  <h1>uMapper</h1>
-</div>
-
-_Available in uComponents 5.1.0_
-
 uMapper lets .NET developers map nodes to strongly typed objects with minimal configuration.  It does its best to map the properties of a node to an object by name, but features a fluent interface for manual configuration in the much the same way AutoMapper does.
 
 I've put together an [example project](https://bitbucket.org/JamesDiacono/umapperexample/src) with Umbraco 4.9.0 which shows example usage of uMapper. The username and password to the Umbraco back office are both "admin".

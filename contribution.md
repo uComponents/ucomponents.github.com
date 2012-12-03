@@ -19,18 +19,18 @@ Our branching structure is as follows:
 | Branch | Comment |
 |--------|---------|
 | [default](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=default) | This branch does not contain any source-code. It is used as a meta-data branch for details on how to contribute, tagging and author credits. |
-| [5.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.x) | The source-code for the upcoming v5.0 release of uComponents, which supports Umbraco 4.8+ (on .NET 4.0). |
-| [4.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=4.x) | The source-code for the stable v4.0 version of uComponents, which supports Umbraco 4.7.1 (on .NET 4.0) |
-| [3.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=3.x) | The source-code for the stable 'legacy' version of uComponents, which supports Umbraco 4.5.2 (on .NET 3.5) |
+| [6.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.x) | The source-code for the upcoming v6.x release of uComponents, which will support Umbraco 6.0+. |
+| [5.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.x) | The source-code for the current stable v5.x releases of uComponents, which supports Umbraco 4.8+ (on .NET 4.0). |
+| [<s>4.x</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=4.x) | <s>The source-code for the 'legacy' v4.x versions of uComponents, which supports Umbraco 4.7.1 (on .NET 4.0).</s> |
+| [<s>3.x</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=3.x) | <s>The source-code for the 'legacy' v3.x versions of uComponents, which supports Umbraco 4.5.2 (on .NET 3.5).</s> |
 
 
 The current developments for upcoming releases are available in their own branches.
 
 | Branch | Comment |
 |--------|---------|
-| [5.1.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.1.0-dev) | The latest bleeding-edge code-base for upcoming _new_ features. |
-| [<s>4.1.0-dev</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=4.1.0-dev) | <s>The latest stable code-base for .NET 4.0 support.</s> |
-| [<s>3.1.3-dev</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=3.1.3-dev) | <s>Current legacy support for bug-fixes on v3.x</s> |
+| [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0-dev) | The latest bleeding-edge code-base for upcoming _new_ features. |
+| [5.2.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.2.0-dev) | The latest stable code-base. |
 
 
 ## Semantic Versioning Specification

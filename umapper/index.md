@@ -79,10 +79,17 @@ uMapper.CreateMap<Artist>()
 {% endhighlight %} 
 ### Removing the default mapping for a property ###
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
-### Mapping without populating relationships ###
+### Mapping with shorthand ###
 {% highlight c# %}
-// By default relationships are not mapped
-var artist = uMapper.GetSingle<Artist>(1063); // artist.Genres == null
+// By default, all relationships are included in a shorthand query:
+var fatArtist = uMapper.GetSingle<Artist>(1063); // fatArtist.Genres.Count == 3
+
+// This can get very expensive very fast.  You can exclude all relationships
+// by specifying the optional parameter:
+var skinnyArtist = uMapper.GetSingle<Artist>(1063, false); // skinnyArtist.Genres == null
+
+// If performance matters to you, I would advise against using shorthand.
+
 {% endhighlight %} 
 ### Querying ###
 Calling the `uMapper.Query<TDestination>()` methods gets you a fluent interface to 'query' nodes.

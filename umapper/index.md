@@ -25,13 +25,19 @@ public class Artist
 }
 {% endhighlight %} 
 
-4. Create a `Global.asax` file and on `Application_Start()` create your maps:
+4. Derive from `ApplicationStartupHandler` and create your maps (these must be created before you start mapping nodes, or uMapper doesn't know which classes to map to):
 {% highlight c# %}
-protected void Application_Start(object sender, EventArgs e)
+using uComponents.Mapping;
+using umbraco.businesslogic;
+
+public class ExampleStartupHandler : ApplicationStartupHandler
 {
-    uMapper.CreateMap<Site>();
-    uMapper.CreateMap<Genre>();
-    uMapper.CreateMap<Artist>();
+    public ExampleStartupHandler()
+    {
+        uMapper.CreateMap<Site>();
+        uMapper.CreateMap<Genre>();
+        uMapper.CreateMap<Artist>();
+    }
 }
 {% endhighlight %} 
 

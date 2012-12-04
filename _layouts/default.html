@@ -44,14 +44,14 @@
 					<div class="well sidebar-nav">
 						<ul class="nav nav-list">
 							<li class="nav-header">Documentation</li>
-							<li class="active"><a href="/">About uComponents</a></li>
-							<li><a href="/contribution/">How to contribute and develop</a></li>
-{% for rootpage in site.pages %}{% if rootpage.category == 'root' %}
-							<li>
+							<li{% if '/index.html' == page.url %} class="active"{% endif %}><a href="/">About uComponents</a></li>
+							<li{% if '/contribution/' == page.url %} class="active"{% endif %}><a href="/contribution/">How to contribute and develop</a></li>
+{% for rootpage in site.pages | sort:title %}{% if rootpage.category == 'root' %}
+							<li{% if rootpage.url == page.url %} class="active"{% endif %}>
 								<a href="{{ rootpage.url | replace:'index.html','' }}">{{ rootpage.title }}</a>
 								<ul>
-								{% for subpage in site.pages %}{% if subpage.category == rootpage.title %}
-									<li>
+								{% for subpage in site.pages | sort:title %}{% if subpage.category == rootpage.title %}
+									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 									</li>
 								{% endif %}{% endfor %}
@@ -69,8 +69,8 @@
 			<hr>
 			
 			<footer>
-				<p>{{ site.title }} &copy; The Umbraco Community 2012</p>
-				<p style="float: right;">Last updated on: {{ site.time | date_to_string }}</p>
+				<p style="float: left;">{{ site.title }} &copy; The Umbraco Community 2012</p>
+				<p style="float: right;">Last updated on: {{ site.time | date: "%d %B %Y" }}</p>
 			</footer>
 		</div>
 

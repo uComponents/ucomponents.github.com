@@ -23,7 +23,7 @@ If you are looking for help and support on how to implement the various componen
 	<div class="span4">
 		<h2>Data Types</h2>
 		<p>The uComponents DataTypes aim to enhance the content editing experience of the Umbraco back-office.</p>
-		<p><a class="btn" href="#">Read more &raquo;</a></p>
+		<p><a class="btn" href="/data-types/">Read more &raquo;</a></p>
 	</div>
 	<div class="span4">
 		<h2>Macro Engines</h2>
@@ -33,7 +33,7 @@ If you are looking for help and support on how to implement the various componen
 	<div class="span4">
 		<h2>XSLT Extensions</h2>
 		<p>Umbraco development using XSLT can be extended with our library of XSLT extension methods.</p>
-		<p><a class="btn" href="#">Read more &raquo;</a></p>
+		<p><a class="btn" href="/xslt-extensions/">Read more &raquo;</a></p>
 	</div>
 </div>
 

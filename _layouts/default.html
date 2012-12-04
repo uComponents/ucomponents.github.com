@@ -46,11 +46,11 @@
 							<li class="nav-header">Documentation</li>
 							<li{% if '/index.html' == page.url %} class="active"{% endif %}><a href="/">About uComponents</a></li>
 							<li{% if '/contribution/' == page.url %} class="active"{% endif %}><a href="/contribution/">How to contribute and develop</a></li>
-{% for rootpage in site.pages | sort:title %}{% if rootpage.category == 'root' %}
+{% for rootpage in site.pages sort:title %}{% if rootpage.category == 'root' %}
 							<li{% if rootpage.url == page.url %} class="active"{% endif %}>
 								<a href="{{ rootpage.url | replace:'index.html','' }}">{{ rootpage.title }}</a>
 								<ul>
-								{% for subpage in site.pages | sort:title %}{% if subpage.category == rootpage.title %}
+								{% for subpage in site.pages sort:title %}{% if subpage.category == rootpage.title %}
 									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 									</li>

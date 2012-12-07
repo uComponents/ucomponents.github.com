@@ -29,8 +29,8 @@ The current developments for upcoming releases are available in their own branch
 
 | Branch | Comment |
 |--------|---------|
-| [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0-dev) | The latest bleeding-edge code-base for upcoming _new_ features. |
-| [5.2.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.2.0-dev) | The latest stable code-base. |
+| [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
+| [5.3.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.3.0-dev) | The latest stable code-base. |
 
 
 ## Semantic Versioning Specification

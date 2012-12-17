@@ -5,9 +5,9 @@ category: root
 since_version: 5.1.0
 ---
 
-uMapper lets .NET developers map nodes to strongly typed objects with minimal configuration.  It does its best to map the properties of a node to an object by name, but features a fluent interface for manual configuration in the much the same way AutoMapper does.
+uMapper lets .NET developers map & query nodes as strongly typed objects with minimal configuration.  It does its best to map the properties and relationships of a node to an object by name, but features a fluent interface for manual configuration in the much the same way AutoMapper does.
 
-I've put together an [example project](https://bitbucket.org/JamesDiacono/umapperexample/src) with Umbraco 4.9.0 which shows example usage of uMapper. The username and password to the Umbraco back office are both "admin".
+I've put together an [example project](https://bitbucket.org/JamesDiacono/umapperexample/src) with Umbraco 4.9.0 which shows example usage of uMapper. A SQLCE database is included as a file, and the username and password for the Umbraco back office are both "admin".
 
 ## Usage (minimal configuration) ##
 1. Add a reference to uComponents.Mapping.dll in your web project (this should already be added if you used NuGet to install uComponents).
@@ -21,7 +21,7 @@ Make sure you use CSV as the data format for any multi-node pickers you use.
 public class Artist
 {
     public string Name { get; set; }
-    public List<Genre> Genres { get; set; }
+    public IEnumerable<Genre> Genres { get; set; } // You can also use List<T>
 }
 {% endhighlight %} 
 

@@ -4,8 +4,8 @@ table {margin-bottom: 20px;}
 th, td {border: solid 1px #BBB; padding: 3px 5px; text-align: left;}
 th {background-color: #F5F5F5; border-bottom: 0;}
 
-.download-buttons {float:left;clear:both;width:100%;}
-.download-button {float:left;margin-right:10px;}
+.download-buttons {float:left;clear:both;width:95%;}
+.download-button {float:left;margin:1px 10px 0 0;}
 .nuget-button {float:left;}
 
 /* Nuget Button */
@@ -13,7 +13,7 @@ th {background-color: #F5F5F5; border-bottom: 0;}
 {
     background: #d6d6d6;
     border: 0px solid #fff;
-    padding: 0.25em;
+    padding: 2px;
     margin: 0;
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#d6d6d6',  endColorstr='#505050');
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#d6d6d6), to(#505050));
@@ -41,7 +41,7 @@ th {background-color: #F5F5F5; border-bottom: 0;}
 {
     color: #e2e2e2 !important;
     font-family: Consolas, "Andale Mono WT" , "Andale Mono" , "Lucida Console" , "Lucida Sans Typewriter" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Liberation Mono" , "Nimbus Mono L" , Monaco, "Courier New" , Courier, monospace;
-    margin: 5px 15px;
+    margin: 7px 20px;
 }
 .nuget-button-commandWrapper a:link,
 .nuget-button-commandWrapper a:visited

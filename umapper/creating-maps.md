@@ -5,6 +5,19 @@ category: uMapper
 ---
 
 Before you can use uMapper, you must create your maps.  You do this by calling `uMapper.CreateMap<YourModel>()` and then using the fluent interface to map any properties which uMapper can't figure out.  There are several different ways to map properties, and these are outline below.
+{% highlight c# %}
+class Artist
+{
+    public string Name { get; set; }
+    public int MemberCount { get; set; }
+}
+
+uMapper.CreateMap<Artist>();
+
+// If necessary, override the document type alias:
+uMapper.CreateMap<Artist>("LeArtiste");
+{% endhighlight %} 
+
 
 ## Default property mapping ##
 This refers to properties which are common to all nodes, such as `Id` and `Name`.   In a situation where the property name on your model does not correlate with the node property name, or you wish to run a mapping on the property (such as `Trim()`), you can use the `DefaultProperty()` method:
@@ -20,6 +33,12 @@ uMapper.CreateMap<Artist>()
 ## Basic property mapping ##
 This refers to properties which you've defined in your document type.  uMapper will automatically map any properties which satisfy a case-insensitive comparison, but if they differ you can just reroute a property:
 {% highlight c# %}
+class Artist
+{
+    public int MemberCount { get; set; }
+    public IEnumerable<string> Tags { get; set; }
+}
+
 uMapper.CreateMap<Artist>()
     .BasicProperty(
         artist => artist.MemberCount, // the model property
@@ -29,18 +48,66 @@ uMapper.CreateMap<Artist>()
 If you want to apply your own mapping to the property, use this overload:
 {% highlight c# %}
 uMapper.CreateMap<Artist>()
-    .BasicProperty<string>( // the type parameter is the system type passed into your mapping
-        artist => artist.Tags, // the Tags property is IEnumerable<string>
+    .BasicProperty<string>( // ensures a string will be passed into your mapping
+        artist => artist.Tags,
         p => p.Split(',').Select(tag => tag.Trim()),
         "myTags" // optional property alias
         );
 {% endhighlight %} 
 
+## Single relationship ##
+These are properties which refer to another model (i.e. mapped node).  They can either be an `int?` or a `TModel`.  If no corresponding property is found on the node, this will map to the closest ancestor which can map to `TModel`.  As expected there are a few ways to customise this mapping:
+{% highlight c# %}
+class City
+{
+    public string Name { get; set; }
+}
+
+class Artist
+{
+    public City Origin { get; set; } // single relationship
+}
+
+uMapper.CreateMap<City>();
+uMapper.CreateMap<Artist>()
+    .SingleProperty(
+        artist => artist.Origin,
+        "placeOfOrigin" // set the property alias
+        );
+        
+uMapper.CreateMap<Artist>()
+    .SingleProperty(
+        artist => artist.Origin,
+        id => {
+            // 'id' is the ID of the artist node being mapped.
+            
+            var childCities = new Node(id).GetChildNodesByType("City");
+            
+            return childCities.Any() 
+                ? childCities.First().Id 
+                : (int?)null; // must return null if not found
+        });
+{% endhighlight %} 
+        
+uMapper.CreateMap<Artist>()
+    .SingleProperty<string>(
+        artist => artist.Origin,
+        p => 
+        {
+            // 'p' is the property as a string
+            var matchingCities = uQuery.GetNodesByType("City").Where(x => x.Name.Contains(p));
+            
+            return matchingCities.Any()
+                ? matchingCities.First().Id
+                : (int?)null; // not found
+        },
+        "placeOfOrigin" // optional
+        );
+{% endhighlight %} 
 
 ## Default mapping behaviour for model property types ##
 * System types and enums are mapped via `Node.GetProperty<TDestination>()` (including nullables)
 * A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.
-* A `TDestination` (without a corresponding node property) will map the closest ancestor node which maps to `TDestination`.
 * Using a collection of `int` will map node IDs rather than models.
 * Properties with the same name as properties on `umbraco.NodeFactory.Node` will map automagically.
 * Custom collections which implement `IEnumerable<>` and take a single argument constructor of `IEnumerable<>` can be used.

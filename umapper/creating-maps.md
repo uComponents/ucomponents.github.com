@@ -87,7 +87,6 @@ uMapper.CreateMap<Artist>()
                 ? childCities.First().Id 
                 : (int?)null; // must return null if not found
         });
-{% endhighlight %} 
         
 uMapper.CreateMap<Artist>()
     .SingleProperty<string>(
@@ -107,6 +106,50 @@ uMapper.CreateMap<Artist>()
 
 ## Collection relationship ##
 These are properties which refer to a collection of other models, and must be included when querying.  They can either be `IEnumerable<int>` or `IEnumerable<TModel>`, or a type which implements `IEnumerable<T>` and takes `IEnumerable<T>` in a single argument constructor (such as `List<T>`). If no corresponding property is found on the node, this will contain all descendants which can map to `TModel`.
+{% highlight c# %}
+class Gig
+{
+    public string Name { get; set; }
+}
+
+class Artist
+{
+    public IEnumerable<Gig> Gigs { get; set; }
+}
+
+uMapper.CreateMap<Gig>();
+
+// Set the property alias.  This should be a CSV of node IDs (e.g. Multi-Node Tree Picker)
+uMapper.CreateMap<Artist>()
+    .CollectionProperty(
+        artist => artist.Gigs,
+        "performances"
+        );
+        
+// Map the IDs based on the ID of the artist
+uMapper.CreateMap<Artist>()
+    .CollectionProperty(
+        artist => artist.Gigs,
+        id => new Node(id).GetChildNodesByType("Gig").Select(n => n.Id) // Just get compatible children
+        );
+        
+// Map the IDs from a property value
+uMapper.CreateMap<Artist>()
+    .CollectionProperty<string>(
+        artist => artist.Gigs,
+        p => uQuery.GetNodesByType("Gig").Where(x => x.Name.Contains(p)).Select(n => n.Id),
+        "performances" // optional property alias override
+        );
+{% endhighlight %} 
+
+## Custom relationship ##
+Sometimes you just want total domination over your property mappings.
+{% highlight c# %}
+uMapper.CreateMap<Artist>()
+    .CustomProperty(
+        );
+{% endhighlight %} 
+
 
 ## Overriding the node type alias ##
 `uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`

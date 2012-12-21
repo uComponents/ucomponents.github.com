@@ -20,7 +20,7 @@ uMapper.CreateMap<Artist>("LeArtiste");
 
 
 ## Default property mapping ##
-This refers to properties which are common to all nodes, such as `Id` and `Name`.   In a situation where the property name on your model does not correlate with the node property name, or you wish to run a mapping on the property (such as `Trim()`), you can use the `DefaultProperty()` method:
+This refers to properties which are common to all nodes, such as `Id` and `Name`.  You do not need to include these properties when querying.  In a situation where the property name on your model does not correlate with the node property name, or you wish to run a mapping on the property (such as `Trim()`), you can use the `DefaultProperty()` method:
 {% highlight c# %}
 uMapper.CreateMap<Artist>()
     .DefaultProperty(
@@ -31,7 +31,7 @@ uMapper.CreateMap<Artist>()
 {% endhighlight %} 
 
 ## Basic property mapping ##
-This refers to properties which you've defined in your document type.  uMapper will automatically map any properties which satisfy a case-insensitive comparison, but if they differ you can just reroute a property:
+This refers to properties which you've defined in your document type.  You do not need to include these properties when querying.  uMapper will automatically map any properties which satisfy a case-insensitive comparison, but if they differ you can just reroute a property:
 {% highlight c# %}
 class Artist
 {
@@ -56,7 +56,7 @@ uMapper.CreateMap<Artist>()
 {% endhighlight %} 
 
 ## Single relationship ##
-These are properties which refer to another model (i.e. mapped node).  They can either be an `int?` or a `TModel`.  If no corresponding property is found on the node, this will map to the closest ancestor which can map to `TModel`.  As expected there are a few ways to customise this mapping:
+These are properties which refer to another model (i.e. mapped node), and as such need to be included when querying.  They can either be an `int?` or a `TModel`.  If no corresponding property is found on the node, this will contain the closest ancestor which can map to `TModel`.  As expected there are a few ways to customise this mapping:
 {% highlight c# %}
 class City
 {
@@ -105,12 +105,8 @@ uMapper.CreateMap<Artist>()
         );
 {% endhighlight %} 
 
-## Default mapping behaviour for model property types ##
-* System types and enums are mapped via `Node.GetProperty<TDestination>()` (including nullables)
-* A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.
-* Using a collection of `int` will map node IDs rather than models.
-* Properties with the same name as properties on `umbraco.NodeFactory.Node` will map automagically.
-* Custom collections which implement `IEnumerable<>` and take a single argument constructor of `IEnumerable<>` can be used.
+## Collection relationship ##
+These are properties which refer to a collection of other models, and must be included when querying.  They can either be `IEnumerable<int>` or `IEnumerable<TModel>`, or a type which implements `IEnumerable<T>` and takes `IEnumerable<T>` in a single argument constructor (such as `List<T>`). If no corresponding property is found on the node, this will contain all descendants which can map to `TModel`.
 
 ## Overriding the node type alias ##
 `uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`

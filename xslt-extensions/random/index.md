@@ -2,6 +2,7 @@
 layout: extension
 title: Random
 category: XSLT Extensions
+since_version: 3.0
 ---
 
 ## Activation

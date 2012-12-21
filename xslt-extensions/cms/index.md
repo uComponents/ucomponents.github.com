@@ -2,6 +2,7 @@
 layout: extension
 title: CMS
 category: XSLT Extensions
+since_version: 1.0
 ---
 
 ## Activation

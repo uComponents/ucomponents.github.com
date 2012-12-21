@@ -2,6 +2,7 @@
 layout: extension
 title: Strings
 category: XSLT Extensions
+since_version: 1.0
 ---
 
 ## Activation
@@ -197,8 +198,8 @@ _Returns_: The string with spaces before each capital letter or number
 *****
 
 ### StripFontTags
-Strips the <font> tags from a string.
-_Returns_: Returns the string stripped of all <font> tags.
+Strips the `<font>` tags from a string.
+_Returns_: Returns the string stripped of all `<font>` tags.
 
 #### Parameters
 | Name | Type |
@@ -790,54 +791,3 @@ _Returns_: Returns the input string with the specified text trimmed from the end
 
 
 *****
-
-### CharLoop
-Loops through each of the characters in the string.
-_Returns_: Returns a string that has been passed through the character condition filtered.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
-| condition | CharCondition |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:CharLoop(input, condition)" />
-
-
-*****
-
-### Coalesce
-Performs a Coalesce among the supplied arguments.
-_Returns_: Returns the first nonnull or empty expression among the supplied arguments.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| args | System.String[] |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Coalesce(args)" />
-
-
-*****
-
-### FormatString
-Formats the specified string.
-_Returns_: Returns a formatted string.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| args | System.String[] |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:FormatString(format, args)" />
-
-
-*****
-

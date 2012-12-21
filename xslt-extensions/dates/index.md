@@ -2,6 +2,7 @@
 layout: extension
 title: Dates
 category: XSLT Extensions
+since_version: 2.0
 ---
 
 ## Activation

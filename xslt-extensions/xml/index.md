@@ -2,6 +2,7 @@
 layout: extension
 title: Xml
 category: XSLT Extensions
+since_version: 1.0
 ---
 
 ## Activation

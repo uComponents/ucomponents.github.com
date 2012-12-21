@@ -2,6 +2,7 @@
 layout: extension
 title: Nodes
 category: XSLT Extensions
+since_version: 2.1
 ---
 
 ## Activation

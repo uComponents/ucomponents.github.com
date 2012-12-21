@@ -2,6 +2,7 @@
 layout: extension
 title: Email
 category: XSLT Extensions
+since_version: 3.0
 ---
 
 ## Activation

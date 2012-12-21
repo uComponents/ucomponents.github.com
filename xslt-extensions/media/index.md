@@ -2,6 +2,7 @@
 layout: extension
 title: Media
 category: XSLT Extensions
+since_version: 2.1
 ---
 
 ## Activation

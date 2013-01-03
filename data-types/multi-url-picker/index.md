@@ -5,7 +5,7 @@ category: Data Types
 since_version: 3.0
 ---
 
-Basically, the user can create and edit multiple instances of a [URL Picker](/data-types/url-picker).  See the [URL Picker documentation page|(/data-types/url-picker) for an understanding of the URL Picker's usage.
+Basically, the user can create and edit multiple instances of a [URL Picker](/data-types/url-picker).  See the [URL Picker documentation page](/data-types/url-picker) for an understanding of the URL Picker's usage.
 
 ## User facing ##
 ### Editing ###

@@ -1,3 +1,73 @@
+---
+navigation:
+- title: About uComponents
+  url: /index.html
+- title: How to contribute and develop
+  url: /contribution/
+- title: DataTypes
+  url: /data-types/index.html
+  subnav:
+  - title: Auto Complete
+    url: /data-types/auto-complete/index.html
+  - title: Character Limit
+    url: /data-types/character-limit/index.html
+  - title: DropDown CheckList
+    url: /data-types/dropdown-checklist/index.html
+  - title: Elastic TextBox
+    url: /data-types/elastic-textbox/index.html
+  - title: Enum DropDownList
+    url: /data-types/enum-dropdownlist/index.html
+  - title: FilePicker
+    url: /data-types/file-picker/index.html
+  - title: Multi-URL Picker
+    url: /data-types/multi-url-picker/index.html
+  - title: Relation Links
+    url: /data-types/relation-links/index.html
+  - title: SQL AutoComplete
+    url: /data-types/sql-auto-complete/index.html
+  - title: URL Picker
+    url: /data-types/url-picker/index.html
+- title: uMapper
+  url: /umapper/index.html
+  subnav:
+  - title: Creating Maps
+    url: /umapper/creating-maps/index.html
+  - title: Inheritance
+    url: /umapper/inheritance/index.html
+  - title: Querying
+    url: /umapper/querying/index.html
+- title: uQuery
+  url: /uquery/index.html
+- title: XSLT Extensions
+  url: /xslt-extensions/index.html
+  subnav:
+  - title: CMS
+    url: /xslt-extensions/cms/index.html
+  - title: Dates
+    url: /xslt-extensions/dates/index.html
+  - title: Email
+    url: /xslt-extensions/email/index.html
+  - title: IO
+    url: /xslt-extensions/io/index.html
+  - title: Media
+    url: /xslt-extensions/media/index.html
+  - title: Members
+    url: /xslt-extensions/members/index.html
+  - title: Nodes
+    url: /xslt-extensions/nodes/index.html
+  - title: Random
+    url: /xslt-extensions/random/index.html
+  - title: Request
+    url: /xslt-extensions/request/index.html
+  - title: Search
+    url: /xslt-extensions/search/index.html
+  - title: Strings
+    url: /xslt-extensions/strings/index.html
+  - title: Urls
+    url: /xslt-extensions/urls/index.html
+  - title: Xml
+    url: /xslt-extensions/xml/index.html
+---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -36,21 +106,15 @@
 				<div class="span3">
 					<div class="well sidebar-nav">
 						<ul class="nav nav-list">
-							<li class="nav-header">Documentation</li>
-							<li{% if '/index.html' == page.url %} class="active"{% endif %}><a href="/">About uComponents</a></li>
-							<li{% if '/contribution/' == page.url %} class="active"{% endif %}><a href="/contribution/">How to contribute and develop</a></li>
-{% for rootpage in site.pages sort:title %}{% if rootpage.category == 'root' %}
-							<li{% if rootpage.url == page.url %} class="active"{% endif %}>
-								<a href="{{ rootpage.url | replace:'index.html','' }}">{{ rootpage.title }}</a>
-								<ul>
-								{% for subpage in site.pages sort:title %}{% if subpage.category == rootpage.title %}
+							<li class="nav-header">Documentation</li>{% for item in page.navigation %}
+							<li{% if item.url == page.url %} class="active"{% endif %}>
+								<a href="{{ item.url | replace:'index.html','' }}">{{ item.title }}</a>
+								<ul>{% for subpage in item.subnav %}
 									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
-									</li>
-								{% endif %}{% endfor %}
+									</li>{% endfor %}
 								</ul>
-							</li>
-{% endif %}{% endfor %}
+							</li>{% endfor %}
 						</ul>
 					</div>
 				</div>

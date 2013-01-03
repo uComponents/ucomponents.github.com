@@ -25,7 +25,7 @@ public class Artist
 }
 {% endhighlight %} 
 
-4. Derive from `ApplicationStartupHandler` and create your maps (these must be created before you start mapping nodes, or uMapper doesn't know which classes to map to):
+4. Derive from `ApplicationStartupHandler` and create your maps (these must be created before you start mapping nodes, or uMapper doesn't know which classes to map to).  Now is also a good time to enable caching (which uses the `HttpContext.Current.Cache`):
 {% highlight c# %}
 using uComponents.Mapping;
 using umbraco.businesslogic;
@@ -37,6 +37,8 @@ public class ExampleStartupHandler : ApplicationStartupHandler
         uMapper.CreateMap<Site>();
         uMapper.CreateMap<Genre>();
         uMapper.CreateMap<Artist>();
+
+	uMapper.CachingEnabled = true;
     }
 }
 {% endhighlight %} 
@@ -58,113 +60,7 @@ public partial class Site : System.Web.UI.MasterPage
             
         this.Genres = uMapper.GetAll<Genre>();
 		
-        var featuredGenre = uMapper.GetSingle<Genre>(1234); // node ID is 1234
+        var featuredGenre = uMapper.Find<Genre>(1234); // node ID is 1234
     }
 }
-{% endhighlight %} 
-
-## Default mapping behaviour for model property types ##
-* System types and enums are mapped via `Node.GetProperty<TDestination>()` (including nullables)
-* A collection of `TDestination` (without a corresponding node property) will map from all descendant nodes which map to `TDestination`.
-* A `TDestination` (without a corresponding node property) will map the closest ancestor node which maps to `TDestination`.
-* Using a collection of `int` will map node IDs rather than models.
-* Properties with the same name as properties on `umbraco.NodeFactory.Node` will map automagically.
-* Custom collections which implement `IEnumerable<>` and take a single argument constructor of `IEnumerable<>` can be used.
-
-## Advanced ##
-### Overriding the node type alias ###
-`uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`
-### Overriding the default property mapping ###
-{% highlight c# %}
-uMapper.CreateMap<Artist>()
-    .ForProperty(
-        x => x.Name, // Choose the model property
-        (node, paths) => node.GetProperty<string>("AlternateName"), // Specify a custom mapping
-        false // Decide if this mapping counts as a relationship
-        );
-{% endhighlight %} 
-### Removing the default mapping for a property ###
-`uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`
-### Mapping with shorthand ###
-{% highlight c# %}
-// By default, all relationships are included in a shorthand query:
-var fatArtist = uMapper.GetSingle<Artist>(1063); // fatArtist.Genres.Count == 3
-
-// This can get very expensive very fast.  You can exclude all relationships
-// by specifying the optional parameter:
-var skinnyArtist = uMapper.GetSingle<Artist>(1063, false); // skinnyArtist.Genres == null
-
-// If performance matters to you, I would advise against using shorthand.
-
-{% endhighlight %} 
-### Querying ###
-Calling the `uMapper.Query<TDestination>()` methods gets you a fluent interface to 'query' nodes.
-I say 'query' because it doesn't implement `IQueryable` (probably never will).
-Enumerating the query gives you back all nodes which can be mapped to `TDestination` (which means
-models which inherit from `TDestination` will be included).
-If you hunger for more query methods, you can write your own extension methods for `INodeQuery<TDestination>`.
-{% highlight c# %}
-// Maps the current node
-var a = uMapper.Query<Artist>().Current();
-    
-// Maps a node by ID (returns null if it doesn't exist)
-var b = uMapper.Query<Artist>().Single(1234);
-    
-// Maps many nodes
-var c = uMapper.Query<Artist>().Many(new[] { 1111, 2222, 3333 });
-    
-// Maps all nodes which can be mapped to 'Artist'
-var d = uMapper.Query<Artist>();
-    
-// Maps all nodes which were explicitly mapped to 'Artist'
-var e = uMapper.Query<Artist>().Explicit();
 {% endhighlight %}
-#### Mapping relationships with paths ####
-{% highlight c# %}
-var homepage = uMapper.Query<Homepage>()
-    .Include(x => x.Genres) // Single level path
-    .Include(x => x.Artists.Select(y => y.Genres)) // Syntax for multi-level paths
-    .Current(); // Maps the current node
-
-    homepage.Genres // populated
-    homepage.FeaturedArtist // null, as it was not included
-    homepage.Artists // populated
-    homepage.Artists.First().Genres // populated
-    
-// You can also use string paths (as deep as you like):
-var otherHomepage = uMapper.Query<Homepage>()
-    .Include("Artists.Genres")
-    .Current();
-{% endhighlight %}  
-### Inheritance ###
-{% highlight c# %}
-// You can structure your model classes to reflect the inheritance
-// in the document type tree.
-
-// Create your base map first.
-uMapper.CreateMap<Artist>() // maps from "Artist" node type
-	.ForProperty(x => x.Name, (node, paths) => "Hello", false);
-
-// Create your derived maps later.
-//
-// The model SoloArtist inherits from Artist.
-//
-// This creates a map from the "SoloArtist" node type, 
-// which inherits from the "Artist" node type.
-uMapper.CreateMap<SoloArtist>(); 
-
-var soloArtist = uMapper.GetSingle<SoloArtist>(1061);
-// soloArtist.Name == "Hello"
-
-// You can map a node to a base model.
-var artist = uMapper.Query<Artist>().Single(1061); 
-
-// And cast it back: 
-(artist as SoloArtist).Name // "Hello"
-
-// Or get every node which maps to a base model:
-List<Artist> allArtists = uMapper.Query<Artist>(); // contains Artist and SoloArtist items
-
-// Or get every node which is explicitly mapped to the base model:
-List<Artist> baseArtists = uMapper.Query<Artist>().Explicit(); // contains only Artist
-{% endhighlight %} 

@@ -6,7 +6,7 @@ This is the GitHub Pages repository for the _uComponents_ project.
 
 * This website is a Jekyll project.
 * Each section is a sub-folder and individual pages is a Markdown file.
-* The navigation and page structure will be automatically generated.
+* The navigation (for the side-menu) is defined as a YAML array inside the ```_layout/default.html``` template; (_we had issues with the sort order of the auto-generated navigation_).
 * Mark-up and styling is applied using [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html)
 
 ## How to Contribute
@@ -17,12 +17,13 @@ This is the GitHub Pages repository for the _uComponents_ project.
 
 ## Where
 
-The generated documentation web-site can be viewed at: <http://ucomponents.org>
+The generated documentation web-site can be viewed at: <http://ucomponents.org>.
 
 ### Collaborators
 
 * [Lee Kelleher](http://leekelleher.com/)
 * [Hendy Racher](http://www.doddracher.com/)
+* [James Diacono](https://twitter.com/diachedelic)
 
 ## License
 
@@ -30,4 +31,4 @@ The generated documentation web-site can be viewed at: <http://ucomponents.org>
 
 ## Credits
 * [The Umbraco Community](http://our.umbraco.org); [#h5yr](http://h5yr.com)
-* [PHP: The Right Way](https://github.com/codeguy/php-the-right-way); for initial documentation format inspiration
+* [GitHub](https://github.com/); for providing an excellent platform to document, collaborate and share.

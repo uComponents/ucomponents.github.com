@@ -9,7 +9,6 @@ Before you can use uMapper, you must create your maps.  You do this by calling `
 class Artist
 {
     public string Name { get; set; }
-    public int MemberCount { get; set; }
 }
 
 uMapper.CreateMap<Artist>();
@@ -72,7 +71,7 @@ uMapper.CreateMap<City>();
 uMapper.CreateMap<Artist>()
     .SingleProperty(
         artist => artist.Origin,
-        "placeOfOrigin" // set the property alias
+        "placeOfOrigin" // set the property alias if necessary
         );
         
 uMapper.CreateMap<Artist>()
@@ -145,22 +144,39 @@ uMapper.CreateMap<Artist>()
 ## Custom relationship ##
 Sometimes you just want total domination over your property mappings.
 {% highlight c# %}
+class Review // not mapped to a document type - just a POCO in the wild
+{
+    public string Author { get; set; }
+    public string BodyHtml { get; set; }
+}
+
+class Artist
+{
+    public IEnumerable<Review> Reviews { get; set; }
+}
+
+// Method to map property - conforms to CustomPropertyMapping delegate signature
+IEnumerable<Review> MapArtistReviews(int id, string[] paths, ICacheProvider cache)
+{
+    var node = new Node(id);
+
+    // The reviews are a DataTypeGrid (a data type from uComponents)
+    var reviewsXml = node.GetProperty<string>("reviews");
+    var reviews = new List<Review>();
+
+    // parse XML for reviews and tadaaaa!
+
+    return reviews;
+}
+
 uMapper.CreateMap<Artist>()
     .CustomProperty(
+	artist => artist.Reviews,
+        MapArtistReviews,
+        false, // this property does not require a specific include when querying
+        true // allow the reviews collection to be cached by reference
         );
 {% endhighlight %} 
 
-
-## Overriding the node type alias ##
-`uMapper.CreateMap<Artist>("SomeNodeTypeAlias");`
-## Overriding the default property mapping ##
-{% highlight c# %}
-uMapper.CreateMap<Artist>()
-    .ForProperty(
-        x => x.Name, // Choose the model property
-        (node, paths) => node.GetProperty<string>("AlternateName"), // Specify a custom mapping
-        false // Decide if this mapping counts as a relationship
-        );
-{% endhighlight %} 
-## Removing the default mapping for a property ##
+## Removing the mapping for a property ##
 `uMapper.CreateMap<Artist>().RemoveMappingForProperty(x => x.Name);`

@@ -28,16 +28,32 @@ If you hunger for more query methods, you can write your own extension methods f
 var a = uMapper.Query<Artist>().Current();
     
 // Maps a node by ID (returns null if it doesn't exist)
-var b = uMapper.Query<Artist>().Single(1234);
+var b = uMapper.Query<Artist>().Find(1234);
     
 // Maps many nodes
 var c = uMapper.Query<Artist>().Many(new[] { 1111, 2222, 3333 });
     
 // Maps all nodes which can be mapped to 'Artist'
-var d = uMapper.Query<Artist>();
+var d = uMapper.Query<Artist>().ToList();
     
 // Maps all nodes which were explicitly mapped to 'Artist'
-var e = uMapper.Query<Artist>().Explicit();
+var e = uMapper.Query<Artist>()
+    .Explicit()
+    .ToList();
+
+// Maps all artist names
+var f = uMapper.Query<Artist>()
+    .SelectProperty(artist => artist.Name)
+    .ToList();
+
+// Map all artists with short names
+var g = uMapper.Query<Artist>()
+    .WhereProperty(
+        artist => artist.Name,
+        name => name.Length < 5
+        )
+    .ToList();
+
 {% endhighlight %}
 #### Querying with paths ####
 {% highlight c# %}

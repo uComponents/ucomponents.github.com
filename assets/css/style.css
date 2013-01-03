@@ -4,6 +4,7 @@ table {margin-bottom: 20px;}
 th, td {border: solid 1px #BBB; padding: 3px 5px; text-align: left;}
 th {background-color: #F5F5F5; border-bottom: 0;}
 
+.navbar-fixed-top {position: absolute;}
 .nav-list .active > a {font-weight: bold;}
 
 .download-buttons {float:left;clear:both;width:95%;}

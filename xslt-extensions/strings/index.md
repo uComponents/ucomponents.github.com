@@ -15,41 +15,59 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Strings``` library:
 
-### GetFirstWords
-Return the first amount of words defined by 'count' contained in 'text'.
-_Returns_: String containing only the first x words.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| text | System.String |
-| count | System.Int32 |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:GetFirstWords(text, count)" />
-
+* [Coalesce](#coalesce)
+* [Concat](#concat)
+* [Format](#format)
+* [FromBase64String](#frombase64string)
+* [GetFirstWords](#getfirstwords)
+* [LowerCaseTags](#lowercasetags)
+* [MakeEmailHyperlink](#makeemailhyperlink)
+* [MakeUrlHyperlink](#makeurlhyperlink)
+* [PathShortener](#pathshortener)
+* [RemoveChars](#removechars)
+* [RemoveDuplicateEntries](#removeduplicateentries)
+* [RemoveEmptyEntries](#removeemptyentries)
+* [Reverse](#reverse)
+* [SafeAlias](#safealias)
+* [SingularPlural](#singularplural)
+* [SpaceOutCamelCase](#spaceoutcamelcase)
+* [StripFontTags](#stripfonttags)
+* [StripHTML](#striphtml)
+* [StripLineBreaks](#striplinebreaks)
+* [StripNonAlphaNumeric](#stripnonalphanumeric)
+* [StripWhitespace](#stripwhitespace)
+* [ToBase64String](#tobase64string)
+* [ToCamelCase](#tocamelcase)
+* [ToLowerCase](#tolowercase)
+* [ToProperCase](#topropercase)
+* [ToTitleCase](#totitlecase)
+* [ToUpperCase](#touppercase)
+* [TrimStringFromStart](#trimstringfromstart)
+* [TrimStringFromEnd](#trimstringfromend)
+* [TruncateInner](#truncateinner)
+* [WordCount](#wordcount)
 
 *****
 
 ### GetFirstWords
-Return the first amount of words defined by 'count' contained in 'text'.
+Return the first amount of words defined by 'count' contained in 'text'.<br>
 _Returns_: String containing only the first x words.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| text | System.String |
-| count | System.Int32 |
-| appender | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| text | ```System.String``` | |
+| count | ```System.Int32``` | |
+| appender | ```System.String``` | _(optional - defaults to ```&#8230;```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:GetFirstWords(text, count, appender)" />
-
+	<xsl:value-of select="ucomponents.strings:GetFirstWords($currentPage/bodyText, 30, '...')" disable-output-escaping="yes" />
 
 *****
 
@@ -57,95 +75,75 @@ _Returns_: String containing only the first x words.
 Converts an email address into a hyperlink.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| email | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| email | ```System.String``` | |
+| text | ```System.String``` | _(optional - defaults to ```email```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:MakeEmailHyperlink(email)" />
-
-
-*****
-
-### MakeEmailHyperlink
-Converts an email address into a hyperlink.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| email | System.String |
-| text | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:MakeEmailHyperlink(email, text)" />
-
+	<xsl:value-of select="ucomponents.strings:MakeEmailHyperlink('username@domain.com', 'Click here to email me.')" disable-output-escaping="yes" />
 
 *****
 
 ### MakeUrlHyperlink
-Converts all URLs into hyperlinks within a string.
+Converts all URLs into hyperlinks within a string.<br>
 _Returns_: Returns a string with all URLs turned into hyperlinks.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:MakeUrlHyperlink(input)" />
-
+	<xsl:value-of select="ucomponents.strings:MakeUrlHyperlink(umbraco.library:NiceUrl($currentPage/@id))" disable-output-escaping="yes" />
 
 *****
 
 ### PathShortener
-Truncates the middle section of a string, this is ideal for long filepaths or URLs.
+Truncates the middle section of a string, this is ideal for long filepaths or URLs.<br>
 _Returns_: Returns a shortened path of the string.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:PathShortener(input)" />
-
+	<xsl:value-of select="ucomponents.strings:PathShortener(umbraco.library:NiceUrl($currentPage/@id))" />
 
 *****
 
 ### TruncateInner
-Truncates the inner-string.
+Truncates the inner-string.<br>
 _Returns_: Returns a string with the mid-section truncated.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
-| maxLength | System.Int32 |
+| input | ```System.String``` |
+| maxLength | ```System.Int32``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:TruncateInner(input, maxLength)" />
-
+	<xsl:value-of select="ucomponents.strings:TruncateInner($currentPage/@nodeName, 30)" />
 
 *****
 
 ### RemoveChars
-Removes non alpha-numeric characters from a string.
+Removes non alpha-numeric characters from a string.<br>
 _Returns_: Returns the string with non alpha-numeric characters removed.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:RemoveChars(input)" />
-
+	<xsl:value-of select="ucomponents.strings:RemoveChars($currentPage/@nodeName)" />
 
 *****
 
@@ -155,359 +153,271 @@ Reverses the specified input.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:Reverse(input)" />
-
+	<xsl:value-of select="ucomponents.strings:Reverse($currentPage/@nodeName)" />
 
 *****
 
 ### SafeAlias
-Makes an alias name safe to use as an XML element name.
-            Removes all spaces and non-alphanumeric characters.
+Makes an alias name safe to use as an XML element name. Removes all spaces and non-alphanumeric characters.<br>
 _Returns_: Returns a safe alias string.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:SafeAlias(input)" />
-
+	<xsl:value-of select="ucomponents.strings:SafeAlias($currentPage/@nodeName)" />
 
 *****
 
 ### SpaceOutCamelCase
-Spaces out a string on capitals or numbers.
+Spaces out a string on capitals or numbers.<br>
 _Returns_: The string with spaces before each capital letter or number
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:SpaceOutCamelCase(input)" />
-
+	<xsl:value-of select="ucomponents.strings:SpaceOutCamelCase(name($currentPage))" />
 
 *****
 
 ### StripFontTags
-Strips the `<font>` tags from a string.
+Strips the `<font>` tags from a string.<br>
 _Returns_: Returns the string stripped of all `<font>` tags.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:StripFontTags(input)" />
-
+	<xsl:value-of select="ucomponents.strings:StripFontTags($currentPage/bodyText)" disable-output-escaping="yes" />
 
 *****
 
 ### StripHTML
-Strips the HTML.
+Strips the HTML.<br>
 _Returns_: Returns the string stripped of all HTML tags.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:StripHTML(input)" />
-
+	<xsl:value-of select="ucomponents.strings:StripHTML($currentPage/bodyText)" />
 
 *****
 
 ### StripWhitespace
-Strips the whitespace characters from a string.
+Strips the whitespace characters from a string.<br>
 _Returns_: Returns the string stripped of any whitespace characters.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:StripWhitespace(input)" />
-
+	<xsl:value-of select="ucomponents.strings:StripWhitespace($currentPage/introText)" />
 
 *****
 
 ### StripNonAlphaNumeric
-Strips the non alpha-numeric characters.
+Strips the non alpha-numeric characters.<br>
 _Returns_: Returns the string with only alpha-numeric characters.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:StripNonAlphaNumeric(input)" />
-
+	<xsl:value-of select="ucomponents.strings:StripNonAlphaNumeric($currentPage/@nodeName)" />
 
 *****
 
 ### StripLineBreaks
-Strips out all the line-breaks.
+Strips out all the line-breaks.<br>
 _Returns_: Returns the string with all the line-breaks stripped out.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:StripLineBreaks(input)" />
-
+	<xsl:value-of select="ucomponents.strings:StripLineBreaks($currentPage/introText)" />
 
 *****
 
 ### ToLowerCase
-Changes the case of the string to lowercase.
+Changes the case of the string to lowercase.<br>
 _Returns_: Returns the string as lowercase.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToLowerCase(input)" />
-
+	<xsl:value-of select="ucomponents.strings:ToLowerCase($currentPage/@nodeName)" />
 
 *****
 
 ### ToUpperCase
-Changes the case of the string to uppercase.
+Changes the case of the string to uppercase.<br>
 _Returns_: Returns the string as uppercase.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToUpperCase(input)" />
-
-
-*****
-
-### ConvertToCamelCase
-Changes a string to camelCase
-_Returns_: The camelCased string
-
-#### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:ConvertToCamelCase(input)" />
-
+	<xsl:value-of select="ucomponents.strings:ToUpperCase($currentPage/@nodeName)" />
 
 *****
 
 ### ToCamelCase
-Changes a string to camelCase
+Changes a string to camelCase.<br>
 _Returns_: The camelCased string
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToCamelCase(input)" />
+	<xsl:value-of select="ucomponents.strings:ToCamelCase($currentPage/@nodeName)" />
 
 
 *****
 
 ### ToProperCase
-Changes the case of the string to proper case.
+Changes the case of the string to proper case.<br>
 _Returns_: Returns the string in proper case.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToProperCase(input)" />
-
+	<xsl:value-of select="ucomponents.strings:ToProperCase($currentPage/@nodeName)" />
 
 *****
 
 ### ToTitleCase
-Changes the case of the string to title case.
+Changes the case of the string to title case.<br>
 _Returns_: Returns the string in title case.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToTitleCase(input)" />
-
+	<xsl:value-of select="ucomponents.strings:ToTitleCase($currentPage/@nodeName)" />
 
 *****
 
 ### ToBase64String
-Encodes a string as Base64.
+Encodes a string as Base64.<br>
 _Returns_: Returns the string encoded as Base64.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:ToBase64String(input)" />
-
+	<xsl:value-of select="ucomponents.strings:ToBase64String('A string to be converted to Base64.')" />
 
 *****
 
 ### FromBase64String
-Decodes a string from Base64.
+Decodes a string from Base64.<br>
 _Returns_: Returns the decoded Base64 string.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:FromBase64String(input)" />
-
+	<xsl:value-of select="ucomponents.strings:FromBase64String('QSBCYXNlNjQgZW5jb2RlZCBzdHJpbmcu')" />
 
 *****
 
 ### WordCount
-Counts the number of words in a string.
+Counts the number of words in a string.<br>
 _Returns_: Returns the number of words in the string.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:WordCount(input)" />
-
+	<xsl:value-of select="ucomponents.strings:WordCount($currentPage/introText)" />
 
 *****
 
 ### LowerCaseTags
-Lowers the case of the HTML tags.
+Lowers the case of the HTML tags.<br>
 _Returns_: Returns the string with all HTML tags in lowercase.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
+| input | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:LowerCaseTags(input)" />
-
+	<xsl:value-of select="ucomponents.strings:LowerCaseTags($currentPage/bodyText)" disable-output-escaping="yes" />
 
 *****
 
 ### Coalesce
 Performs a Coalesce among the supplied arguments.
-_Returns_: Returns the first nonnull or empty expression among the supplied arguments.
+_Returns_: Returns the first non-null or empty expression among the supplied arguments.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| arg1 | System.String |
-| arg2 | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| arg1 | ```System.String``` | |
+| arg2 | ```System.String``` | |
+| arg3 | ```System.String``` | _(optional)_ |
+| arg4 | ```System.String``` | _(optional)_ |
+| arg5 | ```System.String``` | _(optional)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:Coalesce(arg1, arg2)" />
-
-
-*****
-
-### Coalesce
-Performs a Coalesce among the supplied arguments.
-_Returns_: Returns the first nonnull or empty expression among the supplied arguments.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Coalesce(arg1, arg2, arg3)" />
-
-
-*****
-
-### Coalesce
-Performs a Coalesce among the supplied arguments.
-_Returns_: Returns the first nonnull or empty expression among the supplied arguments.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-| arg4 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Coalesce(arg1, arg2, arg3, arg4)" />
-
-
-*****
-
-### Coalesce
-Performs a Coalesce among the supplied arguments.
-_Returns_: Returns the first nonnull or empty expression among the supplied arguments.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-| arg4 | System.String |
-| arg5 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Coalesce(arg1, arg2, arg3, arg4, arg5)" />
-
+	<xsl:value-of select="ucomponents.strings:Coalesce(customTitle, introTitle, pageSubtitle, pageTitle, @nodeName)" />
 
 *****
 
@@ -516,93 +426,18 @@ Formats the specified string.
 _Returns_: Returns a formatted string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| arg1 | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| format | ```System.String``` | _A composite format string ([uses .NET syntax](http://msdn.microsoft.com/en-gb/library/txafckwd.aspx))._ |
+| arg1 | ```System.String``` | |
+| arg2 | ```System.String``` | _(optional)_ |
+| arg3 | ```System.String``` | _(optional)_ |
+| arg4 | ```System.String``` | _(optional)_ |
+| arg5 | ```System.String``` | _(optional)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:Format(format, arg1)" />
-
-
-*****
-
-### Format
-Formats the specified string.
-_Returns_: Returns a formatted string.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| arg1 | System.String |
-| arg2 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Format(format, arg1, arg2)" />
-
-
-*****
-
-### Format
-Formats the specified string.
-_Returns_: Returns a formatted string.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Format(format, arg1, arg2, arg3)" />
-
-
-*****
-
-### Format
-Formats the specified string.
-_Returns_: Returns a formatted string.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-| arg4 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Format(format, arg1, arg2, arg3, arg4)" />
-
-
-*****
-
-### Format
-Formats the specified string.
-_Returns_: Returns a formatted string.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
-| arg1 | System.String |
-| arg2 | System.String |
-| arg3 | System.String |
-| arg4 | System.String |
-| arg5 | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:Format(format, arg1, arg2, arg3, arg4, arg5)" />
-
+	<xsl:value-of select="ucomponents.strings:Format('{0} {1} {2} {3:ddMMyy} {4:ddMMyy}', @id, @nodeName, @urlName, @createDate, @updateDate)" />
 
 *****
 
@@ -613,181 +448,93 @@ Concats the specified nodeset.
 | Name | Type |
 |------|------|
 | nodeset | System.Xml.XPath.XPathNodeIterator |
-| separator | System.String |
+| separator | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:Concat(nodeset, separator)" />
-
+	<xsl:value-of select="ucomponents.strings:Concat($currentPage/widgets/*/nodeId, ',')" />
 
 *****
 
 ### RemoveDuplicateEntries
-Removes the duplicate entries from a comma-separated list.
+Removes the duplicate entries from a comma-separated list.<br>
 _Returns_: Returns a comma-separated list with duplicate entries removed.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| list | ```System.String``` | |
+| separator | ```System.String``` | _(optional - defaults to a comma ```,```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:RemoveDuplicateEntries(list)" />
-
-
-*****
-
-### RemoveDuplicateEntries
-Removes the duplicate entries from a comma-separated list.
-_Returns_: Returns a comma-separated list with duplicate entries removed.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
-| separator | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:RemoveDuplicateEntries(list, separator)" />
-
-
-*****
-
-### RemoveDuplicateEntries
-Removes the duplicate entries from a delimited list.
-_Returns_: Returns a delimited list with duplicate entries removed.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
-| separators | System.Char[] |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:RemoveDuplicateEntries(list, separators)" />
-
+	<xsl:value-of select="ucomponents.strings:RemoveDuplicateEntries('aaa,bbb,ccc,ddd,aaa,ccc,eee', ',')" />
 
 *****
 
 ### RemoveEmptyEntries
-Removes the empty entries from a comma-separated list.
+Removes the empty entries from a comma-separated list.<br>
 _Returns_: Returns a comma-separated list with empty entries removed.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| list | ```System.String``` | |
+| separator | ```System.String``` | _(optional - defaults to a comma ```,```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:RemoveEmptyEntries(list)" />
-
-
-*****
-
-### RemoveEmptyEntries
-Removes the empty entries from a comma-separated list.
-_Returns_: Returns a comma-separated list with empty entries removed.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
-| separator | System.String |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:RemoveEmptyEntries(list, separator)" />
-
-
-*****
-
-### RemoveEmptyEntries
-Removes the empty entries from a delimited list.
-_Returns_: Returns a the delimited list with the empty entries removed.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| list | System.String |
-| separators | System.Char[] |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:RemoveEmptyEntries(list, separators)" />
-
+	<xsl:value-of select="ucomponents.strings:RemoveEmptyEntries('aaa,bbb,ccc,,ddd,,,,,eee', ',')" />
 
 *****
 
 ### SingularPlural
-Selects a singular or plural word based on the value of the count.
+Selects a singular or plural word based on the value of the count.<br>
 _Returns_: Returns the singular or plural word based on the count's value.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| count | System.Int32 |
-| singular | System.String |
-| plural | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| count | ```System.Int32``` | |
+| singular | ```System.String``` | |
+| plural | ```System.String``` | |
+| prefixCount | System.Boolean | _(optional - defaults to ```false```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:SingularPlural(count, singular, plural)" />
-
-
-*****
-
-### SingularPlural
-Selects a singular or plural word based on the value of the count.
-
-#### Parameters
-| Name | Type |
-|------|------|
-| count | System.Int32 |
-| singular | System.String |
-| plural | System.String |
-| prefixCount | System.Boolean |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.strings:SingularPlural(count, singular, plural, prefixCount)" />
-
+	<xsl:text>You have selected </xsl:text>
+	<xsl:value-of select="ucomponents.strings:SingularPlural(count($currentPage/widgets/*/nodeId), 'node.', 'nodes.', true())" />
 
 *****
 
 ### TrimStringFromStart
-Removes the specified string from the beginning of the target, if it exists.
+Removes the specified string from the beginning of the target, if it exists.<br>
 _Returns_: Returns the input string with the specified text trimmed from the start.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
-| textToTrim | System.String |
+| input | ```System.String``` |
+| textToTrim | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:TrimStringFromStart(input, textToTrim)" />
-
+	<xsl:value-of select="ucomponents.strings:TrimStringFromStart($currentPage/@nodeName, 'Some prefix: ')" />
 
 *****
 
 ### TrimStringFromEnd
-Removes the specified string from the end of the target, if it exists.
+Removes the specified string from the end of the target, if it exists.<br>
 _Returns_: Returns the input string with the specified text trimmed from the end.
 
 #### Parameters
 | Name | Type |
 |------|------|
-| input | System.String |
-| textToTrim | System.String |
+| input | ```System.String``` |
+| textToTrim | ```System.String``` |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.strings:TrimStringFromEnd(input, textToTrim)" />
-
+	<xsl:value-of select="ucomponents.strings:TrimStringFromEnd($currentPage/@nodeName, '! Some suffix')" />
 
 *****

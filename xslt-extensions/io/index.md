@@ -15,17 +15,38 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```IO``` library:
+
+* [DirectoryExists](#directoryexists)
+* [FileExists](#fileexists)
+* [GetDirectories](#getdirectories)
+* [GetFiles](#getfiles)
+* [GetExtension](#getextension)
+* [GetFileName](#getfilename)
+* [GetFileNameWithoutExtension](#getfilenamewithoutextension)
+* [GetDirectoryName](#getdirectoryname)
+* [GetFileSize](#getfilesize)
+* [GetServerMapPath](#getservermappath)
+* [MapPath](#mappath)
+* [PathShortener](#pathshortener)
+* [FormatFileSize](#formatfilesize)
+* [LoadFile](#loadfile)
+* [GetFileInfo](#getfileinfo)
+* [GetLocalFilePath](#getlocalfilepath)
+
+*****
 
 ### DirectoryExists
 Directories the exists.
 _Returns_: Returns true if the directory exists, otherwise false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -39,9 +60,9 @@ Files the exists.
 _Returns_: Returns true if the file exists, otherwise false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -55,11 +76,11 @@ Gets the directories.
 _Returns_: Returns a node-set of the directories.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| searchPattern | System.String |
-| allDirectories | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| searchPattern | ```System.String``` | |
+| allDirectories | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -73,11 +94,11 @@ Gets the files.
 _Returns_: Returns a node-set of the files.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| searchPattern | System.String |
-| allDirectories | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| searchPattern | ```System.String``` | |
+| allDirectories | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -91,9 +112,9 @@ Gets the extension.
 _Returns_: Returns the extension of the specified path string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -107,9 +128,9 @@ Gets the name of the file.
 _Returns_: Returns the file name and extension of the specified path string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -123,9 +144,9 @@ Gets the file name without extension.
 _Returns_: Returns the file name of the specified path string without the extension.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -139,9 +160,9 @@ Gets the name of the directory.
 _Returns_: Returns the directory name for the specified path string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -155,9 +176,9 @@ Gets the size of the file.
 _Returns_: Returns the filesize for the specified filepath.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -171,9 +192,9 @@ Gets the mapped path to the server.
 _Returns_: Returns the physical file path that corresponds to the specified virtual path on the web server.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -187,10 +208,10 @@ Gets the mapped path to the server.
 _Returns_: Returns the physical file path that corresponds to the specified virtual path on the web server.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| useHttpContext | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| useHttpContext | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -204,9 +225,9 @@ Truncates the middle section of a string, this is ideal for long filepaths or UR
 _Returns_: Returns a shortened path of the string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| input | ```System.String``` | |
 
 #### XSLT Example
 
@@ -219,9 +240,9 @@ _Returns_: Returns a shortened path of the string.
 Formats the size of the file.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| filesize | System.Int64 |
+| Name | Type | Notes |
+|------|------|-------|
+| filesize | ```System.Int64``` | |
 
 #### XSLT Example
 
@@ -235,9 +256,9 @@ Loads and reads the contents of a file.
 _Returns_: Returns the contents of the specified file.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| filepath | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| filepath | ```System.String``` | |
 
 #### XSLT Example
 
@@ -251,9 +272,9 @@ Gets the FileInfo.
 _Returns_: Returns the System.IO.FileInfo for the specified filepath.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -267,9 +288,9 @@ Checks if the file path is a Uri, then returns the local file path.
 _Returns_: Returns the local file path.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 

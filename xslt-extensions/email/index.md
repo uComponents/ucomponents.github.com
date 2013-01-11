@@ -15,17 +15,24 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Email``` library:
+
+* [IsValidEmail](#isvalidemail)
+* [SendMail](#sendmail)
+
+*****
 
 ### IsValidEmail
 Determines whether [is valid email] [the specified input].
 _Returns_: true if [is valid email] [the specified input]; otherwise, false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| input | ```System.String``` | |
 
 #### XSLT Example
 
@@ -38,14 +45,14 @@ _Returns_: true if [is valid email] [the specified input]; otherwise, false.
 Sends an email. Performs the same function an umbraco.library.SendMail, with the option of sending via SSL.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| from | System.String |
-| to | System.String |
-| subject | System.String |
-| body | System.String |
-| isHtml | System.Boolean |
-| useSSL | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| from | ```System.String``` | |
+| to | ```System.String``` | |
+| subject | ```System.String``` | |
+| body | ```System.String``` | |
+| isHtml | ```System.Boolean``` | |
+| useSSL | ```System.Boolean``` | |
 
 #### XSLT Example
 

@@ -15,17 +15,37 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Media``` library:
+
+* [GetMediaByCsv](#getmediabycsv)
+* [GetMediaByCsv](#getmediabycsv)
+* [GetMediaByName](#getmediabyname)
+* [GetMediaByType](#getmediabytype)
+* [GetMediaByUrlName](#getmediabyurlname)
+* [GetMediaByXPath](#getmediabyxpath)
+* [GetMediaIdByUrl](#getmediaidbyurl)
+* [GetPublishedXml](#getpublishedxml)
+* [GetUniqueId](#getuniqueid)
+* [GetImageHtml](#getimagehtml)
+* [GetImageHtml](#getimagehtml)
+* [GetImageHeight](#getimageheight)
+* [GetImageWidth](#getimagewidth)
+* [GetImageHeightAndWidth](#getimageheightandwidth)
+* [GetImageSize](#getimagesize)
+
+*****
 
 ### GetMediaByCsv
 Gets the media by CSV.
 _Returns_: Returns an XPathNodeIterator of the media nodes from the CSV list.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
 
 #### XSLT Example
 
@@ -39,10 +59,10 @@ Gets the media by CSV.
 _Returns_: Returns an XPathNodeIterator of the media nodes from the CSV list.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
-| deep | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
+| deep | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -56,9 +76,9 @@ Gets the media item by it's node name.
 _Returns_: Returns an XPathNodeIterator of the media nodes from specified node name.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -72,9 +92,9 @@ Gets the media items by node type alias.
 _Returns_: Returns an XPathNodeIterator of the media nodes from specified node type alias.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeTypeAlias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeTypeAlias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -88,9 +108,9 @@ Gets the media items by URL name.
 _Returns_: Returns an XPathNodeIterator of the media nodes from specified URL name.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| urlName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| urlName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -104,9 +124,9 @@ Gets the media items by an XPath expression.
 _Returns_: Returns an XPathNodeIterator of the media nodes from specified XPath expression.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xpath | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| xpath | ```System.String``` | |
 
 #### XSLT Example
 
@@ -120,9 +140,9 @@ Gets the media Id by URL.
 _Returns_: Returns the media Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -148,9 +168,9 @@ Gets the unique id of a media node.
 _Returns_: Returns the unique id of a media node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| mediaId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| mediaId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -164,9 +184,9 @@ Gets the HTML for an image tag, using the Media Id.
 _Returns_: Returns a HTML image tag from a Media Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| mediaId | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| mediaId | ```System.String``` | |
 
 #### XSLT Example
 
@@ -180,11 +200,11 @@ Gets the HTML for an image tag, using the Media Id.
 _Returns_: Returns a HTML image tag from a Media Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| mediaId | System.String |
-| defaultHeight | System.Int32 |
-| defaultWidth | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| mediaId | ```System.String``` | |
+| defaultHeight | ```System.Int32``` | |
+| defaultWidth | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -198,9 +218,9 @@ Gets the height of the image.
 _Returns_: Returns the height of the image.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -214,9 +234,9 @@ Gets the width of the image.
 _Returns_: Returns the width of the image.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 
@@ -230,11 +250,11 @@ Gets the height and width of the image.
 _Returns_: Returns the height and width of the image.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| height | System.Int32@ |
-| width | System.Int32@ |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| height | ```System.Int32@``` | |
+| width | ```System.Int32@``` | |
 
 #### XSLT Example
 
@@ -248,9 +268,9 @@ Gets the size of the image.
 _Returns_: Returns the size (dimensions) of the image.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
 
 #### XSLT Example
 

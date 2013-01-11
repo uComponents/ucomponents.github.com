@@ -15,18 +15,48 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Dates``` library:
+
+* [DateWithinLastDays](#datewithinlastdays)
+* [DateWithinDuration](#datewithinduration)
+* [GetPrettyDate](#getprettydate)
+* [GetPrettyDate](#getprettydate)
+* [FormatDateTime](#formatdatetime)
+* [ParseExact](#parseexact)
+* [ParseExact](#parseexact)
+* [ElapsedSeconds](#elapsedseconds)
+* [Age](#age)
+* [IsLeapYear](#isleapyear)
+* [IsWeekday](#isweekday)
+* [IsWeekend](#isweekend)
+* [AddWorkdays](#addworkdays)
+* [AddWorkdays](#addworkdays)
+* [GetFirstDayOfMonth](#getfirstdayofmonth)
+* [GetFirstDayOfMonth](#getfirstdayofmonth)
+* [GetLastDayOfMonth](#getlastdayofmonth)
+* [GetLastDayOfMonth](#getlastdayofmonth)
+* [ListDates](#listdates)
+* [ToUnixTime](#tounixtime)
+* [WorkdaysDiff](#workdaysdiff)
+* [FormatDateTime](#formatdatetime)
+* [GetDayNumberSuffix](#getdaynumbersuffix)
+* [IsWeekday](#isweekday)
+* [WorkdaysDiff](#workdaysdiff)
+
+*****
 
 ### DateWithinLastDays
 Tests if a date is within the last number of specified days.
 _Returns_: Returns true or false depending on if the date is within the last number of days.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| days | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| days | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -40,10 +70,10 @@ Tests if a date is within the specified duration.
 _Returns_: Returns true or false depending on if the date is within the specified duration.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| duration | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| duration | ```System.String``` | |
 
 #### XSLT Example
 
@@ -57,9 +87,9 @@ Gets the pretty date.
 _Returns_: Returns a pretty date.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -73,10 +103,10 @@ Gets the pretty date.
 _Returns_: Returns a pretty date.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -90,10 +120,10 @@ Converts the value of the date time string to its equivalent string representati
 _Returns_: The formated date string
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -107,10 +137,10 @@ Parses the exact value of the date time string to its equivalent string represen
 _Returns_: Returns a sortable date/time formatted to the specified pattern.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| inputFormat | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| inputFormat | ```System.String``` | |
 
 #### XSLT Example
 
@@ -124,11 +154,11 @@ Parses the exact value of the date time string to its equivalent string represen
 _Returns_: Returns a sortable date/time formatted to the specified pattern.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| inputFormat | System.String |
-| outputFormat | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| inputFormat | ```System.String``` | |
+| outputFormat | ```System.String``` | |
 
 #### XSLT Example
 
@@ -142,9 +172,9 @@ Gets the elapsed seconds since the input DateTime.
 _Returns_: Returns the elapsed seconds since the input DateTime.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| input | ```System.String``` | |
 
 #### XSLT Example
 
@@ -158,9 +188,9 @@ Get the current age, from the specified date of birth.
 _Returns_: Returns the age based on the specified date of birth.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| dateOfBirth | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| dateOfBirth | ```System.String``` | |
 
 #### XSLT Example
 
@@ -174,9 +204,9 @@ Determines whether [is leap year] [the specified date].
 _Returns_: true if [is leap year] [the specified date]; otherwise, false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -190,9 +220,9 @@ Determines whether the specified date is weekday.
 _Returns_: true if the specified date is weekday; otherwise, false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -206,9 +236,9 @@ Determines whether the specified date is weekend.
 _Returns_: true if the specified date is weekend; otherwise, false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -221,10 +251,10 @@ _Returns_: true if the specified date is weekend; otherwise, false.
 Adds the workdays, excluding weekends.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| days | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| days | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -237,11 +267,11 @@ Adds the workdays, excluding weekends.
 Adds the workdays, excluding weekends.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| days | System.Int32 |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| days | ```System.Int32``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -254,9 +284,9 @@ Adds the workdays, excluding weekends.
 Gets the first day of month.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -269,10 +299,10 @@ Gets the first day of month.
 Gets the first day of month.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -285,9 +315,9 @@ Gets the first day of month.
 Gets the last day of month.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -300,10 +330,10 @@ Gets the last day of month.
 Gets the last day of month.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -317,10 +347,10 @@ Lists all the dates between the start and end dates.
 _Returns_: Returns a nodeset of all the dates between the start and end date.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| startDate | System.String |
-| endDate | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| startDate | ```System.String``` | |
+| endDate | ```System.String``` | |
 
 #### XSLT Example
 
@@ -334,9 +364,9 @@ Converts a date to Unix time.
 _Returns_: Return the total number of seconds between Unix epoch and the specified date/time.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.String``` | |
 
 #### XSLT Example
 
@@ -350,10 +380,10 @@ Gets the number of workdays between two dates.
 _Returns_: Returns the number of workdays between two dates.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| startDate | System.String |
-| endDate | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| startDate | ```System.String``` | |
+| endDate | ```System.String``` | |
 
 #### XSLT Example
 
@@ -366,10 +396,10 @@ _Returns_: Returns the number of workdays between two dates.
 Formats the date time.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.DateTime |
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.DateTime``` | |
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -383,9 +413,9 @@ Gets the ordinal suffix for a given date
 _Returns_: The ordinal suffix
 
 #### Parameters
-| Name | Type |
-|------|------|
-| date | System.DateTime |
+| Name | Type | Notes |
+|------|------|-------|
+| date | ```System.DateTime``` | |
 
 #### XSLT Example
 
@@ -399,9 +429,9 @@ Determines whether the specified day is weekday.
 _Returns_: true if the specified day is weekday; otherwise, false.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| day | System.DayOfWeek |
+| Name | Type | Notes |
+|------|------|-------|
+| day | ```System.DayOfWeek``` | |
 
 #### XSLT Example
 
@@ -415,10 +445,10 @@ Gets the number of workdays between two dates.
 _Returns_: Returns the number of workdays between two dates.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| startDate | System.DateTime |
-| endDate | System.DateTime |
+| Name | Type | Notes |
+|------|------|-------|
+| startDate | ```System.DateTime``` | |
+| endDate | ```System.DateTime``` | |
 
 #### XSLT Example
 

@@ -15,17 +15,32 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Members``` library:
+
+* [GetMembersByCsv](#getmembersbycsv)
+* [GetMembersByGroupName](#getmembersbygroupname)
+* [GetMembersByType](#getmembersbytype)
+* [GetMembersByXPath](#getmembersbyxpath)
+* [GetPublishedXml](#getpublishedxml)
+* [GetUniqueId](#getuniqueid)
+* [IsMemberOfAGroup](#ismemberofagroup)
+* [GetGroupsByMemberId](#getgroupsbymemberid)
+* [Search](#search)
+* [Search](#search)
+
+*****
 
 ### GetMembersByCsv
 Gets the members by CSV.
 _Returns_: Returns an XPathNodeIterator of the member nodes from the CSV list.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
 
 #### XSLT Example
 
@@ -39,9 +54,9 @@ Gets the usernames of all the members in the specified group.
 _Returns_: Returns a list of all the member names.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| groupName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| groupName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -55,9 +70,9 @@ Gets the members by node type alias.
 _Returns_: Returns an XPathNodeIterator of the member nodes from specified node type alias.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeTypeAlias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeTypeAlias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -71,9 +86,9 @@ Gets the members by an XPath expression.
 _Returns_: Returns an XPathNodeIterator of the member nodes from specified XPath expression.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xpath | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| xpath | ```System.String``` | |
 
 #### XSLT Example
 
@@ -99,9 +114,9 @@ Gets the unique id of a member node.
 _Returns_: Returns the unique id of a member node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| memberId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| memberId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -115,10 +130,10 @@ Checks if a member is member of a specific group.
 _Returns_: Returns true if member is a member of the group.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| groupName | System.String |
-| memberId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| groupName | ```System.String``` | |
+| memberId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -132,9 +147,9 @@ Gets a list of group names from the specific member.
 _Returns_: A node-set of all the member-groups from the specific member
 
 #### Parameters
-| Name | Type |
-|------|------|
-| memberId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| memberId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -148,9 +163,9 @@ Performs a basic/quick search against the Examine/Lucene index for Members.
 _Returns_: Returns an XML structure of the Members search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
 
 #### XSLT Example
 
@@ -164,10 +179,10 @@ Performs a basic/quick search against the Examine/Lucene index for Members.
 _Returns_: Returns an XML structure of the Members search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
 
 #### XSLT Example
 

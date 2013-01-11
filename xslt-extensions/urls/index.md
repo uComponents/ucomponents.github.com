@@ -15,18 +15,38 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Urls``` library:
+
+* [AppendOrUpdateQueryString](#appendorupdatequerystring)
+* [AppendOrUpdateQueryString](#appendorupdatequerystring)
+* [FormatUrl](#formaturl)
+* [NiceUrl](#niceurl)
+* [NiceUrl](#niceurl)
+* [NiceUrl](#niceurl)
+* [GetHostName](#gethostname)
+* [GetNodeIdByUrl](#getnodeidbyurl)
+* [GetTextByUrl](#gettextbyurl)
+* [GetXmlNodeByUrl](#getxmlnodebyurl)
+* [GuessNiceUrl](#guessniceurl)
+* [ConstructQueryString](#constructquerystring)
+* [GetNiceUrl](#getniceurl)
+* [OnBeforeNiceUrlGenerated](#onbeforeniceurlgenerated)
+* [OnAfterNiceUrlGenerated](#onafterniceurlgenerated)
+
+*****
 
 ### AppendOrUpdateQueryString
 Appends or updates a query string value to the current Url
 _Returns_: The updated Url
 
 #### Parameters
-| Name | Type |
-|------|------|
-| key | System.String |
-| value | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| key | ```System.String``` | |
+| value | ```System.String``` | |
 
 #### XSLT Example
 
@@ -40,11 +60,11 @@ Appends or updates a query string value to supplied Url
 _Returns_: The updated Url
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
-| key | System.String |
-| value | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
+| key | ```System.String``` | |
+| value | ```System.String``` | |
 
 #### XSLT Example
 
@@ -58,9 +78,9 @@ Formats the URL - replacing characters in the string to make a 'safe' URL.
 _Returns_: Returns a 'safe' URL, removing illegal characters.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| input | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| input | ```System.String``` | |
 
 #### XSLT Example
 
@@ -74,9 +94,9 @@ Returns a nicely formated Url for a given node.
 _Returns_: The NiceUrl for the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -90,10 +110,10 @@ Returns a nicely formated Url for a given node and alternative template.
 _Returns_: The NiceUrl for the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
-| altTemplateAlias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
+| altTemplateAlias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -107,11 +127,11 @@ Returns a nicely formated Url for a given node and alternative template.
 _Returns_: The NiceUrl for the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
-| altTemplateAlias | System.String |
-| useQueryString | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
+| altTemplateAlias | ```System.String``` | |
+| useQueryString | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -125,9 +145,9 @@ Gets the hostname of the node Id.
 _Returns_: Returns the hostname for the node Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -141,9 +161,9 @@ Gets the node Id by URL.
 _Returns_: Returns the node Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -157,9 +177,9 @@ Gets the text by URL.
 _Returns_: Returns the text (System.String) from a given URL.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -173,9 +193,9 @@ Gets the XML node by URL.
 _Returns_: Returns the XML for the node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -189,9 +209,9 @@ Guesses the NiceUrl based on the node id.
 _Returns_: Returns a guestimate of the NiceUrl for a node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -205,11 +225,11 @@ Constructs a NameValueCollection into a query string.
 _Returns_: A key/value structured query string, delimited by the specified String
 
 #### Parameters
-| Name | Type |
-|------|------|
-| parameters | System.Collections.Specialized.NameValueCollection |
-| delimiter | System.String |
-| omitEmpty | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| parameters | ```System.Collections.Specialized.NameValueCollection``` | |
+| delimiter | ```System.String``` | |
+| omitEmpty | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -223,9 +243,9 @@ Gets the NiceUrl.
 _Returns_: Returns the NiceUrl for the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -238,9 +258,9 @@ _Returns_: Returns the NiceUrl for the node id.
 Dispatches a BeforeNiceUrlGenerated event.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32@ |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32@``` | |
 
 #### XSLT Example
 
@@ -253,10 +273,10 @@ Dispatches a BeforeNiceUrlGenerated event.
 Dispatches an AfterNiceUrlGenerated event.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32@ |
-| url | System.String@ |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32@``` | |
+| url | ```System.String@``` | |
 
 #### XSLT Example
 

@@ -15,8 +15,18 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Request``` library:
+
+* [ServerVariables](#servervariables)
+* [QueryString](#querystring)
+* [Form](#form)
+* [Cookies](#cookies)
+* [ConvertNameValueCollectionToXPathNodeIterator](#convertnamevaluecollectiontoxpathnodeiterator)
+
+*****
 
 ### ServerVariables
 Converts the Request.ServerVariables object into a XPathNodeIterator object.
@@ -71,10 +81,10 @@ Iterates over the NameValueCollection, appending each entry to an XmlTextNode.
 _Returns_: Returns a XPathNodeIterator object that represents the NameValueCollection.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| rootName | System.String |
-| nvc | System.Collections.Specialized.NameValueCollection |
+| Name | Type | Notes |
+|------|------|-------|
+| rootName | ```System.String``` | |
+| nvc | ```System.Collections.Specialized.NameValueCollection``` | |
 
 #### XSLT Example
 

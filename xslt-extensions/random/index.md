@@ -15,8 +15,24 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Random``` library:
+
+* [GetRandomDouble](#getrandomdouble)
+* [GetRandomItemsFromCsv](#getrandomitemsfromcsv)
+* [GetRandomGuid](#getrandomguid)
+* [GetRandomGuid](#getrandomguid)
+* [GetRandomNumber](#getrandomnumber)
+* [GetRandomNumber](#getrandomnumber)
+* [GetRandomNumber](#getrandomnumber)
+* [GetRandomNumbers](#getrandomnumbers)
+* [GetRandomNumbersAsXml](#getrandomnumbersasxml)
+* [GetRandomString](#getrandomstring)
+* [GenerateRandomString](#generaterandomstring)
+
+*****
 
 ### GetRandomDouble
 Gets the random double.
@@ -35,10 +51,10 @@ Gets the random items from CSV.
 _Returns_: Returns a random selection of items from the original comma-separated values.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
-| count | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
+| count | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -64,9 +80,9 @@ Gets the random GUID, with a specified format.
 _Returns_: Returns a random GUID, with a specified format.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| format | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| format | ```System.String``` | |
 
 #### XSLT Example
 
@@ -92,9 +108,9 @@ Gets the random number.
 _Returns_: Returns a random integer, less than specified maximum.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| maximum | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| maximum | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -108,10 +124,10 @@ Gets the random number.
 _Returns_: Returns a random integer, between the specified minimum and maximum.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| minimum | System.Int32 |
-| maximum | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| minimum | ```System.Int32``` | |
+| maximum | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -125,9 +141,9 @@ Gets the random numbers.
 _Returns_: Returns a sequence of random numbers.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| count | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| count | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -141,9 +157,9 @@ Gets the random numbers as XML.
 _Returns_: Returns a sequence of random numbers as an XML node-set.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| count | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| count | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -157,9 +173,9 @@ Gets the random string.
 _Returns_: Returns a sequence of random characters in a string.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| count | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| count | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -173,10 +189,10 @@ Generates the random string.
 _Returns_: Returns the specified pattern with characters replaced with random characters.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| pattern | System.String |
-| replacer | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| pattern | ```System.String``` | |
+| replacer | ```System.String``` | |
 
 #### XSLT Example
 

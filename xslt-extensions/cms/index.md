@@ -1,6 +1,6 @@
 ---
 layout: extension
-title: CMS
+title: Cms
 category: XSLT Extensions
 since_version: 1.0
 ---
@@ -15,20 +15,72 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Cms``` library:
+
+* [AppendContentType](#appendcontenttype)
+* [AppendDocumentType](#appenddocumenttype)
+* [AppendMediaType](#appendmediatype)
+* [AppendMemberType](#appendmembertype)
+* [GetAllTemplates](#getalltemplates)
+* [GetAllUsers](#getallusers)
+* [GetAllUsersByEmail](#getallusersbyemail)
+* [GetAllUsersByLoginName](#getallusersbyloginname)
+* [GetAllUsersByLoginName](#getallusersbyloginname)
+* [GetUser](#getuser)
+* [GetUserEmail](#getuseremail)
+* [GetUserLanguage](#getuserlanguage)
+* [GetUserLoginName](#getuserloginname)
+* [GetUserName](#getusername)
+* [GetUserTypeAlias](#getusertypealias)
+* [ConvertUsersToXml](#convertuserstoxml)
+* [AppendUser](#appenduser)
+* [GetLanguages](#getlanguages)
+* [GetLanguage](#getlanguage)
+* [GetLanguageByCultureCode](#getlanguagebyculturecode)
+* [GetLanguageByNodeId](#getlanguagebynodeid)
+* [GetLanguageIdByNodeId](#getlanguageidbynodeid)
+* [GetDocumentTypes](#getdocumenttypes)
+* [GetDocumentTypes](#getdocumenttypes)
+* [GetDocumentType](#getdocumenttype)
+* [GetMediaTypes](#getmediatypes)
+* [GetMediaTypes](#getmediatypes)
+* [GetMediaType](#getmediatype)
+* [GetMemberTypes](#getmembertypes)
+* [GetMemberTypes](#getmembertypes)
+* [GetMemberType](#getmembertype)
+* [GetMacros](#getmacros)
+* [GetMacro](#getmacro)
+* [GetDataTypes](#getdatatypes)
+* [GetDataTypeByGuid](#getdatatypebyguid)
+* [GetDataTypeById](#getdatatypebyid)
+* [GetTemplates](#gettemplates)
+* [GetTemplateAlias](#gettemplatealias)
+* [GetTemplateById](#gettemplatebyid)
+* [GetTemplateByAlias](#gettemplatebyalias)
+* [GetTemplateIdByAlias](#gettemplateidbyalias)
+* [GetContentIdByPropertyId](#getcontentidbypropertyid)
+* [GetDictionaryItem](#getdictionaryitem)
+* [GetDictionaryItem](#getdictionaryitem)
+* [GetUniqueId](#getuniqueid)
+* [IsLegacyXmlSchema](#islegacyxmlschema)
+* [InPreviewMode](#inpreviewmode)
+
+*****
 
 ### AppendContentType
 Appends the type of the content.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xd | System.Xml.XmlDocument |
-| elementName | System.String |
-| contentType | umbraco.cms.businesslogic.ContentType |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| xd | ```System.Xml.XmlDocument``` | |
+| elementName | ```System.String``` | |
+| contentType | ```umbraco.cms.businesslogic.ContentType``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -41,13 +93,13 @@ Appends the type of the content.
 Appends the type of the document.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xd | System.Xml.XmlDocument |
-| docType | umbraco.cms.businesslogic.web.DocumentType |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
-| includeAllowedTemplates | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| xd | ```System.Xml.XmlDocument``` | |
+| docType | ```umbraco.cms.businesslogic.web.DocumentType``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
+| includeAllowedTemplates | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -60,12 +112,12 @@ Appends the type of the document.
 Appends the type of the media.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xd | System.Xml.XmlDocument |
-| mediaType | umbraco.cms.businesslogic.media.MediaType |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| xd | ```System.Xml.XmlDocument``` | |
+| mediaType | ```umbraco.cms.businesslogic.media.MediaType``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -78,12 +130,12 @@ Appends the type of the media.
 Appends the type of the member.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xd | System.Xml.XmlDocument |
-| memberType | umbraco.cms.businesslogic.member.MemberType |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| xd | ```System.Xml.XmlDocument``` | |
+| memberType | ```umbraco.cms.businesslogic.member.MemberType``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -119,9 +171,9 @@ Gets all users.
 Gets all users by email.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| email | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| email | ```System.String``` | |
 
 #### XSLT Example
 
@@ -134,9 +186,9 @@ Gets all users by email.
 Gets the name of all users by login.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| loginName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| loginName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -149,10 +201,10 @@ Gets the name of all users by login.
 Gets the name of all users by login.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| loginName | System.String |
-| partialMatch | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| loginName | ```System.String``` | |
+| partialMatch | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -165,9 +217,9 @@ Gets the name of all users by login.
 Gets the user.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -180,9 +232,9 @@ Gets the user.
 Gets the user email.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -195,9 +247,9 @@ Gets the user email.
 Gets the user language.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -210,9 +262,9 @@ Gets the user language.
 Gets the name of the user login.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -225,9 +277,9 @@ Gets the name of the user login.
 Gets the name of the user.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -240,9 +292,9 @@ Gets the name of the user.
 Gets the user type key.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| userId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| userId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -255,9 +307,9 @@ Gets the user type key.
 Converts the users to XML.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| users | umbraco.BusinessLogic.User[] |
+| Name | Type | Notes |
+|------|------|-------|
+| users | ```umbraco.BusinessLogic.User[]``` | |
 
 #### XSLT Example
 
@@ -270,10 +322,10 @@ Converts the users to XML.
 Appends the user to the XML document.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| xd | System.Xml.XmlDocument |
-| user | umbraco.BusinessLogic.User |
+| Name | Type | Notes |
+|------|------|-------|
+| xd | ```System.Xml.XmlDocument``` | |
+| user | ```umbraco.BusinessLogic.User``` | |
 
 #### XSLT Example
 
@@ -299,9 +351,9 @@ Gets the language by id.
 _Returns_: A node-set of the specified language.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| languageId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| languageId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -315,9 +367,9 @@ Gets the language by culture code.
 _Returns_: Returns a node-set of the specified language.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| cultureCode | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| cultureCode | ```System.String``` | |
 
 #### XSLT Example
 
@@ -331,9 +383,9 @@ Gets the language by node id.
 _Returns_: Returns a node-set of the language by the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -347,9 +399,9 @@ Gets the language id by node id.
 _Returns_: Returns the id of the language by the node id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -375,11 +427,11 @@ Returns an XPathNodeIterator of all the document types created in Umbraco.
 _Returns_: A node-set of all the document types used within Umbraco.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
-| includeAllowedTemplates | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
+| includeAllowedTemplates | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -393,12 +445,12 @@ Returns an XPathNodeIterator of the specified document-type.
 _Returns_: A node-set of the specified document-type.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| docTypeId | System.Int32 |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
-| includeAllowedTemplates | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| docTypeId | ```System.Int32``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
+| includeAllowedTemplates | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -424,10 +476,10 @@ Returns an XPathNodeIterator of all the media types created in Umbraco.
 _Returns_: A node-set of all the media types used within Umbraco.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -441,11 +493,11 @@ Returns an XPathNodeIterator of the specified media-type.
 _Returns_: A node-set of the specified media-type.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| mediaTypeId | System.Int32 |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| mediaTypeId | ```System.Int32``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -471,10 +523,10 @@ Returns an XPathNodeIterator of all the member types created in Umbraco.
 _Returns_: A node-set of all the member types used within Umbraco.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -488,11 +540,11 @@ Returns an XPathNodeIterator of the specified member-type.
 _Returns_: A node-set of the specified member-type.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| memberTypeId | System.Int32 |
-| includeTabs | System.Boolean |
-| includePropertyTypes | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| memberTypeId | ```System.Int32``` | |
+| includeTabs | ```System.Boolean``` | |
+| includePropertyTypes | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -518,9 +570,9 @@ Returns an XPathNodeIterator of the specified macro.
 _Returns_: A node-set of the specified macro.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| alias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| alias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -546,9 +598,9 @@ Returns an XPathNodeIterator of the specified data-type by guid.
 _Returns_: A node-set of the specified data-type
 
 #### Parameters
-| Name | Type |
-|------|------|
-| dataTypeGuid | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| dataTypeGuid | ```System.String``` | |
 
 #### XSLT Example
 
@@ -562,9 +614,9 @@ Returns an XPathNodeIterator of the specified data-type by Id.
 _Returns_: A node-set of the specified data-type
 
 #### Parameters
-| Name | Type |
-|------|------|
-| dataTypeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| dataTypeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -590,9 +642,9 @@ Gets the template alias.
 _Returns_: Returns the alias name of the template.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| templateId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| templateId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -606,9 +658,9 @@ Gets the template by id.
 _Returns_: Returns an XML structure of the template.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| templateId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| templateId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -622,9 +674,9 @@ Gets the template by alias.
 _Returns_: Returns an XML structure of the template.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| templateAlias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| templateAlias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -638,9 +690,9 @@ Gets the template id by alias.
 _Returns_: Returns the template id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| templateAlias | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| templateAlias | ```System.String``` | |
 
 #### XSLT Example
 
@@ -654,9 +706,9 @@ Gets the Content Id by property Id.
 _Returns_: Returns the Content Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| propertyId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| propertyId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -670,10 +722,10 @@ Gets the dictionary item for the specified language id.
 _Returns_: Returns the string value of the dictionary item for the specified language id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| key | System.String |
-| languageId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| key | ```System.String``` | |
+| languageId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -687,11 +739,11 @@ Gets the dictionary item for the specified language id, with a fall-back default
 _Returns_: Returns the string value of the dictionary item for the specified language id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| key | System.String |
-| languageId | System.Int32 |
-| defaultValue | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| key | ```System.String``` | |
+| languageId | ```System.Int32``` | |
+| defaultValue | ```System.String``` | |
 
 #### XSLT Example
 
@@ -705,9 +757,9 @@ Gets the unique id of a CMSNode.
 _Returns_: Returns the unique id of a CMSNode.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| id | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| id | ```System.Int32``` | |
 
 #### XSLT Example
 

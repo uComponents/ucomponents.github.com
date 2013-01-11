@@ -15,17 +15,35 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Search``` library:
+
+* [AdvancedSearch](#advancedsearch)
+* [AdvancedSearch](#advancedsearch)
+* [AdvancedSearch](#advancedsearch)
+* [AdvancedSearch](#advancedsearch)
+* [GetNodeIds](#getnodeids)
+* [GetNodeIds](#getnodeids)
+* [GetNodeIds](#getnodeids)
+* [QuickSearch](#quicksearch)
+* [QuickSearch](#quicksearch)
+* [QuickSearch](#quicksearch)
+* [RawQuery](#rawquery)
+* [InternalSearch](#internalsearch)
+* [GetResultsAsXml](#getresultsasxml)
+
+*****
 
 ### AdvancedSearch
 Performs an advanced search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the advanced search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
 
 #### XSLT Example
 
@@ -39,10 +57,10 @@ Performs an advanced search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the advanced search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -56,11 +74,11 @@ Advanceds the search.
 _Returns_: Returns an XML structure of the advanced search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -74,12 +92,12 @@ Performs an advanced search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the advanced search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
-| indexType | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
+| indexType | ```System.String``` | |
 
 #### XSLT Example
 
@@ -93,9 +111,9 @@ Gets the node ids.
 _Returns_: Returns a CSV of node Ids from a basic/quick search
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
 
 #### XSLT Example
 
@@ -109,10 +127,10 @@ Gets the node ids.
 _Returns_: Returns a CSV of node Ids from a basic/quick search
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -126,11 +144,11 @@ Gets the node ids.
 _Returns_: Returns a CSV of node Ids from a basic/quick search
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -144,9 +162,9 @@ Performs a basic/quick search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the basic/quick search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
 
 #### XSLT Example
 
@@ -160,10 +178,10 @@ Performs a basic/quick search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the basic/quick search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -177,11 +195,11 @@ Performs a basic/quick search against an Examine/Lucene index.
 _Returns_: Returns an XML structure of the basic/quick search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -195,12 +213,12 @@ Performs a raw query against the specified Examine/Lucene provider.
 _Returns_: Returns an XML structure of the raw search query results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| rawQuery | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
-| indexType | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| rawQuery | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
+| indexType | ```System.String``` | |
 
 #### XSLT Example
 
@@ -213,11 +231,11 @@ _Returns_: Returns an XML structure of the raw search query results.
 Perform a search (interally).
 
 #### Parameters
-| Name | Type |
-|------|------|
-| searchText | System.String |
-| useWildcards | System.Boolean |
-| providerName | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| searchText | ```System.String``` | |
+| useWildcards | ```System.Boolean``` | |
+| providerName | ```System.String``` | |
 
 #### XSLT Example
 
@@ -231,9 +249,9 @@ Gets the results as XML.
 _Returns_: Returns an XML structure of the search results.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| results | Examine.ISearchResults |
+| Name | Type | Notes |
+|------|------|-------|
+| results | ```Examine.ISearchResults``` | |
 
 #### XSLT Example
 

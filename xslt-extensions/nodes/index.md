@@ -15,17 +15,32 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+*****
+
 ## Methods
-Here are available methods:
+Here are available methods in the ```Nodes``` library:
+
+* [GetExpireDate](#getexpiredate)
+* [GetNodeIdByUrl](#getnodeidbyurl)
+* [GetNodeIdByPathLevel](#getnodeidbypathlevel)
+* [GetReleaseDate](#getreleasedate)
+* [GetUniqueId](#getuniqueid)
+* [GetXmlNodeByCsv](#getxmlnodebycsv)
+* [GetXmlNodeByCsv](#getxmlnodebycsv)
+* [GetXmlNodeByPathLevel](#getxmlnodebypathlevel)
+* [GetXmlNodeByUrl](#getxmlnodebyurl)
+* [GetXPathQuery](#getxpathquery)
+
+*****
 
 ### GetExpireDate
 Gets the expiry date of a node.
 _Returns_: Returns the expiry date of a node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -39,9 +54,9 @@ Gets the node Id by URL.
 _Returns_: Returns the node Id.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -55,10 +70,10 @@ Gets the node id by path level.
 _Returns_: Returns the node id for a given path level.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| level | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| level | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -72,9 +87,9 @@ Gets the release date of a node.
 _Returns_: Returns the release date of a node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -88,9 +103,9 @@ Gets the unique id of a node.
 _Returns_: Returns the unique id of a node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| nodeId | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| nodeId | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -104,9 +119,9 @@ Gets a list of XML nodes by CSV.
 _Returns_: Returns an XPathNodeIterator of the nodes from the CSV list.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
 
 #### XSLT Example
 
@@ -120,10 +135,10 @@ Gets a list of XML nodes by CSV (with an option to persist the order).
 _Returns_: Returns an XPathNodeIterator of the nodes from the CSV list.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| csv | System.String |
-| persistOrder | System.Boolean |
+| Name | Type | Notes |
+|------|------|-------|
+| csv | ```System.String``` | |
+| persistOrder | ```System.Boolean``` | |
 
 #### XSLT Example
 
@@ -137,10 +152,10 @@ Gets the XML node by path level.
 _Returns_: Returns an XML node by path level.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| path | System.String |
-| level | System.Int32 |
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| level | ```System.Int32``` | |
 
 #### XSLT Example
 
@@ -154,9 +169,9 @@ Gets the XML node by URL.
 _Returns_: Returns the XML for the node.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 
@@ -170,9 +185,9 @@ Gets the XPath query.
 _Returns_: Returns an XPath query for the specified URL.
 
 #### Parameters
-| Name | Type |
-|------|------|
-| url | System.String |
+| Name | Type | Notes |
+|------|------|-------|
+| url | ```System.String``` | |
 
 #### XSLT Example
 

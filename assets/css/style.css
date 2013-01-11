@@ -63,3 +63,8 @@ th {background-color: #F5F5F5; border-bottom: 0;}
     background-color: transparent !important;
     border: 0 !important;
 }
+
+@media screen and (max-width: 979px)
+{
+	.fork-me {display: none;}
+}

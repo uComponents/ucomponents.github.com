@@ -11,6 +11,8 @@ There are a few ways to contribute to the uComponents project:
 
 For general support, please use the [uComponents forum](http://our.umbraco.org/projects/backoffice-extensions/ucomponents/questionssuggestions) on Our Umbraco community website.
 
+---
+
 # Development
 The uComponents team use Mercurial source-control as our repository.
 
@@ -32,6 +34,28 @@ The current developments for upcoming releases are available in their own branch
 | [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
 | [5.3.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.3.0-dev) | The latest stable code-base. |
 
+---
 
 ## Semantic Versioning Specification
 We aim to use SemVer for our version numbering system. For more information about SemVar, please see: <http://semver.org/>
+
+---
+
+## Components migrated to the Umbraco
+
+The following parts of uComponents have been migrated to the core Umbraco release.
+
+For Umbraco v4.8.0:
+
+* Multi-Node Tree Picker
+* Multiple Textstring
+* Slider
+* XPath CheckBoxList
+* XPath DropDownList
+* uQuery
+
+For Umbraco v4.9.0:
+
+* (Multi)Picker Relations
+
+These components are still available in uComponents, accessible in the ```uComponents.Legacy``` assembly.

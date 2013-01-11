@@ -33,7 +33,7 @@ If you are looking for help and support on how to implement the various componen
 	</div>
 	<div class="span4">
 		<h2><a href="/umapper/">uMapper</a></h2>
-		<p>Map & query nodes as strongly typed objects with minimal configuration.</p>
+		<p>Map &amp; query nodes as strongly typed objects with minimal configuration.</p>
 	</div>
 </div>
 

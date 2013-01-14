@@ -28,15 +28,15 @@ Here are available methods in the ```Xml``` library:
 * [RandomChildNode](#randomchildnode)
 * [RandomNode](#randomnode)
 * [RandomSort](#randomsort)
-* [RandomSort](#randomsort)
-* [Split](#split)
-* [Split](#split)
 * [Split](#split)
 
 *****
 
 ### FilterNodes
-Filters the node-set with the specified XPath.
+The ```FilterNodes``` method is used to further filter a node-set with an XPath expression (string).
+
+Typically you could perform these filters in XSLT directly, however there are situations where you may want to build an XPath expression dynamically, which can lead to complexities - especially for those new to developing with XSLT.
+
 _Returns_: Returns an XPathNodeIterator of the filtered node-set.
 
 #### Parameters
@@ -47,8 +47,10 @@ _Returns_: Returns an XPathNodeIterator of the filtered node-set.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:FilterNodes(nodeset, xpath)" />
-
+	<!-- Filter all the descendant node of the $currentPage for those that contain a 'bodyText' element (with normalized space, e.g. not empty) -->
+	<xsl:for-each select="ucomponents.xml:FilterNodes($currentPage, '//*[@isDoc and bodyText[normalize-space()]]')">
+		<xsl:value-of select="@nodeName" />
+	</xsl:for-each>
 
 *****
 
@@ -64,13 +66,16 @@ Gets the XML document by URL.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:GetXmlDocumentByUrl(url, cacheInSeconds, isGzipped)" />
-
+	<xsl:copy-of select="ucomponents.xml:GetXmlDocumentByUrl('http://google.com/sitemap.xml', 600, false())" />
 
 *****
 
 ### Parse
-Parses the specified XML string.
+
+The Parse method is used for those situations where you have an XML string and need to convert it into a node-set (e.g. XML document, or rather an XPathNodeIterator).
+
+Internally this method calls ```[ParseXml](#parsexml)``` with the the ```xpath``` parameter set to the root ("/").
+
 _Returns_: Returns an XPathNodeIterator of the XML string.
 
 #### Parameters
@@ -80,30 +85,28 @@ _Returns_: Returns an XPathNodeIterator of the XML string.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:Parse(xml)" />
-
+	<xsl:copy-of select="ucomponents.xml:Parse('<root><node>Value 1</node><node>Value 2</node></root>')" />
 
 *****
 
 ### ParseXml
-Parses the specified XML string.
+Parses the specified XML string.<br>
 _Returns_: Returns an XPathNodeIterator of the XML string.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
 | xml | ```System.String``` | |
-| xpath | ```System.String``` | |
+| xpath | ```System.String``` | The XPath expression to return the node-set. |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:ParseXml(xml, xpath)" />
-
+	<xsl:copy-of select="ucomponents.xml:ParseXml('<root><node>Value 1</node><node>Value 2</node></root>', '//node')" />
 
 *****
 
 ### ParseXhtml
-Parses the specified XHTML string.
+Parses the specified XHTML string.<br>
 _Returns_: Returns an XPathNodeIterator of the XHTML string.
 
 #### Parameters
@@ -113,13 +116,14 @@ _Returns_: Returns an XPathNodeIterator of the XHTML string.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:ParseXhtml(xhtml)" />
-
+	<!-- Parse the HTML content of the 'bodyText' property into workable XML -->
+	<xsl:copy-of select="ucomponents.xml:Parse($currentPage/bodyText)" />
 
 *****
 
 ### RandomChildNode
-Returns a random child node from the parent node.
+The ```RandomChildNode``` method is a compliment to ```[RandomNode](#randomnode)```, where instead of passing a node-set to select a random node from, you pass it a parent node, of which one of the child nodes is returned at random.
+
 _Returns_: Returns an XPathNodeIterator of a random child node from the parent node.
 
 #### Parameters
@@ -129,13 +133,16 @@ _Returns_: Returns an XPathNodeIterator of a random child node from the parent n
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:RandomChildNode(node)" />
-
+	<!-- Return a random property from the $currentPage node -->
+	<xsl:value-of select="ucomponents.xml:RandomChildNode($currentPage)" />
 
 *****
 
 ### RandomNode
-Returns a random node from the node-set.
+The ```RandomNode``` method accepts a node-set and returns a single node selected at random.
+
+It is important to note that the input node-set must be a collection of nodes, (a result tree fragment) and not a parent node.  For example, calling RandomNode($currentPage) would return itself - as there is only a single node to choose from!
+
 _Returns_: Returns an System.Xml.XPath.XPathNodeIterator of a random node from the node-set.
 
 #### Parameters
@@ -145,93 +152,49 @@ _Returns_: Returns an System.Xml.XPath.XPathNodeIterator of a random node from t
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:RandomNode(nodeset)" />
-
+	<!-- Return a random content page from the $currentPage -->
+	<xsl:copy-of select="ucomponents.xml:RandomNode($currentPage/*[@isDoc])" />
 
 *****
 
 ### RandomSort
-Randomizes the sort order of the specified nodeset.
+Randomizes the sort order of the specified node-set, (can be limited to a specified number of nodes).<br>
 _Returns_: Returns the nodeset with a random sort order.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
 | node | ```System.Xml.XPath.XPathNavigator``` | |
+| count | ```System.Int32``` | _(optional)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:RandomSort(node)" />
-
-
-*****
-
-### RandomSort
-Randomizes the sort order of the specified nodeset, limited to a specified number.
-_Returns_: Returns the nodeset with a random sort order.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| node | ```System.Xml.XPath.XPathNavigator``` | |
-| count | ```System.Int32``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.xml:RandomSort(node, count)" />
-
+	<xsl:value-of select="ucomponents.xml:RandomSort($currentPage/*[@isDoc], 5)" />
 
 *****
 
 ### Split
-Splits the specified delimited string into an XPathNodeIterator.
+Splits the specified delimited string into an XPathNodeIterator.<br>
 _Returns_: Returns an System.Xml.XPath.XPathNodeIterator representation of the delimited string data.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| data | ```System.String``` | |
+| data | ```System.String``` | A string delimited list, e.g. CSV |
+| separator | ```System.String``` | _(optional - defaults to a comma ```,```)_ |
+| rootName | ```System.String``` | _(optional - defaults to 'values')_ |
+| elementName | ```System.String``` | _(optional - defaults to 'value')_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:Split(data)" />
-
-
-*****
-
-### Split
-Splits the specified delimited string into an XPathNodeIterator.
-_Returns_: Returns an System.Xml.XPath.XPathNodeIterator representation of the delimited string data.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| data | ```System.String``` | |
-| separator | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.xml:Split(data, separator)" />
-
-
-*****
-
-### Split
-Splits the specified delimited string into an XPathNodeIterator.
-_Returns_: Returns an System.Xml.XPath.XPathNodeIterator representation of the delimited string data.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| data | ```System.String``` | |
-| separator | ```System.String``` | |
-| rootName | ```System.String``` | |
-| elementName | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.xml:Split(data, separator, rootName, elementName)" />
-
+	<!-- Take a comma-separated list, split it and display as HTML list. -->
+	<ul>
+		<xsl:for-each select="ucomponents.xml:Split('hello,world,foo,bar')//values">
+			<li>
+				<xsl:value-of select="text()" />
+			</li>
+		</xsl:for-each>
+	</ul>
 
 *****
 

@@ -20,14 +20,9 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 ## Methods
 Here are available methods in the ```Cms``` library:
 
-* [AppendContentType](#appendcontenttype)
-* [AppendDocumentType](#appenddocumenttype)
-* [AppendMediaType](#appendmediatype)
-* [AppendMemberType](#appendmembertype)
 * [GetAllTemplates](#getalltemplates)
 * [GetAllUsers](#getallusers)
 * [GetAllUsersByEmail](#getallusersbyemail)
-* [GetAllUsersByLoginName](#getallusersbyloginname)
 * [GetAllUsersByLoginName](#getallusersbyloginname)
 * [GetUser](#getuser)
 * [GetUserEmail](#getuseremail)
@@ -35,20 +30,15 @@ Here are available methods in the ```Cms``` library:
 * [GetUserLoginName](#getuserloginname)
 * [GetUserName](#getusername)
 * [GetUserTypeAlias](#getusertypealias)
-* [ConvertUsersToXml](#convertuserstoxml)
-* [AppendUser](#appenduser)
 * [GetLanguages](#getlanguages)
 * [GetLanguage](#getlanguage)
 * [GetLanguageByCultureCode](#getlanguagebyculturecode)
 * [GetLanguageByNodeId](#getlanguagebynodeid)
 * [GetLanguageIdByNodeId](#getlanguageidbynodeid)
 * [GetDocumentTypes](#getdocumenttypes)
-* [GetDocumentTypes](#getdocumenttypes)
 * [GetDocumentType](#getdocumenttype)
 * [GetMediaTypes](#getmediatypes)
-* [GetMediaTypes](#getmediatypes)
 * [GetMediaType](#getmediatype)
-* [GetMemberTypes](#getmembertypes)
 * [GetMemberTypes](#getmembertypes)
 * [GetMemberType](#getmembertype)
 * [GetMacros](#getmacros)
@@ -63,84 +53,9 @@ Here are available methods in the ```Cms``` library:
 * [GetTemplateIdByAlias](#gettemplateidbyalias)
 * [GetContentIdByPropertyId](#getcontentidbypropertyid)
 * [GetDictionaryItem](#getdictionaryitem)
-* [GetDictionaryItem](#getdictionaryitem)
 * [GetUniqueId](#getuniqueid)
 * [IsLegacyXmlSchema](#islegacyxmlschema)
 * [InPreviewMode](#inpreviewmode)
-
-*****
-
-### AppendContentType
-Appends the type of the content.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| xd | ```System.Xml.XmlDocument``` | |
-| elementName | ```System.String``` | |
-| contentType | ```umbraco.cms.businesslogic.ContentType``` | |
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:AppendContentType(xd, elementName, contentType, includeTabs, includePropertyTypes)" />
-
-
-*****
-
-### AppendDocumentType
-Appends the type of the document.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| xd | ```System.Xml.XmlDocument``` | |
-| docType | ```umbraco.cms.businesslogic.web.DocumentType``` | |
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
-| includeAllowedTemplates | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:AppendDocumentType(xd, docType, includeTabs, includePropertyTypes, includeAllowedTemplates)" />
-
-
-*****
-
-### AppendMediaType
-Appends the type of the media.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| xd | ```System.Xml.XmlDocument``` | |
-| mediaType | ```umbraco.cms.businesslogic.media.MediaType``` | |
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:AppendMediaType(xd, mediaType, includeTabs, includePropertyTypes)" />
-
-
-*****
-
-### AppendMemberType
-Appends the type of the member.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| xd | ```System.Xml.XmlDocument``` | |
-| memberType | ```umbraco.cms.businesslogic.member.MemberType``` | |
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:AppendMemberType(xd, memberType, includeTabs, includePropertyTypes)" />
-
 
 *****
 
@@ -189,22 +104,7 @@ Gets the name of all users by login.
 | Name | Type | Notes |
 |------|------|-------|
 | loginName | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:GetAllUsersByLoginName(loginName)" />
-
-
-*****
-
-### GetAllUsersByLoginName
-Gets the name of all users by login.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| loginName | ```System.String``` | |
-| partialMatch | ```System.Boolean``` | |
+| partialMatch | ```System.Boolean``` | _(optional)_ |
 
 #### XSLT Example
 
@@ -303,37 +203,6 @@ Gets the user type key.
 
 *****
 
-### ConvertUsersToXml
-Converts the users to XML.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| users | ```umbraco.BusinessLogic.User[]``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:ConvertUsersToXml(users)" />
-
-
-*****
-
-### AppendUser
-Appends the user to the XML document.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| xd | ```System.Xml.XmlDocument``` | |
-| user | ```umbraco.BusinessLogic.User``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:AppendUser(xd, user)" />
-
-
-*****
-
 ### GetLanguages
 Returns an XPathNodeIterator of all the languages created in Umbraco.
 _Returns_: A node-set of all the languages used within Umbraco
@@ -407,19 +276,6 @@ _Returns_: Returns the id of the language by the node id.
 
 	<xsl:value-of select="ucomponents.cms:GetLanguageIdByNodeId(nodeId)" />
 
-
-*****
-
-### GetDocumentTypes
-Returns an XPathNodeIterator of all the document types created in Umbraco.
-_Returns_: A node-set of all the document types used within Umbraco.
-
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:GetDocumentTypes()" />
-
-
 *****
 
 ### GetDocumentTypes
@@ -429,14 +285,13 @@ _Returns_: A node-set of all the document types used within Umbraco.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
-| includeAllowedTemplates | ```System.Boolean``` | |
+| includeTabs | ```System.Boolean``` | _(optional)_ |
+| includePropertyTypes | ```System.Boolean``` | _(optional)_ |
+| includeAllowedTemplates | ```System.Boolean``` | _(optional)_ |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.cms:GetDocumentTypes(includeTabs, includePropertyTypes, includeAllowedTemplates)" />
-
 
 *****
 
@@ -463,28 +318,15 @@ _Returns_: A node-set of the specified document-type.
 Returns an XPathNodeIterator of all the media types created in Umbraco.
 _Returns_: A node-set of all the media types used within Umbraco.
 
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:GetMediaTypes()" />
-
-
-*****
-
-### GetMediaTypes
-Returns an XPathNodeIterator of all the media types created in Umbraco.
-_Returns_: A node-set of all the media types used within Umbraco.
-
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
+| includeTabs | ```System.Boolean``` | _(optional)_ |
+| includePropertyTypes | ```System.Boolean``` | _(optional)_ |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.cms:GetMediaTypes(includeTabs, includePropertyTypes)" />
-
 
 *****
 
@@ -503,19 +345,6 @@ _Returns_: A node-set of the specified media-type.
 
 	<xsl:value-of select="ucomponents.cms:GetMediaType(mediaTypeId, includeTabs, includePropertyTypes)" />
 
-
-*****
-
-### GetMemberTypes
-Returns an XPathNodeIterator of all the member types created in Umbraco.
-_Returns_: A node-set of all the member types used within Umbraco.
-
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:GetMemberTypes()" />
-
-
 *****
 
 ### GetMemberTypes
@@ -525,8 +354,8 @@ _Returns_: A node-set of all the member types used within Umbraco.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| includeTabs | ```System.Boolean``` | |
-| includePropertyTypes | ```System.Boolean``` | |
+| includeTabs | ```System.Boolean``` | _(optional)_ |
+| includePropertyTypes | ```System.Boolean``` | _(optional)_ |
 
 #### XSLT Example
 
@@ -718,23 +547,6 @@ _Returns_: Returns the Content Id.
 *****
 
 ### GetDictionaryItem
-Gets the dictionary item for the specified language id.
-_Returns_: Returns the string value of the dictionary item for the specified language id.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| key | ```System.String``` | |
-| languageId | ```System.Int32``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.cms:GetDictionaryItem(key, languageId)" />
-
-
-*****
-
-### GetDictionaryItem
 Gets the dictionary item for the specified language id, with a fall-back default value.
 _Returns_: Returns the string value of the dictionary item for the specified language id.
 
@@ -743,12 +555,11 @@ _Returns_: Returns the string value of the dictionary item for the specified lan
 |------|------|-------|
 | key | ```System.String``` | |
 | languageId | ```System.Int32``` | |
-| defaultValue | ```System.String``` | |
+| defaultValue | ```System.String``` | _(optional)_ |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.cms:GetDictionaryItem(key, languageId, defaultValue)" />
-
 
 *****
 
@@ -763,20 +574,25 @@ _Returns_: Returns the unique id of a CMSNode.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.cms:GetUniqueId(id)" />
-
+	<xsl:value-of select="ucomponents.cms:GetUniqueId($currentPage/@id)" />
 
 *****
 
 ### IsLegacyXmlSchema
-Checks the Umbraco XML Schema version in use
+Checks the Umbraco XML Schema version in use.
 _Returns_: true if [is legacy XML schema]; otherwise, false.
 
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.cms:IsLegacyXmlSchema()" />
-
+	<xsl:choose>
+		<xsl:when test="ucomponents.cms:IsLegacyXmlSchema()">
+			<xsl:value-of select="$currentPage/data[@alias = 'pageTitle']" />
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:value-of select="$currentPage/pageTitle" />
+		</xsl:otherwise>
+	</xsl:choose>
 
 *****
 
@@ -787,8 +603,14 @@ _Returns_: true if Umbraco front-end [is in preview mode]; otherwise, false.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.cms:InPreviewMode()" />
-
+	<xsl:choose>
+		<xsl:when test="ucomponents.cms:InPreviewMode()">
+			<p>Display something in preview mode.</p>
+		</xsl:when>
+		<xsl:otherwise>
+			<p>Hide something from preview mode.</p>
+		</xsl:otherwise>
+	</xsl:choose>
 
 *****
 

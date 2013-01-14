@@ -26,23 +26,30 @@ Here are available methods in the ```Email``` library:
 *****
 
 ### IsValidEmail
-Determines whether [is valid email] [the specified input].
-_Returns_: true if [is valid email] [the specified input]; otherwise, false.
+Determines whether the input is a valid email address.<br>
+_Returns_: true if valid; otherwise, false.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| input | ```System.String``` | |
+| input | ```System.String``` | The email address. |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.email:IsValidEmail(input)" />
-
+	<!-- Testing an email address; where 'emailAddress' is a node -->
+	<xsl:choose>
+		<xsl:when test="ucomponents.email:IsValidEmail(emailAddress)">
+			<p>This is a valid email address.</p>
+		</xsl:when>
+		<xsl:otherwise>
+			<p>This is not a valid email address.</p>
+		</xsl:otherwise>
+	</xsl:choose>
 
 *****
 
 ### SendMail
-Sends an email. Performs the same function an umbraco.library.SendMail, with the option of sending via SSL.
+Sends an email. Performs the exact same function an ```umbraco.library.SendMail```, with the option of sending via SSL.
 
 #### Parameters
 | Name | Type | Notes |
@@ -56,8 +63,7 @@ Sends an email. Performs the same function an umbraco.library.SendMail, with the
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.email:SendMail(from, to, subject, body, isHtml, useSSL)" />
-
+	<xsl:value-of select="ucomponents.email:SendMail('no-reply@localhost', 'test@localhost', 'Test message', 'This is a test message.', false(), true())" />
 
 *****
 

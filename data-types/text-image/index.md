@@ -3,7 +3,7 @@ layout: datatype
 title: Text Image
 category: Data Types
 since_version: 2.1.0
-retired_version: 5.3.1
+retired_version: 6.0.0
 ---
 
 The TextImage datatype allows for generation of an image of text based on settings (color, background, font, size, position, etc..)

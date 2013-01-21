@@ -14,11 +14,11 @@ It appears on doctypes as a standard textbox, but generates an image file on sav
 
 ## Prevalue Editor Settings
 
-![Prevalue Editor](PreValueEditor.jpg)
+![Prevalue Editor](PreValueEditor.png)
 
 ## Content Editor
 
-![Content Editor](DataEditor.jpg)
+![Content Editor](DataEditor.png)
 
 ## XSLT Example
 

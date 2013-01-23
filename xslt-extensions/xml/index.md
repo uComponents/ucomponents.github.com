@@ -74,7 +74,7 @@ Gets the XML document by URL.
 
 The Parse method is used for those situations where you have an XML string and need to convert it into a node-set (e.g. XML document, or rather an XPathNodeIterator).
 
-Internally this method calls ```[ParseXml](#parsexml)``` with the the ```xpath``` parameter set to the root ("/").
+Internally this method calls [```ParseXml```](#parsexml) with the the ```xpath``` parameter set to the root ("/").
 
 _Returns_: Returns an XPathNodeIterator of the XML string.
 
@@ -122,7 +122,7 @@ _Returns_: Returns an XPathNodeIterator of the XHTML string.
 *****
 
 ### RandomChildNode
-The ```RandomChildNode``` method is a compliment to ```[RandomNode](#randomnode)```, where instead of passing a node-set to select a random node from, you pass it a parent node, of which one of the child nodes is returned at random.
+The ```RandomChildNode``` method is a compliment to [```RandomNode```](#randomnode), where instead of passing a node-set to select a random node from, you pass it a parent node, of which one of the child nodes is returned at random.
 
 _Returns_: Returns an XPathNodeIterator of a random child node from the parent node.
 

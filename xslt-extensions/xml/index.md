@@ -21,6 +21,7 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 Here are available methods in the ```Xml``` library:
 
 * [FilterNodes](#filternodes)
+* [GetXmlDocument](#getxmldocument)
 * [GetXmlDocumentByUrl](#getxmldocumentbyurl)
 * [Parse](#parse)
 * [ParseXml](#parsexml)
@@ -54,8 +55,30 @@ _Returns_: Returns an XPathNodeIterator of the filtered node-set.
 
 *****
 
+### GetXmlDocument
+Get an XML document by local file path.
+
+This method makes a call to the ```umbraco.library:GetXmlDocument()``` method, with the addition of the ```cacheInSeconds``` parameter - which will cache the XML document for a specified number of seconds.
+
+#### Parameters
+| Name | Type | Notes |
+|------|------|-------|
+| path | ```System.String``` | |
+| relative | ```System.Boolean``` | |
+| cacheInSeconds | ```System.Int32``` | |
+
+#### XSLT Example
+
+	<xsl:copy-of select="ucomponents.xml:GetXmlDocument('~/App_Data/data.xml', true(), 600)" />
+
+*****
+
 ### GetXmlDocumentByUrl
-Gets the XML document by URL.
+Gets an XML document by URL.
+
+This method is the same as the ```umbraco.library:GetXmlDocumentByUrl()``` method, with the addition of the ```isGzipped``` parameter - which is able to decompress Gzipped XML responses.
+
+If ```isGzipped``` is set to ```false()```, then the ```umbraco.library:GetXmlDocumentByUrl(url, cacheInSeconds)``` is called by default.
 
 #### Parameters
 | Name | Type | Notes |

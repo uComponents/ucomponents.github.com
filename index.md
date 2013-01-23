@@ -19,7 +19,7 @@ If you are looking for help and support on how to implement the various componen
 	<div class="download-button">
 		<a class="btn btn-primary btn-large" href="http://ucomponents.codeplex.com/releases">Download the latest version of uComponents &raquo;</a>
 	</div>
-	<div class="nuget-button"><div class="nuget-button-commandWrapper"><div class="nuget-button-commandPrompt"><p class="nuget-button-command">PM&gt; Install-Package <a href="http://nuget.org/packages/uComponents">uComponents</a></p></div></div></div>
+	<div class="nuget-button"><div class="nuget-button-commandWrapper"><div class="nuget-button-commandPrompt"><p class="nuget-button-command">PM&gt; <a href="http://nuget.org/packages/uComponents">Install-Package uComponents</a></p></div></div></div>
 </div>
 
 <div class="row-fluid">

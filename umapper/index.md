@@ -10,7 +10,7 @@ uMapper lets .NET developers map & query nodes as strongly typed objects with mi
 I've put together an [example project](https://bitbucket.org/JamesDiacono/umapperexample/src) with Umbraco 4.9.0 which shows example usage of uMapper. A SQLCE database is included as a file, and the username and password for the Umbraco back office are both "admin".
 
 ## Usage (minimal configuration) ##
-1. Add a reference to uComponents.Mapping.dll in your web project (this should already be added if you used NuGet to install uComponents).
+1. Add a reference to `uComponents.Mapping.dll` in your web project (this should already be added if you used [NuGet to install uComponents](http://nuget.org/packages/uComponents)).
 
 2. Create your document types in Umbraco:
 ![Example tree](ExampleTree.png)

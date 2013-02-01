@@ -32,7 +32,7 @@ The current developments for upcoming releases are available in their own branch
 | Branch | Comment |
 |--------|---------|
 | [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
-| [5.3.1-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.3.1-dev) | The latest development branch of the stable code-base. |
+| [5.4.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.4.0-dev) | The latest development branch of the stable code-base. |
 
 ---
 
@@ -57,5 +57,10 @@ For Umbraco v4.8.0:
 For Umbraco v4.9.0:
 
 * (Multi)Picker Relations
+
+For Umbraco v6.1.0 _(pending approval)_
+
+* Url Picker
+* Multi-Url Picker
 
 These components are still available in uComponents, accessible in the ```uComponents.Legacy``` assembly.

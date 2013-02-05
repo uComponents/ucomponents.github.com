@@ -64,3 +64,9 @@ For Umbraco v6.1.0 _(pending approval)_
 * Multi-Url Picker
 
 These components are still available in uComponents, accessible in the ```uComponents.Legacy``` assembly.
+
+---
+
+## Umbraco compatibility
+
+Details on uComponents compatibility with specific Umbraco versions, please see our [Umbraco compatibility grid](/compatibility/).

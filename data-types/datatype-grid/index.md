@@ -804,7 +804,7 @@ Please consult the table of aliases below to create your own translation.
 
 #### --> v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
-![Prevalue Editor](prevalueeditor.JPG)
+![Prevalue Editor](PreValueEditor.JPG)
 
 It was then populated with the following values:
 ![Content Editor](contenteditor.JPG)

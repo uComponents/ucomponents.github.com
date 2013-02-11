@@ -834,9 +834,11 @@ Please consult the table of aliases below to create your own translation.
 #### Pre v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
 ![Prevalue Editor](prevalueeditor.JPG)
+
 It was then populated with the following values:
 ![Content Editor](contenteditor.JPG)
 ![Add Row Dialog](insertdialog.JPG)
+
 To get out those values using Razor syntax, you can use the following code:
 
 	@*

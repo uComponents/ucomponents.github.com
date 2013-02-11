@@ -57,45 +57,45 @@ since_version: 3.0
 		<tr>
 			<td>Label</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Numeric</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Simple Editor</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Textstring</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
@@ -108,196 +108,196 @@ since_version: 3.0
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Approved Color</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Checkbox list</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Content Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Date Picker with time</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Date Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Dropdown multiple</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Folder Browser</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;">YSOD</span>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Dropdown</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Member Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Radiobox</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Related Links</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;">Doesn't add values</span>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Richtext editor</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;">Not shown</span>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Textbox multiple</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Tags</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;">
 					<span style="color: #ffffff;">YSOD</span>
 				</span>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>True/false</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Ultimate Picker</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;"/>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Upload</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ff0000;" align="center" valign="top">
 				<span style="color: #ffffff;">YSOD</span>
 			</td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
@@ -310,26 +310,26 @@ since_version: 3.0
 		<tr>
 			<td>Auto Complete</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v4.0</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Character Limit</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v4.0</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Checkbox Tree</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -340,27 +340,27 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Country Picker</span>
 				</span>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Dropdown CheckList</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Elastic TextBox</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -371,9 +371,9 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Enum CheckBoxList</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -384,63 +384,63 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Enum DropDownList </span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>File DropDownList</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>FilePicker</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Image DropDown</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Incremental TextBox</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>JSON Dropdown</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Multi-Node Tree Picker</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -451,18 +451,18 @@ since_version: 3.0
 					<span style="color: #3e62a6;">MultiPicker Relations</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Multiple Dates</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -473,9 +473,9 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Multiple Textstring</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -486,45 +486,45 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Multi-URL Picker</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Radiobutton List with Images</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Related Links with Media</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Render Macro</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -535,31 +535,31 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Similarity</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Slider</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td style="background-color: #ffff00;" align="center" valign="top">
 				<p>
 					<em>Does not support editing</em>
 				</p>
 			</td>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
-				<em/>
+				<em> </em>
 			</td>
 		</tr>
 		<tr>
 			<td>Styled TextBox</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -570,18 +570,18 @@ since_version: 3.0
 					<span style="color: #3e62a6;">SQL DropDownList</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>ToggleBox</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -592,9 +592,9 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Text Image</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -605,18 +605,18 @@ since_version: 3.0
 					<span style="color: #3e62a6;">Textstring Array</span>
 				</a>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>Unique Property</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
@@ -625,36 +625,36 @@ since_version: 3.0
 			<td>
 				<span style="color: #3e62a6;">URL Picker</span>
 			</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>User Picker</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>XPath CheckBoxList</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>
 		</tr>
 		<tr>
 			<td>XPath DropDownList</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em>X</em>
 			</td>

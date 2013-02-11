@@ -828,3 +828,84 @@ Please consult the table of aliases below to create your own translation.
 </table>
 
 ## <a id="RazorSamples"></a> Razor Samples ##
+
+### Getting DataTypeGrid values ###
+
+#### Pre v5.4.0 ####
+This example uses a document type that has the following DTG datatype:
+![Prevalue Editor](prevalueeditor.JPG)
+It was then populated with the following values:
+![Content Editor](contenteditor.JPG)
+![Add Row Dialog](insertdialog.JPG)
+To get out those values using Razor syntax, you can use the following code:
+	@*
+	DataType Grid Sample
+	=================================
+	This snippet makes lists all values stored in a DataType Grid
+	NOTE: The property value is of type DynamicXML.
+	      All DynamicXML properties are case-sensitive!
+	
+	NOTE: It is safe to remove this comment (anything between @ * * @), the code that generates the list is only the below!
+	*@
+	
+	@inherits umbraco.MacroEngines.DynamicNodeContext
+	@using uComponents.Core
+	@using umbraco.cms.businesslogic.datatype
+	
+	<p>Property XML:<br/>@Model.DataTypeGrid.ToXml()</p>
+	
+	<ul>
+	    @foreach(var item in Model.DataTypeGrid) {
+	        @* Inside here, everything is case-sensitive *@
+	        <li>ID: @item.id
+	            <table>
+	                <tr>
+	                    <th>XML</th>
+	                    <td>@item.ToXml()</td>
+	                </tr>
+	                <tr>
+	                    <th>Image</th>
+	                    <td><img src="@Library.MediaById(int.Parse(item.image.InnerText)).UmbracoFile" width="100" height="100"/></td>
+	                </tr>
+	                <tr>
+	                    <th>Dropdown List</th>
+	                    <td>
+	                        <ul>
+	                        @* Display prevalue name instead of id *@
+	                        @{ IList<PreValue> preValues1 = uQuery.GetPreValues(int.Parse(item.list.nodeType)); }
+	                        @foreach(var i in item.list.InnerText.Split(',')) {
+	                            <li>@preValues1.Single(x => x.Id.ToString() == i).Value (#@i)</li>
+	                        }
+	                        </ul>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th>Dropdown Multi</th>
+	                    <td>
+	                        <ul>
+	                        @* Display prevalue name instead of id *@
+	                        @{ IList<PreValue> preValues2 = uQuery.GetPreValues(int.Parse(item.multiList.nodeType)); }
+	                        @foreach(var i in item.multiList.InnerText.Split(',')) {
+	                            <li>@preValues2.Single(x => x.Id.ToString() == i).Value (#@i)</li>
+	                        }
+	                        </ul>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th>Dropdown List</th>
+	                    <td>
+	                        <ul>
+	                        @* Display prevalue name instead of id *@
+	                        @{ IList<PreValue> preValues3 = uQuery.GetPreValues(int.Parse(item.meh.nodeType)); }
+	                        @foreach(var i in item.meh.InnerText.Split(',')) {
+	                            <li>@preValues3.Single(x => x.Id.ToString() == i).Value (#@i)</li>
+	                        }
+	                        </ul>
+	                    </td>
+	                </tr>
+	            </table>
+	        </li>
+	    }
+	</ul>
+
+#### v5.4.0 -> current ####

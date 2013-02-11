@@ -58,9 +58,7 @@ since_version: 3.0
 			<td>Label</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -69,9 +67,7 @@ since_version: 3.0
 			<td>Numeric</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -80,9 +76,7 @@ since_version: 3.0
 			<td>Simple Editor</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -91,9 +85,7 @@ since_version: 3.0
 			<td>Textstring</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -104,9 +96,7 @@ since_version: 3.0
 			<td align="center" valign="top">
 				<p/>
 			</td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -115,9 +105,7 @@ since_version: 3.0
 			<td>Approved Color</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -126,9 +114,7 @@ since_version: 3.0
 			<td>Checkbox list</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -137,9 +123,7 @@ since_version: 3.0
 			<td>Content Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -171,9 +155,7 @@ since_version: 3.0
 			<td>Dropdown multiple</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -193,9 +175,7 @@ since_version: 3.0
 			<td>Dropdown</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -214,9 +194,7 @@ since_version: 3.0
 			<td>Radiobox</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -247,9 +225,7 @@ since_version: 3.0
 			<td>Textbox multiple</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -271,9 +247,7 @@ since_version: 3.0
 			<td>True/false</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>
@@ -282,9 +256,7 @@ since_version: 3.0
 			<td>Ultimate Picker</td>
 			<td align="center" valign="top"> </td>
 			<td align="center" valign="top"> </td>
-			<td style="background-color: #ff0000;" align="center" valign="top">
-				<span style="color: #ffffff;"/>
-			</td>
+			<td style="background-color: #ff0000;" align="center" valign="top"> </td>
 			<td align="center" valign="top">
 				<em> </em>
 			</td>

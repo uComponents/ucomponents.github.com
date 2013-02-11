@@ -14,7 +14,7 @@ since_version: 3.0
 * [Localization](#Localization)
 * [Razor Samples](#RazorSamples)
 
-## <a id="PrevalueEditor"></a>Prevalue Editor ##
+## Prevalue Editor ##
 
 ![Prevalue Editor](PreValueEditor.JPG)
 
@@ -33,7 +33,7 @@ since_version: 3.0
 **Content Sort Priority:** If you want to set a default grid sorting for the content editors, set the column priority here. Leave blank to disable automatic sorting.    
 **Content Sort Order:** The grid sorting direction. Only used if Content Sort Priority has been enabled.
 
-## <a id="ContentEditor"></a> Content Editor ##
+## Content Editor ##
 
 ### Grid ###
 ![Content Editor](contenteditor.JPG)
@@ -44,7 +44,7 @@ since_version: 3.0
 ### Edit row dialog ###
 ![Edit Row Dialog](editdialog.JPG)
 
-## <a id="CompatibleDatatypes"></a> Compatible Datatypes ##
+## Compatible Datatypes ##
 <table border="0">
   <tbody>
 		<tr>
@@ -634,7 +634,7 @@ since_version: 3.0
 	</tbody>
 </table>
 
-### <a id="UsingCustomDatatypes"></a> Using custom datatypes ###
+### Using custom datatypes ###
 By default, only datatypes that are verified are enabled and selectable from the prevalue editor.
 To enable a non-default datatype, go to {your-umbraco-folder}\config and open the file DataTypeGrid.config.
 
@@ -645,7 +645,7 @@ Add your datatype guid to the `<CompatibleDataTypes>` section like this:
 Recycle the application pool in IIS or touch the web.config file.
 You can now use your datatype with DataType Grid.
 
-## <a id="Localization"></a> Localization ##
+## Localization ##
 DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.
 
 Please consult the table of aliases below to create your own translation.
@@ -799,7 +799,7 @@ Please consult the table of aliases below to create your own translation.
 	</tbody>
 </table>
 
-## <a id="RazorSamples"></a> Razor Samples ##
+## Razor Samples ##
 
 ### Getting DataTypeGrid values ###
 

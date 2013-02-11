@@ -140,14 +140,22 @@ since_version: 3.0
 		<tr>
 			<td>Date Picker with time</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top">
+				<em/>
+			</td>
+			<td align="center" valign="top">
+				<em/>
+			</td>
 		</tr>
 		<tr>
 			<td>Date Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top">
+				<em/>
+			</td>
+			<td align="center" valign="top">
+				<em/>
+			</td>
 			<td align="center" valign="top">
 				<em/>
 			</td>
@@ -188,8 +196,12 @@ since_version: 3.0
 		<tr>
 			<td>Member Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-			<td align="center" valign="top"/>
-			<td align="center" valign="top"/>
+			<td align="center" valign="top">
+				<em/>
+			</td>
+			<td align="center" valign="top">
+				<em/>
+			</td>
 		</tr>
 		<tr>
 			<td>Radiobox</td>

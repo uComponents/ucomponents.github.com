@@ -8,11 +8,11 @@ since_version: 3.0
 ---
 
 ## Table of contents ##
-* [Prevalue Editor](#_prevalue_editor)
-* [Content Editor](#_content_editor)
-* [Compatible Datatypes](#_compatible_datatypes)
-* [Localization](#_localization)
-* [Razor Samples](#_razor_samples)
+* [Prevalue Editor](#prevalue_editor)
+* [Content Editor](#content_editor)
+* [Compatible Datatypes](#compatible_datatypes)
+* [Localization](#localization)
+* [Razor Samples](#razor_samples)
 
 ## Prevalue Editor ##
 

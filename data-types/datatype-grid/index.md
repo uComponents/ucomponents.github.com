@@ -13,9 +13,10 @@ since_version: 3.0
 * [Localization](#localization)
 * [Razor Samples](#razor_samples)
 
+
 ## Prevalue Editor ##
 
-![Prevalue Editor](PreValueEditor.JPG)
+<img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
 
 ### Content Editor Settings ###
 **Show Label:** Toggle the left side label for the content editor.    
@@ -32,16 +33,17 @@ since_version: 3.0
 **Content Sort Priority:** If you want to set a default grid sorting for the content editors, set the column priority here. Leave blank to disable automatic sorting.    
 **Content Sort Order:** The grid sorting direction. Only used if Content Sort Priority has been enabled.
 
+
 ## Content Editor ##
 
 ### Grid ###
-![Content Editor](contenteditor.JPG)
+<img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>
 
 ### Add row dialog ###
-![Add Row Dialog](insertdialog.JPG)
+<img src="insertdialog_post54.JPG" width="400" alt="Add Row Dialog"/>
 
 ### Edit row dialog ###
-![Edit Row Dialog](editdialog.JPG)
+<img src="editdialog_post54.JPG" width="400" alt="Edit Row Dialog"/>
 
 ## Compatible Datatypes ##
 <table border="0">
@@ -644,6 +646,7 @@ Add your datatype guid to the `<CompatibleDataTypes>` section like this:
 Recycle the application pool in IIS or touch the web.config file.
 You can now use your datatype with DataType Grid.
 
+
 ## Localization ##
 DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.
 
@@ -798,29 +801,25 @@ Please consult the table of aliases below to create your own translation.
 	</tbody>
 </table>
 
+
 ## Razor Samples ##
 
 ### Getting DataTypeGrid values ###
 
 #### --> v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
-![Prevalue Editor](PreValueEditor.JPG)
 
+<img src="PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>
+    
+    
 It was then populated with the following values:
-![Content Editor](contenteditor.JPG)
-![Add Row Dialog](insertdialog.JPG)
 
+<img alt="Content Editor" src="contenteditor_pre54.JPG"/>
+
+<img alt="Add Row Dialog" src="insertdialog_pre54.JPG"/>
+    
+    
 To get out those values using Razor syntax, you can use the following code:
-
-	@*
-	DataType Grid Sample
-	=================================
-	This snippet makes lists all values stored in a DataType Grid
-	NOTE: The property value is of type DynamicXML.
-	      All DynamicXML properties are case-sensitive!
-	
-	NOTE: It is safe to remove this comment (anything between @ * * @), the code that generates the list is only the below!
-	*@
 	
 	@inherits umbraco.MacroEngines.DynamicNodeContext
 	@using uComponents.Core
@@ -885,6 +884,82 @@ To get out those values using Razor syntax, you can use the following code:
 This should give you the following output:
 
 <img src="RazorSampleOutput_pre54.JPG" width="500"/>
-
+    
+    
 #### v5.4.0 -> current ####
 
+This example uses a document type that has the following DTG datatype:
+
+<img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
+    
+    
+It was then populated with the following values:
+
+<img alt="Content Editor" src="contenteditor_post54.JPG"/>
+
+<img alt="Add Row Dialog" src="insertdialog_post54.JPG"/>
+    
+    
+To get out those values using Razor syntax, you can use the following code:
+
+	@inherits umbraco.MacroEngines.DynamicNodeContext
+		
+	<h3>Show raw data</h3>
+	<p>@Model.DataTypeGrid</p>
+		
+	<h3>List all rows and cells</h3>
+	<table cellspacing="0" cellpadding="0">
+		<tr>
+			<th>Row ID</th>
+			<th>Row SortOrder</th>
+			<th>Row Cells</th>
+		</tr>
+		@foreach(var row in Model.DataTypeGrid) {
+			<tr>
+				<th>@row.Id</th>
+				<th>@row.SortOrder</th>
+				<td>
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<th>Cell Alias</th>
+							<th>Cell Name</th>
+							<th>Cell DataType</th>
+							<th>Cell Value</th>
+						</tr>
+						@foreach(var cell in row) {
+							<tr>
+								<td>@cell.Alias</td>
+								<td>@cell.Name</td>
+								<td>@cell.DataType</td>
+								<td>@cell.Value</td>
+							</tr>
+						}
+					</table>
+				</td>
+			</tr>
+		}
+	</table>
+		
+	<h3>Alternate access</h3>
+	<table cellspacing="0" cellpadding="0">
+		<tr>
+			<th>Get cell value by key (alias)</th>
+			<td>@Html.Raw("@Model.DataTypeGrid[0][\"image\"]")</td>
+			<td>@Model.DataTypeGrid[0]["image"]</td>
+		</tr>
+		<tr>
+			<th>Get cell value by key (alias) using dynamic access</th>
+			<td>@Html.Raw("@Model.DataTypeGrid[0].image")</td>
+			<td>@Model.DataTypeGrid[0].image</td>
+		</tr>
+		<tr>
+			<th>Get cell value by name using dynamic access</th>
+			<td>@Html.Raw("@Model.DataTypeGrid[0].Image")</td>
+			<td>@Model.DataTypeGrid[0].Image</td>
+		</tr>
+	</table>
+	
+
+This should give you the following output:
+
+<img src="RazorSampleOutput_post54.JPG" width="500"/>

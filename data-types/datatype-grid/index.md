@@ -802,7 +802,7 @@ Please consult the table of aliases below to create your own translation.
 
 ### Getting DataTypeGrid values ###
 
-#### Pre v5.4.0 ####
+#### --> v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
 ![Prevalue Editor](prevalueeditor.JPG)
 
@@ -883,7 +883,8 @@ To get out those values using Razor syntax, you can use the following code:
 	</ul>
 
 This should give you the following output:
-![Razor Output Pre v5.4.0](RazorSampleOutput_pre54.JPG)
+
+<img src="RazorSampleOutput_pre54.JPG" width="500"/>
 
 #### v5.4.0 -> current ####
 

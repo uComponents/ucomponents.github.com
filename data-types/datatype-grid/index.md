@@ -838,6 +838,7 @@ It was then populated with the following values:
 ![Content Editor](contenteditor.JPG)
 ![Add Row Dialog](insertdialog.JPG)
 To get out those values using Razor syntax, you can use the following code:
+
 	@*
 	DataType Grid Sample
 	=================================

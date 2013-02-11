@@ -910,6 +910,6 @@ To get out those values using Razor syntax, you can use the following code:
 	</ul>
 
 This should give you the following output:
-![Razor Output Pre v5.4.0](RazorSampleOutput_pre54.jpg)
+![Razor Output Pre v5.4.0](RazorSampleOutput_pre54.JPG)
 
 #### v5.4.0 -> current ####

@@ -15,7 +15,7 @@ since_version: 3.0
 
 ## Prevalue Editor ##
 
-![Prevalue Editor](PreValueEditor_post54.JPG)
+<img src="PreValueEditor_post54.JPG" width="500" alt="Prevalue Editor"/>
 
 ### Content Editor Settings ###
 **Show Label:** Toggle the left side label for the content editor.    

@@ -600,10 +600,8 @@ since_version: 3.0
 			</td>
 			<td align="center" valign="top"> </td>
 			<td align="center" valign="top"> </td>
+			<td align="center" valign="top" style="background-color: #00ff00;">v5.4.0</td>
 			<td align="center" valign="top"> </td>
-			<td align="center" valign="top">
-				<em>X</em>
-			</td>
 		</tr>
 		<tr>
 			<td>User Picker</td>

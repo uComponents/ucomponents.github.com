@@ -20,7 +20,7 @@ since_version: 3.0
 ### Datatype (Column) Settings ###
 **Name:** The column name. Can be localized by inserting the dictionary key prepended with a hash (#).    
 **Alias:** The column alias. This is the key for the column.   
-**DataType:** The editor datatype for the column. See using custom datatypes if you want to use custom (untested) datatypes.
+**DataType:** The editor datatype for the column. See [using custom datatypes][UsingCustomDatatypes] if you want to use custom (untested) datatypes.
 **Mandatory:** Toggles whether a value must be set for this column when inserting or updating a row.   
 **Validation:** Custom Regex validation for the column value. Leave blank to disable.    
 **Content Sort Priority:** If you want to set a default grid sorting for the content editors, set the column priority here. Leave blank to disable automatic sorting.    
@@ -654,3 +654,5 @@ since_version: 3.0
 		</tr>
 	</tbody>
 </table>
+
+### [UsingCustomDatatypes] Using custom datatypes ###

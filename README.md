@@ -24,6 +24,7 @@ The generated documentation web-site can be viewed at: <http://ucomponents.org>.
 * [Lee Kelleher](http://leekelleher.com/)
 * [Hendy Racher](http://www.doddracher.com/)
 * [James Diacono](https://twitter.com/diachedelic)
+* [Ove Andersen](http://www.eyecatch.no)
 
 ## License
 

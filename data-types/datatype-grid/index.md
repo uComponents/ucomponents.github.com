@@ -814,9 +814,9 @@ This example uses a document type that has the following DTG datatype:
     
 It was then populated with the following values:
 
-<img alt="Content Editor" src="contenteditor_pre54.JPG"/>
+<img alt="Content Editor" src="contenteditor_pre54.JPG" width="700"/>
 
-<img alt="Add Row Dialog" src="insertdialog_pre54.JPG"/>
+<img alt="Add Row Dialog" src="insertdialog_pre54.JPG" width="400"/>
     
     
 To get out those values using Razor syntax, you can use the following code:
@@ -895,9 +895,9 @@ This example uses a document type that has the following DTG datatype:
     
 It was then populated with the following values:
 
-<img alt="Content Editor" src="contenteditor_post54.JPG"/>
+<img alt="Content Editor" src="contenteditor_post54.JPG" width="700"/>
 
-<img alt="Add Row Dialog" src="insertdialog_post54.JPG"/>
+<img alt="Add Row Dialog" src="insertdialog_post54.JPG" width="400"/>
     
     
 To get out those values using Razor syntax, you can use the following code:

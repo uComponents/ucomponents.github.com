@@ -15,7 +15,7 @@ since_version: 3.0
 
 ## Prevalue Editor ##
 
-<img src="PreValueEditor_post54.JPG" width="500" alt="Prevalue Editor"/>
+<img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
 
 ### Content Editor Settings ###
 **Show Label:** Toggle the left side label for the content editor.    
@@ -35,13 +35,13 @@ since_version: 3.0
 ## Content Editor ##
 
 ### Grid ###
-![Content Editor](contenteditor_post54.JPG)
+<img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>
 
 ### Add row dialog ###
-![Add Row Dialog](insertdialog_post54.JPG)
+<img src="insertdialog_post54.JPG" width="400" alt="Add Row Dialog"/>
 
 ### Edit row dialog ###
-![Edit Row Dialog](editdialog_post54.JPG)
+<img src="editdialog_post54.JPG" width="400" alt="Edit Row Dialog"/>
 
 ## Compatible Datatypes ##
 <table border="0">
@@ -805,13 +805,13 @@ Please consult the table of aliases below to create your own translation.
 #### --> v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
 
-![Prevalue Editor](PreValueEditor_pre54.JPG)
+<img src="PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>
 
 It was then populated with the following values:
 
-![Content Editor](contenteditor_pre54.JPG)
+<img alt="Content Editor" src="contenteditor_pre54.JPG"/>
 
-![Add Row Dialog](insertdialog_pre54.JPG)
+<img alt="Add Row Dialog" src="insertdialog_pre54.JPG"/>
 
 To get out those values using Razor syntax, you can use the following code:
 

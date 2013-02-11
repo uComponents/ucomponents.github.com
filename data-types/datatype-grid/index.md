@@ -634,7 +634,7 @@ since_version: 3.0
 	</tbody>
 </table>
 
-### [UsingCustomDatatypes] Using custom datatypes ###
+### <a id="UsingCustomDatatypes"></a> Using custom datatypes ###
 By default, only datatypes that are verified are enabled and selectable from the prevalue editor.
 To enable a non-default datatype, go to {your-umbraco-folder}\config and open the file DataTypeGrid.config.
 

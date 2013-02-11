@@ -94,7 +94,7 @@ since_version: 3.0
 			<td>Media Picker</td>
 			<td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
 			<td align="center" valign="top">
-				<p/>
+				<p> </p>
 			</td>
 			<td align="center" valign="top"> </td>
 			<td align="center" valign="top">

@@ -598,9 +598,9 @@ since_version: 3.0
 			<td>
 				<span style="color: #3e62a6;">URL Picker</span>
 			</td>
-			<td align="center" valign="top"> </td>
-			<td align="center" valign="top"> </td>
 			<td align="center" valign="top" style="background-color: #00ff00;">v5.4.0</td>
+			<td align="center" valign="top"> </td>
+			<td align="center" valign="top"> </td>			
 			<td align="center" valign="top"> </td>
 		</tr>
 		<tr>

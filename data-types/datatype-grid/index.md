@@ -808,14 +808,14 @@ Please consult the table of aliases below to create your own translation.
 
 #### --> v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
-
+    
 <img src="PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>
     
     
 It was then populated with the following values:
-
+    
 <img alt="Content Editor" src="contenteditor_pre54.JPG" width="700"/>
-
+    
 <img alt="Add Row Dialog" src="insertdialog_pre54.JPG" width="400"/>
     
     
@@ -880,9 +880,9 @@ To get out those values using Razor syntax, you can use the following code:
 	        </li>
 	    }
 	</ul>
-
+    
 This should give you the following output:
-
+    
 <img src="RazorSampleOutput_pre54.JPG" width="500"/>
     
     
@@ -894,9 +894,9 @@ This example uses a document type that has the following DTG datatype:
     
     
 It was then populated with the following values:
-
+    
 <img alt="Content Editor" src="contenteditor_post54.JPG" width="700"/>
-
+    
 <img alt="Add Row Dialog" src="insertdialog_post54.JPG" width="400"/>
     
     
@@ -958,8 +958,11 @@ To get out those values using Razor syntax, you can use the following code:
 			<td>@Model.DataTypeGrid[0].Image</td>
 		</tr>
 	</table>
-	
-
+    	
+    
 This should give you the following output:
 
 <img src="RazorSampleOutput_post54.JPG" width="500"/>
+    
+## Integration ##
+TBD

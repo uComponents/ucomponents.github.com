@@ -12,8 +12,8 @@ since_version: 3.0
 * [Compatible Datatypes](#compatible_datatypes)
 * [Localization](#localization)
 * [Razor Samples](#razor_samples)
-
-
+* [Integration](#integration)
+    
 ## Prevalue Editor ##
 
 <img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>

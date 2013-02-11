@@ -1,10 +1,9 @@
 ---
 layout: datatype
 title: DataType Grid
-description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion.
-Think Excel, but with other Datatypes instead of textboxes.
 category: Data Types
-since_version: 2.0
+description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
+since_version: 3.0
 ---
 
 ## Prevalue Editor Settings ##

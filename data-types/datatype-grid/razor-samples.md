@@ -6,7 +6,7 @@ description: DataType Grid is basically a DataType that allows you to store Data
 since_version: 3.0
 ---
 
-## Table of contents ##
+### Table of contents ###
 * [Prevalue Editor](../#prevalue_editor)
 * [Content Editor](../#content_editor)
 * [Compatible Datatypes](../compatible-datatypes)
@@ -15,6 +15,7 @@ since_version: 3.0
     - [v5.4.0 --> current](#v540___current)    
     - [Up until v5.4.0 (legacy)](#up_until_v540)    
 * [Integration](../integration)
+    
     
 ## Razor Samples ##
 

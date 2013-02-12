@@ -6,7 +6,7 @@ description: DataType Grid is basically a DataType that allows you to store Data
 since_version: 3.0
 ---
 
-## Table of contents ##
+### Table of contents ###
 * [Prevalue Editor](../#prevalue_editor)
 * [Content Editor](../#content_editor)
 * [Compatible Datatypes](../compatible-datatypes)
@@ -15,7 +15,8 @@ since_version: 3.0
     - [Prevalue Editor](#prevalue_editor)    
 * [Razor Samples](../razor-samples)
 * [Integration](../integration)
- 
+    
+    
 ## Localization ##
 DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.
 

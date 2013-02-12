@@ -38,10 +38,10 @@ since_version: 3.0
 ## Content Editor ##
 
 ### Grid ###
-<img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>
+<img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>    
 
 ### Add row dialog ###
-<img src="insertdialog_post54.JPG" width="400" alt="Add Row Dialog"/>
+<img src="insertdialog_post54.JPG" width="400" alt="Add Row Dialog"/>    
 
 ### Edit row dialog ###
 <img src="editdialog_post54.JPG" width="400" alt="Edit Row Dialog"/>

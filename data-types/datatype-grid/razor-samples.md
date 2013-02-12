@@ -12,27 +12,27 @@ since_version: 3.0
 * [Compatible Datatypes](../compatible-datatypes)
 * [Localization](../localization)
 * **razor-samples**    
-    - [v5.4.0 --> current](#v540___current)    
+    - [v5.4.0 (current)](#v540)    
     - [Up until v5.4.0 (legacy)](#up_until_v540)    
-* [Integration](../integration)
+* [Integration](../integration)    
     
-    
+
 ## Razor Samples ##
 
 ### Getting DataTypeGrid values ###
 
-#### v5.4.0 --> current ####
+#### v5.4.0 ####
 
 This example uses a document type that has the following DTG datatype:
 
-<img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
+<img src="../PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
     
     
 It was then populated with the following values:
     
-<img alt="Content Editor" src="contenteditor_post54.JPG" width="700"/>
+<img alt="Content Editor" src="../contenteditor_post54.JPG" width="700"/>
     
-<img alt="Add Row Dialog" src="insertdialog_post54.JPG" width="400"/>
+<img alt="Add Row Dialog" src="../insertdialog_post54.JPG" width="400"/>
     
     
 To get out those values using Razor syntax, you can use the following code:
@@ -97,19 +97,19 @@ To get out those values using Razor syntax, you can use the following code:
     
 This should give you the following output:
 
-<img src="RazorSampleOutput_post54.JPG" width="500"/>
+<img src="../RazorSampleOutput_post54.JPG" width="500"/>
 
 #### Up until v5.4.0 ####
 This example uses a document type that has the following DTG datatype:
     
-<img src="PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>
+<img src="../PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>
     
     
 It was then populated with the following values:
     
-<img alt="Content Editor" src="contenteditor_pre54.JPG" width="700"/>
+<img alt="Content Editor" src="../contenteditor_pre54.JPG" width="700"/>
     
-<img alt="Add Row Dialog" src="insertdialog_pre54.JPG" width="400"/>
+<img alt="Add Row Dialog" src="../insertdialog_pre54.JPG" width="400"/>
     
     
 To get out those values using Razor syntax, you can use the following code:
@@ -176,4 +176,4 @@ To get out those values using Razor syntax, you can use the following code:
     
 This should give you the following output:
     
-<img src="RazorSampleOutput_pre54.JPG" width="500"/>
+<img src="../RazorSampleOutput_pre54.JPG" width="500"/>

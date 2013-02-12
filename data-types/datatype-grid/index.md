@@ -8,8 +8,8 @@ since_version: 3.0
 
 ### Table of contents ###
 * [Usage](../)    
-    - [Prevalue Editor](#prevalue_editor)
-    - [Content Editor](#content_editor)
+    - [Prevalue Editor](#prevalue_editor)    
+    - [Content Editor](#content_editor)    
 * [Compatible Datatypes](compatible-datatypes)
 * [Localization](localization)
 * [Razor Samples](razor-samples)

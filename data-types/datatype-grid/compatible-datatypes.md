@@ -10,7 +10,7 @@ since_version: 3.0
 * [Prevalue Editor](../#prevalue_editor)
 * [Content Editor](../#content_editor)
 * **Compatible Datatypes**    
-    - [Using Custom Datatypes](#using_custom_datatypes)
+    - [Using Custom Datatypes](#using_custom_datatypes)    
 * [Localization](../localization)
 * [Razor Samples](../razor-samples)
 * [Integration](../integration)

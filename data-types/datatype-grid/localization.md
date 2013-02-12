@@ -11,8 +11,8 @@ since_version: 3.0
 * [Content Editor](../#content_editor)
 * [Compatible Datatypes](../compatible-datatypes)
 * **Localization**    
-    - [Content Editor](#content_editor)
-    - [Prevalue Editor](#prevalue_editor)
+    - [Content Editor](#content_editor)    
+    - [Prevalue Editor](#prevalue_editor)    
 * [Razor Samples](../razor-samples)
 * [Integration](../integration)
  

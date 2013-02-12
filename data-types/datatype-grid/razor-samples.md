@@ -12,8 +12,8 @@ since_version: 3.0
 * [Compatible Datatypes](../compatible-datatypes)
 * [Localization](../localization)
 * **razor-samples**    
-    - [v5.4.0 --> current](#v540___current)
-    - [Up until v5.4.0 (legacy)](#up_until_v540)
+    - [v5.4.0 --> current](#v540___current)    
+    - [Up until v5.4.0 (legacy)](#up_until_v540)    
 * [Integration](../integration)
     
 ## Razor Samples ##

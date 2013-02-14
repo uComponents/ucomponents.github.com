@@ -605,7 +605,7 @@ since_version: 3.0
 
 ### Using custom datatypes ###
 By default, only datatypes that are verified are enabled and selectable from the prevalue editor.
-To enable a non-default datatype, go to {your-umbraco-folder}\config and open the file DataTypeGrid.config.
+To enable a non-default datatype, go to `{your-umbraco-folder}\config` and open the file `DataTypeGrid.config`.
 
 Add your datatype guid to the `<CompatibleDataTypes>` section like this:
 

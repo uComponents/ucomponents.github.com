@@ -7,7 +7,7 @@ since_version: 3.0
 ---
 
 ### Table of contents ###
-* [Usage](../)    
+* **Usage**        
     - [Prevalue Editor](#prevalue_editor)    
     - [Content Editor](#content_editor)    
 * [Compatible Datatypes](compatible-datatypes)

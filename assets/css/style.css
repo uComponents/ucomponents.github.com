@@ -7,6 +7,8 @@ th {background-color: #F5F5F5; border-bottom: 0;}
 .navbar-fixed-top {position: absolute;}
 .nav-list .active > a {font-weight: bold;}
 
+.page-header {margin-top: 40px}
+
 .download-buttons {float:left;clear:both;width:95%;}
 .download-button {float:left;margin:1px 10px 0 0;}
 .nuget-button {float:left;}

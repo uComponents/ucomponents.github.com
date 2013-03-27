@@ -3,8 +3,12 @@ layout: default
 title: Contribution and Development
 ---
 
-# Contribution
+# Contributing
+
+Want to contribute to uComponents? Great!
+
 There are a few ways to contribute to the uComponents project:
+
 * Raising bugs - [Create a new workitem](http://ucomponents.codeplex.com/WorkItem/Create) and we'll investigate further.
 * Submitting patches (or new features) - [Create a fork of the repository](http://ucomponents.codeplex.com/SourceControl/network/create/fork), and make a pull request.
 * Discussing ideas - [Start a new discussion thread](http://ucomponents.codeplex.com/discussions/create).
@@ -15,6 +19,20 @@ For general support, please use the [uComponents forum](http://our.umbraco.org/p
 
 # Development
 The uComponents team use Mercurial source-control as our repository.
+
+If you are new to Mercurial, please take time to read the guide: [Using Mercurial on CodePlex](http://codeplex.codeplex.com/wikipage?title=Using%20TortoiseHG%20with%20CodePlex&referringTitle=Source%20control%20clients&ProjectName=codeplex).
+
+## Clone the repository
+
+To clone the uComponents project in Mercurial, use the following command:
+
+	hg clone https://hg.codeplex.com/ucomponents
+
+Once the repository has been cloned, your local working directory will be using the `default` branch. To switch to the latest development branch, use the following command:
+
+	hg update 5.4.2-dev
+
+## Branches
 
 Our branching structure is as follows:
 
@@ -32,7 +50,7 @@ The current developments for upcoming releases are available in their own branch
 | Branch | Comment |
 |--------|---------|
 | [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
-| [5.4.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.4.0-dev) | The latest development branch of the stable code-base. |
+| [5.4.2-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.4.2-dev) | The latest development branch of the stable code-base. |
 
 ---
 
@@ -63,7 +81,7 @@ For Umbraco v6.1.0 _(pending approval)_
 * Url Picker
 * Multi-Url Picker
 
-These components are still available in uComponents, accessible in the ```uComponents.Legacy``` assembly.
+These components are still available in uComponents, accessible in the `uComponents.Legacy` assembly.
 
 ---
 

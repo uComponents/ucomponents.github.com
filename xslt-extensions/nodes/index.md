@@ -2,10 +2,16 @@
 layout: extension
 title: Nodes
 category: XSLT Extensions
-since_version: 2.1
+since_version: 2.1.0
 ---
 
 ## Activation
+
+### Version 6.0.0 (and above)
+As of uComponents v6.0.0 all XSLT extensions are automatically registered with Umbraco. Newly created XSLT files (in the back-office) will already contain the appropriate namespaces.  For existing XSLT files, you will still need to add the `ucomponents.nodes` namespace.
+
+### Prior to version 6.0.0
+
 Enabling the XSLT extension for use in your XSLT templates.
 Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 
@@ -26,15 +32,13 @@ Here are available methods in the ```Nodes``` library:
 * [GetReleaseDate](#getreleasedate)
 * [GetUniqueId](#getuniqueid)
 * [GetXmlNodeByCsv](#getxmlnodebycsv)
-* [GetXmlNodeByCsv](#getxmlnodebycsv)
 * [GetXmlNodeByPathLevel](#getxmlnodebypathlevel)
 * [GetXmlNodeByUrl](#getxmlnodebyurl)
-* [GetXPathQuery](#getxpathquery)
 
 *****
 
 ### GetExpireDate
-Gets the expiry date of a node.
+Gets the expiry date of a node; e.g. when the content is scheduled to be unpublished.<br>
 _Returns_: Returns the expiry date of a node.
 
 #### Parameters
@@ -44,14 +48,14 @@ _Returns_: Returns the expiry date of a node.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetExpireDate(nodeId)" />
+	<xsl:value-of select="ucomponents.nodes:GetExpireDate($currentPage/@id)" />
 
 
 *****
 
 ### GetNodeIdByUrl
-Gets the node Id by URL.
-_Returns_: Returns the node Id.
+Gets the node Id by URL.<br>
+_Returns_: Returns the node Id for a given URL.
 
 #### Parameters
 | Name | Type | Notes |
@@ -60,13 +64,13 @@ _Returns_: Returns the node Id.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetNodeIdByUrl(url)" />
+	<xsl:value-of select="ucomponents.nodes:GetNodeIdByUrl('/nice-url/')" />
 
 
 *****
 
 ### GetNodeIdByPathLevel
-Gets the node id by path level.
+Gets the node id by path level.<br>
 _Returns_: Returns the node id for a given path level.
 
 #### Parameters
@@ -77,13 +81,13 @@ _Returns_: Returns the node id for a given path level.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetNodeIdByPathLevel(path, level)" />
+	<xsl:value-of select="ucomponents.nodes:GetNodeIdByPathLevel('-1,1059,1083,1085', 1)" />
 
 
 *****
 
 ### GetReleaseDate
-Gets the release date of a node.
+Gets the release date of a node (to be published).<br>
 _Returns_: Returns the release date of a node.
 
 #### Parameters
@@ -93,13 +97,13 @@ _Returns_: Returns the release date of a node.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetReleaseDate(nodeId)" />
+	<xsl:value-of select="ucomponents.nodes:GetReleaseDate(1099)" />
 
 
 *****
 
 ### GetUniqueId
-Gets the unique id of a node.
+Gets the unique id (`System.Guid`) of a node.<br>
 _Returns_: Returns the unique id of a node.
 
 #### Parameters
@@ -109,46 +113,38 @@ _Returns_: Returns the unique id of a node.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetUniqueId(nodeId)" />
+	<xsl:value-of select="ucomponents.nodes:GetUniqueId($currentPage/@id)" />
 
 
 *****
 
 ### GetXmlNodeByCsv
-Gets a list of XML nodes by CSV.
-_Returns_: Returns an XPathNodeIterator of the nodes from the CSV list.
+Gets a list of XML nodes by CSV (with an option to persist the order).<br>
+_Returns_: Returns an `XPathNodeIterator` of the nodes from the CSV list.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
 | csv | ```System.String``` | |
+| persistOrder | ```System.Boolean``` | _(optional - defaults to ```false```)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetXmlNodeByCsv(csv)" />
-
-
-*****
-
-### GetXmlNodeByCsv
-Gets a list of XML nodes by CSV (with an option to persist the order).
-_Returns_: Returns an XPathNodeIterator of the nodes from the CSV list.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| csv | ```System.String``` | |
-| persistOrder | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.nodes:GetXmlNodeByCsv(csv, persistOrder)" />
+	<ul>
+		<xsl:for-each select="ucomponents.nodes:GetXmlNodeByCsv('1085,1086,1087,1088', false())">
+			<li>
+				<a href="{umbraco.library:NiceUrl(@id)}">
+					<xsl:value-of select="@nodeName" />
+				</a>
+			</li>
+		</xsl:for-each>
+	</ul>
 
 
 *****
 
 ### GetXmlNodeByPathLevel
-Gets the XML node by path level.
+Gets the XML node by path level.<br>
 _Returns_: Returns an XML node by path level.
 
 #### Parameters
@@ -159,13 +155,14 @@ _Returns_: Returns an XML node by path level.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetXmlNodeByPathLevel(path, level)" />
+	<xsl:variable name="homepage" select="ucomponents.nodes:GetXmlNodeByPathLevel($currentPage/@path, 1)" />
+	<xsl:value-of select="$homepage/@nodeName" />
 
 
 *****
 
 ### GetXmlNodeByUrl
-Gets the XML node by URL.
+Gets the XML node by URL.<br>
 _Returns_: Returns the XML for the node.
 
 #### Parameters
@@ -175,24 +172,10 @@ _Returns_: Returns the XML for the node.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.nodes:GetXmlNodeByUrl(url)" />
+	<xsl:variable name="node" select="ucomponents.nodes:GetXmlNodeByUrl('/nice-url/')" />
+	<xsl:value-of select="$node/@nodeName" />
 
 
 *****
 
-### GetXPathQuery
-Gets the XPath query.
-_Returns_: Returns an XPath query for the specified URL.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| url | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.nodes:GetXPathQuery(url)" />
-
-
-*****
 

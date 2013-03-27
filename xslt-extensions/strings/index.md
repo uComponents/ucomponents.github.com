@@ -2,10 +2,16 @@
 layout: extension
 title: Strings
 category: XSLT Extensions
-since_version: 1.0
+since_version: 1.0.0
 ---
 
 ## Activation
+
+### Version 6.0.0 (and above)
+As of uComponents v6.0.0 all XSLT extensions are automatically registered with Umbraco. Newly created XSLT files (in the back-office) will already contain the appropriate namespaces.  For existing XSLT files, you will still need to add the `ucomponents.strings` namespace.
+
+### Prior to version 6.0.0
+
 Enabling the XSLT extension for use in your XSLT templates.
 Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 

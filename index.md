@@ -43,7 +43,7 @@ If you are looking for help and support on how to implement the various componen
 		<p>uComponents controls can be used within Macros or directly in your ASP.NET pages and code.</p>
 	</div>
 	<div class="span4">
-		<h2>Macro Engines</h2>
+		<h2><a href="/macro-engines/">Macro Engines</a></h2>
 		<p>The uComponent Macro Engines implement a new approach to using Umbraco's Macro functionality.</p>
 	</div>
 	<div class="span4">

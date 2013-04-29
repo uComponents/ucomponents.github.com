@@ -8,7 +8,7 @@ since_version: 3.0
 ## Activation
 
 ### Version 6.0.0 (and above)
-As of uComponents v6.0.0 all XSLT extensions are automatically registered with Umbraco. Newly created XSLT files (in the back-office) will already contain the appropriate namespaces.  For existing XSLT files, you will still need to add the `ucomponents.cms` namespace.
+As of uComponents v6.0.0 all XSLT extensions are automatically registered with Umbraco. Newly created XSLT files (in the back-office) will already contain the appropriate namespaces.  For existing XSLT files, you will still need to add the `ucomponents.request` namespace.
 
 ### Prior to version 6.0.0
 
@@ -24,7 +24,7 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 *****
 
 ## Methods
-Here are available methods in the ```Request``` library:
+Here are available methods in the `Request` library:
 
 * [Cookies](#cookies)
 * [Form](#form)

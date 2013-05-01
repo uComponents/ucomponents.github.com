@@ -24,7 +24,7 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 *****
 
 ## Methods
-Here are available methods in the ```Strings``` library:
+Here are available methods in the `Strings` library:
 
 * [Coalesce](#coalesce)
 * [Concat](#concat)
@@ -67,9 +67,9 @@ _Returns_: String containing only the first x words.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| text | ```System.String``` | |
-| count | ```System.Int32``` | |
-| appender | ```System.String``` | _(optional - defaults to ```&#8230;```)_ |
+| text | `System.String` | |
+| count | `System.Int32` | |
+| appender | `System.String` | _(optional - defaults to `&#8230;`)_ |
 
 #### XSLT Example
 
@@ -83,8 +83,8 @@ Converts an email address into a hyperlink.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| email | ```System.String``` | |
-| text | ```System.String``` | _(optional - defaults to ```email```)_ |
+| email | `System.String` | |
+| text | `System.String` | _(optional - defaults to `email`)_ |
 
 #### XSLT Example
 
@@ -99,7 +99,7 @@ _Returns_: Returns a string with all URLs turned into hyperlinks.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -114,7 +114,7 @@ _Returns_: Returns a shortened path of the string.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -129,8 +129,8 @@ _Returns_: Returns a string with the mid-section truncated.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
-| maxLength | ```System.Int32``` |
+| input | `System.String` |
+| maxLength | `System.Int32` |
 
 #### XSLT Example
 
@@ -145,7 +145,7 @@ _Returns_: Returns the string with non alpha-numeric characters removed.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -159,7 +159,7 @@ Reverses the specified input.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -174,7 +174,7 @@ _Returns_: Returns a safe alias string.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -189,7 +189,7 @@ _Returns_: The string with spaces before each capital letter or number
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -204,7 +204,7 @@ _Returns_: Returns the string stripped of all `<font>` tags.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -219,7 +219,7 @@ _Returns_: Returns the string stripped of all HTML tags.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -234,7 +234,7 @@ _Returns_: Returns the string stripped of any whitespace characters.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -249,7 +249,7 @@ _Returns_: Returns the string with only alpha-numeric characters.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -264,7 +264,7 @@ _Returns_: Returns the string with all the line-breaks stripped out.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -279,7 +279,7 @@ _Returns_: Returns the string as lowercase.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -294,7 +294,7 @@ _Returns_: Returns the string as uppercase.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -309,7 +309,7 @@ _Returns_: The camelCased string
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -325,7 +325,7 @@ _Returns_: Returns the string in proper case.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -340,7 +340,7 @@ _Returns_: Returns the string in title case.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -355,7 +355,7 @@ _Returns_: Returns the string encoded as Base64.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -370,7 +370,7 @@ _Returns_: Returns the decoded Base64 string.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -385,7 +385,7 @@ _Returns_: Returns the number of words in the string.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -400,7 +400,7 @@ _Returns_: Returns the string with all HTML tags in lowercase.
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
+| input | `System.String` |
 
 #### XSLT Example
 
@@ -415,11 +415,11 @@ _Returns_: Returns the first non-null or empty expression among the supplied arg
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| arg1 | ```System.String``` | |
-| arg2 | ```System.String``` | |
-| arg3 | ```System.String``` | _(optional)_ |
-| arg4 | ```System.String``` | _(optional)_ |
-| arg5 | ```System.String``` | _(optional)_ |
+| arg1 | `System.String` | |
+| arg2 | `System.String` | |
+| arg3 | `System.String` | _(optional)_ |
+| arg4 | `System.String` | _(optional)_ |
+| arg5 | `System.String` | _(optional)_ |
 
 #### XSLT Example
 
@@ -434,12 +434,12 @@ _Returns_: Returns a formatted string.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| format | ```System.String``` | _A composite format string ([uses .NET syntax](http://msdn.microsoft.com/en-gb/library/txafckwd.aspx))._ |
-| arg1 | ```System.String``` | |
-| arg2 | ```System.String``` | _(optional)_ |
-| arg3 | ```System.String``` | _(optional)_ |
-| arg4 | ```System.String``` | _(optional)_ |
-| arg5 | ```System.String``` | _(optional)_ |
+| format | `System.String` | _A composite format string ([uses .NET syntax](http://msdn.microsoft.com/en-gb/library/txafckwd.aspx))._ |
+| arg1 | `System.String` | |
+| arg2 | `System.String` | _(optional)_ |
+| arg3 | `System.String` | _(optional)_ |
+| arg4 | `System.String` | _(optional)_ |
+| arg5 | `System.String` | _(optional)_ |
 
 #### XSLT Example
 
@@ -454,7 +454,7 @@ Concats the specified nodeset.
 | Name | Type |
 |------|------|
 | nodeset | System.Xml.XPath.XPathNodeIterator |
-| separator | ```System.String``` |
+| separator | `System.String` |
 
 #### XSLT Example
 
@@ -469,8 +469,8 @@ _Returns_: Returns a comma-separated list with duplicate entries removed.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| list | ```System.String``` | |
-| separator | ```System.String``` | _(optional - defaults to a comma ```,```)_ |
+| list | `System.String` | |
+| separator | `System.String` | _(optional - defaults to a comma `,`)_ |
 
 #### XSLT Example
 
@@ -485,8 +485,8 @@ _Returns_: Returns a comma-separated list with empty entries removed.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| list | ```System.String``` | |
-| separator | ```System.String``` | _(optional - defaults to a comma ```,```)_ |
+| list | `System.String` | |
+| separator | `System.String` | _(optional - defaults to a comma `,`)_ |
 
 #### XSLT Example
 
@@ -501,10 +501,10 @@ _Returns_: Returns the singular or plural word based on the count's value.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| count | ```System.Int32``` | |
-| singular | ```System.String``` | |
-| plural | ```System.String``` | |
-| prefixCount | System.Boolean | _(optional - defaults to ```false```)_ |
+| count | `System.Int32` | |
+| singular | `System.String` | |
+| plural | `System.String` | |
+| prefixCount | System.Boolean | _(optional - defaults to `false`)_ |
 
 #### XSLT Example
 
@@ -520,8 +520,8 @@ _Returns_: Returns the input string with the specified text trimmed from the sta
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
-| textToTrim | ```System.String``` |
+| input | `System.String` |
+| textToTrim | `System.String` |
 
 #### XSLT Example
 
@@ -536,8 +536,8 @@ _Returns_: Returns the input string with the specified text trimmed from the end
 #### Parameters
 | Name | Type |
 |------|------|
-| input | ```System.String``` |
-| textToTrim | ```System.String``` |
+| input | `System.String` |
+| textToTrim | `System.String` |
 
 #### XSLT Example
 

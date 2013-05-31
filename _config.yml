@@ -1,8 +1,6 @@
 safe:        true
-auto:        true
 base-url:    /
-server:      true
-server_port: 4000
+port: 4000
 
 title:       uComponents
 

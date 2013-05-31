@@ -13,7 +13,7 @@ sidebar: <h3>Table of contents</h3>
         <li><a href="../integration">Integration</a></li>
     </ul>
 ---    
-<table border="0">
+<table class="table table-bordered table-striped">
   <tbody>
     <tr>
             <th>Umbraco Native Datatypes </th>

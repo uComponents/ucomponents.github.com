@@ -13,17 +13,19 @@ sidebar: <h3>Table of contents</h3>
         <li><a href="integration">Integration</a></li>
     </ul>
 ---
-## Prevalue Editor ##
+## Usage ##
+
+### Prevalue Editor ###
 
 <img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
 
-### Content Editor Settings ###
+#### Content Editor Settings ####
 **Show Label:** Toggle the left side label for the content editor.    
 **Show Grid Header:** Toggle the visibility for the grid header. Also toggles search functionality.    
 **Show Grid Footer:** Toggle the visibility for the grid footer. Also toggles paging.    
 **Rows Per Page:** How many rows should be shown per page
 
-### Datatype (Column) Settings ###
+#### Datatype (Column) Settings ####
 **Name:** The column name. Can be localized by inserting the dictionary key prepended with a hash (#).    
 **Alias:** The column alias. This is the key for the column.   
 **DataType:** The editor datatype for the column. See [using custom datatypes](compatible-datatypes/#using_custom_datatypes) if you want to use custom (untested) datatypes.    
@@ -31,13 +33,13 @@ sidebar: <h3>Table of contents</h3>
 **Validation:** Custom Regex validation for the column value. Leave blank to disable.
 
 
-## Content Editor ##
+### Content Editor ###
 
-### Grid ###
+#### Grid ####
 <img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>    
 
-### Add row dialog ###
+#### Add row dialog ####
 <img src="insertdialog_post54.JPG" width="400" alt="Add Row Dialog"/>    
 
-### Edit row dialog ###
+#### Edit row dialog ####
 <img src="editdialog_post54.JPG" width="400" alt="Edit Row Dialog"/>

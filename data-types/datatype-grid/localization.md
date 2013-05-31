@@ -15,7 +15,7 @@ sidebar: <h3>Table of contents</h3>
     </ul>
 ---
 ### Content Editor ###
-<table border="0">
+<table class="table table-bordered table-striped">
     <tbody>
         <tr>
             <td>
@@ -62,7 +62,7 @@ sidebar: <h3>Table of contents</h3>
 </table>
 
 ### Prevalue Editor ###
-<table border="0">
+<table class="table table-bordered table-striped">
     <tbody>
         <tr>
             <td>

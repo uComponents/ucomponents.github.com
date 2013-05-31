@@ -1,26 +1,19 @@
 ---
-layout: datatype
-title: DataType Grid
-category: Data Types
-description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
+layout: datatypesubpage
+title: Localization
+category: DataType Grid
+excerpt: DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.<br/><br/>
+    Please consult the table of aliases below to create your own translation.
 since_version: 3.0
+sidebar: <h3>Table of contents</h3>
+    <ul>
+        <li><a href="../">Usage</a></li>
+        <li><a href="../compatible-datatypes">Compatible Datatypes</a></li>
+        <li>Localization</li>
+        <li><a href="../razor-samples">Razor Samples</a></li>
+        <li><a href="../integration">Integration</a></li>
+    </ul>
 ---
-
-### Table of contents ###
-* [Usage](../)    
-* [Compatible Datatypes](../compatible-datatypes)
-* **Localization**    
-    - [Content Editor](#content_editor)    
-    - [Prevalue Editor](#prevalue_editor)    
-* [Razor Samples](../razor-samples)
-* [Integration](../integration)
-    
-    
-## Localization ##
-DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.
-
-Please consult the table of aliases below to create your own translation.
-
 ### Content Editor ###
 <table border="0">
     <tbody>

@@ -1,21 +1,18 @@
 ---
-layout: datatype
-title: DataType Grid
-category: Data Types
+layout: datatypesubpage
+title: Compatible Datatypes
+category: DataType Grid
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 since_version: 3.0
----
-
-### Table of contents ###
-* [Usage](../)     
-* **Compatible Datatypes**    
-    - [Using Custom Datatypes](#using_custom_datatypes)    
-* [Localization](../localization)
-* [Razor Samples](../razor-samples)
-* [Integration](../integration)
-    
-    
-## Compatible Datatypes ##
+sidebar: <h3>Table of contents</h3>
+    <ul>
+        <li><a href="../">Usage</a></li>
+        <li>Compatible Datatypes</li>
+        <li><a href="../localization">Localization</a></li>
+        <li><a href="../razor-samples">Razor Samples</a></li>
+        <li><a href="../integration">Integration</a></li>
+    </ul>
+---    
 <table border="0">
   <tbody>
     <tr>

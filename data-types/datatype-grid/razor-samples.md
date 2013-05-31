@@ -1,23 +1,18 @@
 ---
-layout: datatype
-title: DataType Grid
-category: Data Types
+layout: datatypesubpage
+title: Razor Samples
+category: DataType Grid
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 since_version: 3.0
+sidebar: <h3>Table of contents</h3>
+    <ul>
+        <li><a href="../">Usage</a></li>
+        <li><a href="../compatible-datatypes">Compatible Datatypes</a></li>
+        <li><a href="../localization">Localization</a></li>
+        <li>Razor Samples</li>
+        <li><a href="../integration">Integration</a></li>
+    </ul>
 ---
-
-### Table of contents ###
-* [Usage](../)    
-* [Compatible Datatypes](../compatible-datatypes)
-* [Localization](../localization)
-* **razor-samples**    
-    - [v5.4.0 (current)](#v540)    
-    - [Up until v5.4.0 (legacy)](#up_until_v540)    
-* [Integration](../integration)    
-    
-
-## Razor Samples ##
-
 ### Getting DataTypeGrid values ###
 
 #### v5.4.0 ####

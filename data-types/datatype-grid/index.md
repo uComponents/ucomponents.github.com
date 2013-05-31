@@ -4,18 +4,15 @@ title: DataType Grid
 category: Data Types
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 since_version: 3.0
+sidebar: <h3>Table of contents</h3>
+    <ul>
+        <li>Usage</li>
+        <li><a href="compatible-datatypes">Compatible Datatypes</a></li>
+        <li><a href="localization">Localization</a></li>
+        <li><a href="razor-samples">Razor Samples</a></li>
+        <li><a href="integration">Integration</a></li>
+    </ul>
 ---
-
-### Table of contents ###
-* **Usage**        
-    - [Prevalue Editor](#prevalue_editor)    
-    - [Content Editor](#content_editor)    
-* [Compatible Datatypes](compatible-datatypes)
-* [Localization](localization)
-* [Razor Samples](razor-samples)
-* [Integration](integration)    
-    
-
 ## Prevalue Editor ##
 
 <img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
@@ -31,9 +28,7 @@ since_version: 3.0
 **Alias:** The column alias. This is the key for the column.   
 **DataType:** The editor datatype for the column. See [using custom datatypes](compatible-datatypes/#using_custom_datatypes) if you want to use custom (untested) datatypes.    
 **Mandatory:** Toggles whether a value must be set for this column when inserting or updating a row.   
-**Validation:** Custom Regex validation for the column value. Leave blank to disable.    
-**Content Sort Priority:** If you want to set a default grid sorting for the content editors, set the column priority here. Leave blank to disable automatic sorting.    
-**Content Sort Order:** The grid sorting direction. Only used if Content Sort Priority has been enabled.
+**Validation:** Custom Regex validation for the column value. Leave blank to disable.
 
 
 ## Content Editor ##

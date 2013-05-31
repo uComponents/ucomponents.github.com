@@ -14,588 +14,424 @@ sidebar: <h3>Table of contents</h3>
     </ul>
 ---    
 <table class="table table-bordered table-striped">
-  <tbody>
+  <thead>
     <tr>
-            <th>Umbraco Native Datatypes </th>
-            <th>Fully Compatible </th>
-            <th>Partially Compatible </th>
-            <th>Not Compatible </th>
-            <th>Not Tested </th>
-        </tr>
-        <tr>
+        <th>Umbraco Native Datatypes </th>
+        <th>Fully Compatible </th>
+        <th>Partially Compatible </th>
+        <th>Not Compatible </th>
+        <th>Not Tested </th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr class="success">
             <td>Label</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Numeric</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Simple Editor</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Textstring</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Media Picker</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
-            <td align="center" valign="top">
+            <td>v3.0.1</td>
+            <td>
                 <p> </p>
             </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Approved Color</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Checkbox list</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Content Picker</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Date Picker with time</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Date Picker</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Dropdown multiple</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="error">
             <td>Folder Browser</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top">
-                <span style="color: #ffffff;">YSOD</span>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td>YSOD</td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Dropdown</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.1</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Member Picker</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0.2</td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>Radiobox</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="error">
             <td>Related Links</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top">
-                <span style="color: #ffffff;">Doesn't add values</span>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="error">
             <td>Richtext editor</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top">
-                <span style="color: #ffffff;">Not shown</span>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td>Not shown</td>
+            <td></td>
         </tr>
-        <tr>
-            <td>Textbox multiple</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-        </tr>
-        <tr>
+        <tr class="error">
             <td>Tags</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top">
-                <span style="color: #ffffff;">
-                    <span style="color: #ffffff;">YSOD</span>
-                </span>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td>YSOD</td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
+            <td>Textbox multiple</td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
             <td>True/false</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v3.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td>v3.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="error">
             <td>Ultimate Picker</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="error">
             <td>Upload</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ff0000;" align="center" valign="top">
-                <span style="color: #ffffff;">YSOD</span>
-            </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
+            <td></td>
+            <td></td>
+            <td>YSOD</td>
+            <td></td>
         </tr>
-        <tr>
-            <th>Custom Datatypes </th>
-            <th>Fully Compatible </th>
-            <th>Partially Compatible </th>
-            <th>Not Compatible </th>
-            <th>Not Tested </th>
-        </tr>
-        <tr>
-            <td>Auto Complete</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v4.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-        </tr>
-        <tr>
-            <td>Character Limit</td>
-            <td style="background-color: #00ff00;" align="center" valign="top">v4.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-        </tr>
-        <tr>
-            <td>Checkbox Tree</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: #000000;">
-                    <span style="color: #3e62a6;">Country Picker</span>
-                </span>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Dropdown CheckList</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Elastic TextBox</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=Enum CheckBoxList">
-                    <span style="color: #3e62a6;">Enum CheckBoxList</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=Enum DropDownList">
-                    <span style="color: #3e62a6;">Enum DropDownList </span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>File DropDownList</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>FilePicker</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Image DropDown</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Incremental TextBox</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>JSON Dropdown</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Multi-Node Tree Picker</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=MultiPickerRelations&amp;referringTitle=DataTypes">
-                    <span style="color: #3e62a6;">MultiPicker Relations</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Multiple Dates</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=MultipleTextstring&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">Multiple Textstring</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=MultiUrlPicker&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">Multi-URL Picker</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Radiobutton List with Images</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Related Links with Media</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Render Macro</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=Similarity&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">Similarity</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Slider</td>
-            <td align="center" valign="top"> </td>
-            <td style="background-color: #ffff00;" align="center" valign="top">
-                <p>
-                    <em>Does not support editing</em>
-                </p>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em> </em>
-            </td>
-        </tr>
-        <tr>
-            <td>Styled TextBox</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=SQL DropDownList&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">SQL DropDownList</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>ToggleBox</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=TextImage&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">Text Image</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=TextstringArray&amp;referringTitle=Documentation">
-                    <span style="color: #3e62a6;">Textstring Array</span>
-                </a>
-            </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>Unique Property</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: #3e62a6;">URL Picker</span>
-            </td>
-            <td align="center" valign="top" style="background-color: #00ff00;">v5.4.0</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>          
-            <td align="center" valign="top"> </td>
-        </tr>
-        <tr>
-            <td>User Picker</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
-        </tr>
-        <tr>
+        <tr class="success">
             <td>XPath CheckBoxList</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
-            </td>
+            <td>v6.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
+        <tr class="success">
             <td>XPath DropDownList</td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top"> </td>
-            <td align="center" valign="top">
-                <em>X</em>
+            <td>v6.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+        <th>Other Datatypes</th>
+        <th>Fully Compatible </th>
+        <th>Partially Compatible </th>
+        <th>Not Compatible </th>
+        <th>Not Tested </th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr class="success">
+            <td>uComponents: XPath Auto Complete</td>
+            <td>v6.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Character Limit</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="error">
+            <td>uComponents: Checkbox Tree</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Country Picker</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Dropdown CheckList</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Elastic TextBox</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td><a href="http://ucomponents.codeplex.com/wikipage?title=Enum CheckBoxList">uComponents: Enum CheckBoxList</a></td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>
+                <a href="http://ucomponents.codeplex.com/wikipage?title=Enum DropDownList">uComponents: Enum DropDownList </a>
             </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: File DropDownList</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: FilePicker</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Incremental TextBox</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Multi-URL Picker</td>
+            <td>v6.0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="error">
+            <td>uComponents: Multiple Dates</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Notes</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="info">
+            <td>uComponents: Property Picker</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Relation Links</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: Render Macro</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td><a href="http://ucomponents.codeplex.com/wikipage?title=Similarity&amp;referringTitle=Documentation">uComponents: Similarity</a></td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="error">
+            <td>uComponents: SQL AutoComplete</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="info">
+            <td><a href="http://ucomponents.codeplex.com/wikipage?title=SQL DropDownList&amp;referringTitle=Documentation">uComponents: SQL DropDownList</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="info">
+            <td>uComponents: SQL CheckBoxList</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="info">
+            <td><a href="http://ucomponents.codeplex.com/wikipage?title=TextstringArray&amp;referringTitle=Documentation">uComponents: Textstring Array</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="info">
+            <td>uComponents: ToggleBox</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: URL Picker</td>
+            <td>v5.4.0</td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="info">
+            <td>uComponents: User Picker</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr class="success">
+            <td>uComponents: XPath AutoComplete</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="info">
+            <td>Digibiz Advanced Media Picker (DAMP)</td>
+            <td></td>
+            <td></td>
+            <td></td>          
+            <td>X</td>
+        </tr>
+        <tr class="success">
+            <td>Google Maps Datatype</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="error">
+            <td>Universal Media Picker</td>
+            <td></td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="error">
+            <td>True Color Picker</td>
+            <td></td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>Markdown Editor (from v1.4)</td>
+            <td>v5.4.0</td>
+            <td></td>
+            <td></td>          
+            <td></td>
+        </tr>
+        <tr class="success">
+            <td>uTube</td>
+            <td>v5.4.1</td>
+            <td></td>
+            <td></td>          
+            <td></td>
         </tr>
     </tbody>
 </table>

@@ -9,32 +9,68 @@ navigation:
 - title: DataTypes
   url: /data-types/index.html
   subnav:
-  - title: Auto Complete
-    url: /data-types/auto-complete/index.html
   - title: Character Limit
     url: /data-types/character-limit/index.html
+  - title: CheckBox Tree
+    url: /data-types/check-box-tree/index.html
+  - title: Country Picker
+    url: /data-types/country-picker/index.html
   - title: DataType Grid
     url: /data-types/datatype-grid/index.html
   - title: DropDown CheckList
     url: /data-types/dropdown-checklist/index.html
   - title: Elastic TextBox
     url: /data-types/elastic-textbox/index.html
+  - title: Enum CheckBoxList
+    url: /data-types/enum-checkboxlist/index.html
   - title: Enum DropDownList
     url: /data-types/enum-dropdownlist/index.html
+  - title: File DropDownList
+    url: /data-types/file-dropdownlist/index.html
   - title: FilePicker
     url: /data-types/file-picker/index.html
+  - title: Incremental TextBox
+    url: /data-types/incremental-textbox/index.html
+  - title: Multiple Dates
+    url: /data-types/multiple-dates/index.html
   - title: Multi-URL Picker
     url: /data-types/multi-url-picker/index.html
+  - title: Notes
+    url: /data-types/notes/index.html
+  - title: Property Picker
+    url: /data-types/property-picker/index.html
   - title: Relation Links
     url: /data-types/relation-links/index.html
-  - title: SQL AutoComplete
+  - title: Render Macro
+    url: /data-types/render-macro/index.html
+  - title: Similarity
+    url: /data-types/similarity/index.html
+  - title: SQL Auto Complete
     url: /data-types/sql-auto-complete/index.html
-  - title: Text Image
-    url: /data-types/text-image/index.html
+  - title: SQL CheckBoxList
+    url: /data-types/sql-checkboxlist/index.html
+  - title: SQL DropDownList
+    url: /data-types/sql-dropdownlist/index.html
+  - title: Sub Tabs
+    url: /data-types/sub-tabs/index.html
+  - title: Textstring Array
+    url: /data-types/textstring-array/index.html
+  - title: Toggle Box
+    url: /data-types/toggle-box/index.html
   - title: URL Picker
     url: /data-types/url-picker/index.html
+  - title: User Picker
+    url: /data-types/user-picker/index.html
   - title: XML DropDownList
     url: /data-types/xml-dropdownlist/index.html
+  - title: XPath Auto Complete
+    url: /data-types/xpath-auto-complete/index.html
+  - title: XPath Templatable List
+    url: /data-types/xpath-templatable-list/index.html
+  - title: (Legacy) Auto Complete
+    url: /data-types/auto-complete/index.html
+  - title: (Legacy) Text Image
+    url: /data-types/text-image/index.html
 - title: Macro Engines
   url: /macro-engines/
   subnav:
@@ -129,6 +165,9 @@ navigation:
 								<ul>{% for subpage in item.subnav %}
 									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
+
+
+
 									</li>{% endfor %}
 								</ul>
 							</li>{% endfor %}

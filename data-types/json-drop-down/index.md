@@ -1,8 +1,8 @@
 ---
 layout: datatype
-title: User Picker
+title:
 category: Data Types
 description: 
-since_version: 1.0
+since_version: 
 retired_version: 
 ---

@@ -3,6 +3,7 @@ layout: datatype
 title: DropDown CheckList
 category: Data Types
 since_version: 1.0
+retired_version: 
 ---
 
 This is a DropDownList containing CheckBoxes.

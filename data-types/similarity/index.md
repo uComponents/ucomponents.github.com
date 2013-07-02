@@ -1,8 +1,8 @@
 ---
 layout: datatype
-title:
+title: Similarity
 category: Data Types
 description: 
-since_version: 
+since_version: 2.1
 retired_version: 
 ---

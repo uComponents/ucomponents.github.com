@@ -2,10 +2,9 @@
 layout: datatype
 title: Relation Links
 category: Data Types
-since_version: 
+description: Render a list of links to any content / media or members related to the current node, via a given RelationType.
+since_version: 4.0
 ---
-
-This datatype can be used to render a list of links to any content / media or members that are related to the current item via a selected RelationType.
 
 ## Prevalue Editor Settings
 

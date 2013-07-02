@@ -1,8 +1,8 @@
 ---
 layout: datatype
-title: Textstring Array
+title: Styled TextBox
 category: Data Types
 description: 
-since_version: 3.0
+since_version: 1.0
 retired_version: 
 ---

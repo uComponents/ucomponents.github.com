@@ -1,6 +1,6 @@
 ---
 layout: datatype
-title:
+title: Enum CheckBoxList
 category: Data Types
 description: 
 since_version: 

@@ -1,8 +1,8 @@
 ---
 layout: datatype
-title:
+title: Incremental TextBox
 category: Data Types
-description: 
-since_version: 
+description: Select a number via up / down arrows
+since_version: 1.0
 retired_version: 
 ---

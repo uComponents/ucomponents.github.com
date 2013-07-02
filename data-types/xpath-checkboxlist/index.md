@@ -1,8 +1,8 @@
 ---
 layout: datatype
-title:
+title: XPath CheckBoxList
 category: Data Types
-description: 
-since_version: 
+description: Use an XPath expression to select nodes, media or members to use as CheckBoxList options.
+since_version: 2.0
 retired_version: 
 ---

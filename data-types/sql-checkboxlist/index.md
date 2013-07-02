@@ -2,7 +2,7 @@
 layout: datatype
 title: SQL CheckBoxList
 category: Data Types
-since_version: 
+since_version: 4.1
 ---
 
 

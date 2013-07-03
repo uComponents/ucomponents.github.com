@@ -15,3 +15,8 @@ retired_version:
 ## Content Editor
 
 ![Content Editor](DataEditor.jpg)
+---
+
+_... documentation coming soon ..._
+
+In the meantime, please see Simon Antony's post on [how to use the CheckBoxTree](http://www.simonantony.net/knowledge-base/articles/using-the-ucomponents-checkboxtree/).

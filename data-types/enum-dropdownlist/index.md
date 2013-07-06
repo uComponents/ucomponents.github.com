@@ -1,11 +1,19 @@
 ---
+
 layout: datatype
+
 title: Enum DropDownList
+
 category: Data Types
+
+description: 
+Use an Enum as the data source for a DropDownList.
 since_version: 3.0
+
+retired_version: 
 ---
 
-Use an Enum as the source for a DropDownList.
+
 
 An optional EnumDropDownListAttribute can be applied to configure how the DropDownList Text and Value fields are populated, as well as being able to exclude enum items from the resulting list.
 

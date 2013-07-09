@@ -2,6 +2,9 @@
 layout: datatype
 title: XPath Templatable List
 category: Data Types
+description: 
+
+
 since_version: 6.0.0
 ---
 

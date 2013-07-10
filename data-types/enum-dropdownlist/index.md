@@ -16,24 +16,24 @@ An optional EnumDropDownListAttribute can be applied to configure how the DropDo
 
 ## Example Enum
 
-using uComponents.Core.DataTypes.EnumDropDownList; // Namespace to the optional EnumDropDownListAttribute
+	using uComponents.Core.DataTypes.EnumDropDownList; // Namespace to the optional EnumDropDownListAttribute
 
-namespace Example
-{
-	public enum SiteSection
+	namespace Example
 	{
-		[EnumDropDownList(Enabled=false)]
-		Unknown,
+		public enum SiteSection
+		{
+			[EnumDropDownList(Enabled=false)]
+			Unknown,
 
-		[EnumDropDownList(Text="Home Page")]
-		Home,
+			[EnumDropDownList(Text="Home Page")]
+			Home,
 
-		[EnumDropDownList(Value="123")]
-		Landing,
+			[EnumDropDownList(Value="123")]
+			Landing,
 
-		Article
+			Article
+		}
 	}
-}
 
 ## Pre-value editor settings
 
@@ -50,4 +50,4 @@ The default value stored by the property is the name of the enum item selected, 
 
 ## uQuery
 
-SiteSection siteSection = uQuery.GetCurrentNode().GetProperty<SiteSection>("propertyAlias");
+	SiteSection siteSection = uQuery.GetCurrentNode().GetProperty&lt;SiteSection&gt;("propertyAlias");

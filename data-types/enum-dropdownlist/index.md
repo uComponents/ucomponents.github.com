@@ -10,13 +10,13 @@ retired_version:
 
 ## Prevalue Editor Settings
 
+![Prevalue Editor](PreValueEditor.jpg)
+
 An optional EnumDropDownListAttribute can be applied to configure how the DropDownList Text and Value fields are populated, as well as being able to exclude enum items from the resulting list.
-
-
 
 ## Example Enum
 
-	using uComponents.Core.DataTypes.EnumDropDownList; // Namespace to the optional EnumDropDownListAttribute
+	using uComponents.Core.DataTypes.EnumDropDownList;
 
 	namespace Example
 	{
@@ -35,9 +35,6 @@ An optional EnumDropDownListAttribute can be applied to configure how the DropDo
 		}
 	}
 
-## Pre-value editor settings
-
-![Prevalue Editor](PreValueEditor.jpg)
 
 
 ## Content editor
@@ -50,4 +47,4 @@ The default value stored by the property is the name of the enum item selected, 
 
 ## uQuery
 
-	SiteSection siteSection = uQuery.GetCurrentNode().GetProperty&lt;SiteSection&gt;("propertyAlias");
+	SiteSection siteSection = uQuery.GetCurrentNode().GetProperty<SiteSection>;("propertyAlias");

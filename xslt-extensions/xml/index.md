@@ -140,7 +140,7 @@ _Returns_: Returns an XPathNodeIterator of the XHTML string.
 #### XSLT Example
 
 	<!-- Parse the HTML content of the 'bodyText' property into workable XML -->
-	<xsl:copy-of select="ucomponents.xml:Parse($currentPage/bodyText)" />
+	<xsl:copy-of select="ucomponents.xml:ParseXhtml($currentPage/bodyText)" />
 
 *****
 

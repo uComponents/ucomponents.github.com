@@ -9,7 +9,7 @@ retired_version:
 
 ## Prevalue Editor Settings
 
-![Prevalue Editor](PreValueEditor.jpg)
+![Prevalue Editor](PreValueEditor.gif)
 
 
 The **SQL Expression** must return two columns: a _'Text'_ field that's used for the visible text and a _'Value'_ field that's used to identify an item. The parameter (or token) @currentId can be used in the SQL, and will be substituted with the id of the Document / Media or Member that the datatype is a property on.

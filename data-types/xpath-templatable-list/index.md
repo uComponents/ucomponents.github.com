@@ -31,12 +31,12 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **Text Template** : Markup used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
 
-eg. {{pickedMediaPropertyAlias:media:mediaPropertyAlia}}
+eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlia\}\}
 
 it's also possible to get associated members or nodes with using the same approach:
 
-eg. {{pickedMemberPropertyAlias:member:memberPropertyAlias}}
-or  {{pickedNodeProprtyAlias:node:nodePropertyAlias}}
+eg. \{\{pickedMemberPropertyAlias:member:memberPropertyAlias\}\}
+or  \{\{pickedNodeProprtyAlias:node:nodePropertyAlias\}\}
 	
 
 **Macro Template** : (TODO: using a macro will allow Razor / XSLT logic to be used for each item being rendered.)

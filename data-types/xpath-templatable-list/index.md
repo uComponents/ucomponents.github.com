@@ -31,7 +31,7 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **Text Template** : Markup used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
 
-eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlia\}\}
+eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlias\}\}
 
 it's also possible to get associated members or nodes with using the same approach:
 
@@ -53,3 +53,13 @@ or  \{\{pickedNodeProprtyAlias:node:nodePropertyAlias\}\}
 ![Content Editor](DataEditor.png)
 
 In the above example, no items have yet been selected, but once selected the items will appear on the list to the right, and can be sorted (via drag-n-drop) like MNTP, XPath / SQL AutoComplete etc...
+
+
+## Example XML
+
+The node, media or member ids are used to identify any selected items.
+
+	<XPathTemplatableList Type="f5f79d85-83dc-40a8-9050-52c3b68b07d6">
+		<Item Value="1060" />
+		<Item Value="1058" />
+	</XPathTemplatableList>

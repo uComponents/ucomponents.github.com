@@ -29,7 +29,7 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **Template Type** : (TODO: select between _Text Template_ or _Macro Template_)
 
-**Text Template** : Markup used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
+**Text Template** : Markup used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
 
 eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlias\}\}
 

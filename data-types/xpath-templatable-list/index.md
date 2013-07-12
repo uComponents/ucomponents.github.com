@@ -2,17 +2,33 @@
 layout: datatype
 title: XPath Templatable List
 category: Data Types
-description: 
-
+description: Use an XPath expression to specify a collection of nodes / media or members can be selected, this collection can be sorted and limited and the markup for each item defined by simple text template.
 
 since_version: 6.0.0
 ---
 
-Use an XPath expression to specify a collection of nodes / media or members can be selected, this collection can be sorted and limited and the markup for each item defined by simple text template (TODO: or a Razor / XSLT Macro).
-
-Validation can be defined to specify a minimum and / or maximum selection and if duplicate items can be selected.
-
 ## Prevalue Editor Settings
 
-![Prevalue Editor](PreValueEditor.jpg)
+![Prevalue Editor](PreValueEditor.png)
 
+In the example above, the datatype has been configured to use the three oldest members, requiring one or two of them to be selected.
+
+**Type** : The XML schema to query.
+**XPath Expression** : All matched nodes will be used for the source data in the list.
+**Sort On** : Allows the source data to be sorted.
+**Sort Direction** : (only present when Sort On set)
+**Limit To** : Limit the source data to a defined count.
+**List Height** : Height in px, of the whole control - useful for when there is a sizeable amount of data in the source list; a scroll bar will be added if the height of all items exceeds this value.
+**Item Height** : Height in px of each item.
+**Text Template** : 
+**Min Items** : Number of items that must be selected. The Content Editor UI illustrates this value by drawing empty boxes as placeholders to indicate that items need to be selected.
+**Max Items** : Number of items that can be selected. The Content Editor UI illustrates this value by drawing a bounding box around the selected list on the right to indicate how many items can be selected.
+**Allow Duplicates** : When checked, the same item in the source list can be selected multipe times (assuming this is also within the parameters of the _Max Items_ value above).
+
+## Content Editor
+
+![Content Editor](DataEditor.png)
+
+
+## TODO:
+As an alternative to the _Text Template_ configuration field, an option to use a macro should be implemented (two additional fields, one to toggle between _Text Template_ and _Macro_, and another as a DropDownList of availale macros). Using a macro will allow Razor / XSLT logic to be used for each item being rendered.

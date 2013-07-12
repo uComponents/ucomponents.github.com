@@ -27,16 +27,16 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **Item Height** : Height in px of each item.
 
-**Template Type** : (TODO: select between Text Template or Macro Template)
+**Template Type** : (TODO: select between _Text Template_ or _Macro Template_)
 
 **Text Template** : Markup used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
 
-	eg. {{pickedMediaPropertyAlias:media:mediaPropertyAlias}}
+	eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlias\}\}
 
 	it's also possible to get associated members or nodes with using the same approach:
 
-	eg. {{pickedMemberPropertyAlias:member:memberPropertyAlias}}
-	or  {{pickedNodeProprtyAlias:node:nodePropertyAlias}}
+	eg. \{\{pickedMemberPropertyAlias:member:memberPropertyAlias\}\}
+	or  \{\{pickedNodeProprtyAlias:node:nodePropertyAlias\}\}
 	
 
 **Macro Template** : (TODO: using a macro will allow Razor / XSLT logic to be used for each item being rendered.)
@@ -47,6 +47,9 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **Allow Duplicates** : When checked, the same item in the source list can be selected multipe times (assuming this is also within the parameters of the _Max Items_ value above).
 
+
 ## Content Editor
 
 ![Content Editor](DataEditor.png)
+
+In the above example, no items have yet been selected, but once selected the items will appear on the list to the right, and can be sorted (via drag-n-drop) like MNTP, XPath / SQL AutoComplete etc...

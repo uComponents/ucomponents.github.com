@@ -56,4 +56,4 @@ The enum can be decorated with an EnumDropDownListAttribute to configure how the
 
 ## uQuery
 
-	SiteColours siteColours = uQuery.GetCurrentNode().GetProperty<SiteColours>;("propertyAlias");
+	SiteColours siteColours = uQuery.GetCurrentNode().GetProperty<SiteColours>("propertyAlias");

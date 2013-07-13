@@ -7,6 +7,7 @@ since_version:
 retired_version: 
 ---
 
+
 ## Prevalue Editor Settings
 
 ![Prevalue Editor](PreValueEditor.png)
@@ -48,10 +49,10 @@ The enum can be decorated with an optional EnumCheckBoxListAttribute to configur
         Aquamarine 
     }
 
+
 ## Content Editor
 
 ![Content Editor](DataEditor.png)
 
 
-## uQuery
 

@@ -9,36 +9,49 @@ retired_version:
 
 ## Prevalue Editor Settings
 
-The Enum can be decorated with optional EnumCheckBoxList attributes to configure how the Text and Value fields are populated, as well as being able to exclude items from the resulting list.
+![Prevalue Editor](PreValueEditor.png)
 
-**Enabled** a boolean value to indicate if the item should be included in the list.
+**Assembly** : the DLL or App_Code folder containing the Enum.
 
-**Text** the text to use in the list instead of the Enum item name.
+**Enum** : The Enum to use as the data source for the CheckBoxList.
 
-**Value** the value to use in the list instead of the Enum item name.
+**Storage Type** : Either an Xml fragment, or a CSV.
 
-	using uComponents.Core.DataTypes.EnumCheckBoxList;
 
-	public enum Example
-	{
-		[EnumCheckBoxList(Enabled=false)]
-		Item1,
-	
-		[EnumCheckBoxList(Text="Item One")]
-		Item2,
-	
-		[EnumCheckBoxList(Value="3")]
-		Item3,
-	
-		[EnumCheckBoxList(Text="Item Four", Value="4")]
-		Item4,
-	
-		Item5
-	}
+## Optional Attributes
+
+The enum can be decorated with an optional EnumCheckBoxListAttribute to configure how the Text and Value fields are populated, as well as being able to exclude items from the resulting list.
+
+**Enabled** : a boolean value to indicate if the item should be included in the list.
+
+**Text** : the text to use in the list instead of the Enum item name.
+
+**Value** : the value to use in the list instead of the Enum item name.
+
+    using uComponents.DataTypes.EnumCheckBoxList;
+
+    public enum SiteColours
+    {
+        [EnumCheckBoxList(Enabled = false)]
+        Unknown,
+
+        [EnumCheckBoxList(Text = "Alice Blue", Value = "F0F8FF")]
+        AliceBlue,
+
+        [EnumCheckBoxList(Text = "Antique White", Value = "FAEBD7")]
+        AntiqueWhite,
+
+        [EnumCheckBoxList(Value = "00FFFF")]
+        Aqua,
+
+        [EnumCheckBoxList(Value = "7FFFD4")]
+        Aquamarine 
+    }
 
 ## Content Editor
+
+![Content Editor](DataEditor.png)
 
 
 ## uQuery
 
-	Example example = uQuery.GetCurrentNode().GetProperty<Example>("propertyAlias");

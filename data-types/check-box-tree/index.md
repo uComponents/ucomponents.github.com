@@ -2,14 +2,13 @@
 layout: datatype
 title: CheckBox Tree
 category: Data Types
-description: Render a tree of nodes specifying which items have checkboxes for selection. It can be configured to auto select all ascendants or descendants, amongst other options.
+description: Render a tree of nodes specifying which items have checkboxes for selection. It can be configured to auto select all ascendants or descendants.
 since_version: 3.0
 retired_version: 
 ---
 ## Prevalue Editor Settings
 
 ![Prevalue Editor](PreValueEditor.jpg)
-
 
 **XPath Start Node** : (Required) The first matched node from this XPath expression will be used as the start node of the tree.
 
@@ -27,13 +26,13 @@ retired_version:
 
 **Output Format** : Defines how the data is saved, it can be either a CSV of node Ids, or an XML fragment.
 
-
+  
 ## Content Editor
 
 ![Content Editor](DataEditor.jpg)
 ---
 
-
+  
 ## External Links
 
 Simon Antony's post on [how to use the CheckBoxTree](http://www.simonantony.net/knowledge-base/articles/using-the-ucomponents-checkboxtree/).

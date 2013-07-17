@@ -18,7 +18,7 @@ retired_version:
 
 **Storage Type** : Either an Xml fragment, or a CSV.
 
-
+  
 ## Optional Attributes
 
 The enum can be decorated with an optional EnumCheckBoxListAttribute to configure how the Text and Value fields are populated, as well as being able to exclude items from the resulting list.
@@ -49,8 +49,10 @@ The enum can be decorated with an optional EnumCheckBoxListAttribute to configur
         Aquamarine 
     }
 
-
+  
 ## Content Editor
+
+From the example enum above:
 
 ![Content Editor](DataEditor.png)
 

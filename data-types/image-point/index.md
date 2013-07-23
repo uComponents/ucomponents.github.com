@@ -22,7 +22,21 @@ If either a _Width_ or _Height_ is > 0 and the other is set to 0, then dimension
 
 ![Content Editor](DataEditor.png)
 
-Image Point allows a marker to be placed on an image and stored as an X,Y coordinate in a CSV string. The marker can be positioned dragging it or updating the X, Y textboxes. It can be removed by dragging it off the image or clearing the textboxes.
+Image Point allows a marker to be placed on an image and positioned by dragging it or updating the X, Y textboxes. It can be removed by dragging it off the image or clearing the textboxes.
+
+The value is stored as an XML fragment:
+
+	<ImagePoint x="256" y="82" width="500" height="290" />
+
+## uQuery
+
+	ImagePoint imagePoint = uQuery.GetCurrentNode().GetProperty<ImagePoint>("officeLocation");
+	int? x = imagePoint.X;
+	int? y = imagePoint.Y;
+	int width = imagePoint.Width;
+	int height = imagePoint.Height;
+	byte percentageX = imagePoint.PercentageX;
+	byte percentageY = imagePoint.PercentageY;	
 
 _The hierarchical nature of aquiring the image allows other data to be associated with any given point, for example by using this datatype in child nodes / media of an ancestor with an image._
 

@@ -29,7 +29,7 @@ The value is stored as an XML fragment:
 	<ImagePoint x="256" y="82" width="500" height="290" />
 
 
-## Strongly Typed Value Model
+## Strongly Typed Model
 
 Whether you use uQuery, DynamicNode or the MVC Published Content Model a strongly typed object can be returned with the following properties:
 

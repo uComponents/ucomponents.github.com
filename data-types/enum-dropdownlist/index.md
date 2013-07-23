@@ -61,5 +61,4 @@ From the example enum above:
 
 using uQuery the original enum instance can be returned eg.
 
-	SiteColour siteColour = uQuery.GetCurrentNode()
-	                              .GetProperty<SiteColour>("siteColours");
+	SiteColour siteColour = uQuery.GetCurrentNode().GetProperty<SiteColour>("siteColours");

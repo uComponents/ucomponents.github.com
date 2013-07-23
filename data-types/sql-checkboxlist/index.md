@@ -30,14 +30,19 @@ The **Storage Type** can be either a CSV or XML fragment of the selected values.
 ![Content Editor](DataEditor.gif)
 
 
+## Example XML
 
+	<SqlCheckBoxList>
+		<value>100</value>
+		<value>101</value>
+	</SqlCheckBoxList>
 
-
-## Examples
+## Example SQL
 
 ### All Member Groups
 
-SELECT	id AS 'Value',
-	text AS 'Text'
-FROM	umbracoNode
-WHERE	nodeObjectType = '366e63b9-880f-4e13-a61c-98069b029728'
+	SELECT	id AS 'Value',
+		text AS 'Text'
+	FROM	umbracoNode
+	WHERE	nodeObjectType = '366e63b9-880f-4e13-a61c-98069b029728'
+

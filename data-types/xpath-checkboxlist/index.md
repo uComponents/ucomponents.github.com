@@ -7,3 +7,18 @@ status: core
 since_version: 2.0
 retired_version: 
 ---
+
+
+
+Example XML
+
+	<XPathCheckBoxList>
+		<nodeId>100</nodeId>
+		<nodeId>100</nodeId>
+	</XPathCheckBoxList>
+
+	or
+
+	<XPathCheckBoxList>
+		<nodeName>ABC</nodeName>
+	</XPathCheckBoxList>

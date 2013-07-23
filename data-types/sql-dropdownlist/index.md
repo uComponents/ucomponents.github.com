@@ -27,3 +27,6 @@ _Note: Prior to release v5.0.0 the full connection string value was stored rathe
 
 
 ## Content Editor
+
+
+## Example XML

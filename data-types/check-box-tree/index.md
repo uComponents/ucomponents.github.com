@@ -31,8 +31,15 @@ retired_version:
 ## Content Editor
 
 ![Content Editor](DataEditor.jpg)
----
 
+
+## Example Xml
+
+	<CheckBoxTree>
+		<nodeId>100</nodeId>
+		<nodeId>101</nodeId>
+	</CheckBoxTree>
+	
   
 ## External Links
 

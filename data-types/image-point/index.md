@@ -25,10 +25,9 @@ If either a _Width_ or _Height_ is > 0 and the other is set to 0, then dimension
 
 Image Point allows a marker to be placed on an image and positioned by dragging it or updating the X, Y textboxes. It can be removed by dragging it off the image or clearing the textboxes.
 
-The value is stored as an XML fragment:
+## Example XML
 
 	<ImagePoint x="256" y="82" width="500" height="290" />
-
 
 ## Strongly Typed Model
 

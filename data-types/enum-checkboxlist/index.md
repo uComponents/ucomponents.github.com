@@ -3,6 +3,7 @@ layout: datatype
 title: Enum CheckBoxList
 category: Data Types
 description: Use an Enum as the data source for a CheckBoxList.
+status: current
 since_version: 
 retired_version: 
 ---
@@ -19,7 +20,7 @@ retired_version:
 **Storage Type** : Either an Xml fragment, or a CSV.
 
   
-## Optional Attributes
+### Optional Enum Attributes
 
 The enum can be decorated with an optional EnumCheckBoxListAttribute to configure how the Text and Value fields are populated, as well as being able to exclude items from the resulting list.
 
@@ -31,7 +32,7 @@ The enum can be decorated with an optional EnumCheckBoxListAttribute to configur
 
     using uComponents.DataTypes.EnumCheckBoxList;
 
-    public enum SiteColours
+    public enum SiteColour
     {
         [EnumCheckBoxList(Enabled = false)]
         Unknown,
@@ -55,6 +56,9 @@ The enum can be decorated with an optional EnumCheckBoxListAttribute to configur
 From the example enum above:
 
 ![Content Editor](DataEditor.png)
+
+
+
 
 
 

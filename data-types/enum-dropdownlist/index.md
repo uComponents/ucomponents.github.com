@@ -18,7 +18,7 @@ retired_version:
 **Default To First Item** : When checked the first item in the enum will be selected, if this option is unchecked, then the first item in the DropDownList will be "Choose...". If this datatype has been set to be mandatory when placed on a document type, then any selection apart from "Choose..." will be valid.
 
   
-## Optional Attributes
+### Optional Enum Attributes
 
 The enum can be decorated with an EnumDropDownListAttribute to configure how the Text and Value fields are are populated, as well as being able to exclude items from the resulting list.
 
@@ -30,7 +30,7 @@ The enum can be decorated with an EnumDropDownListAttribute to configure how the
 
     using uComponents.DataTypes.EnumDropDownList;
 
-    public enum SiteColours
+    public enum SiteColour
     {
         [EnumDropDownList(Enabled = false)]
         Unknown,
@@ -56,6 +56,9 @@ From the example enum above:
 ![Content Editor](DataEditor.png)
 
 
-## uQuery
+## Strongly Typed Model
 
-	SiteColours siteColours = uQuery.GetCurrentNode().GetProperty<SiteColours>("propertyAlias");
+using uQuery the original enum instance can be returned eg.
+
+	SiteColour siteColour = uQuery.GetCurrentNode()
+	                              .GetProperty<SiteColour>("siteColours");

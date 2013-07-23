@@ -3,6 +3,7 @@ layout: datatype
 title: SQL AutoComplete
 category: Data Types
 description: AJAX enabled AutoComplete suggestions for a TextBox that polls data from a SQL source. The selected items can be sorted, and are stored as an XML fragment.
+status: current
 since_version: 5.1.0
 ---
 

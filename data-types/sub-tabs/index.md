@@ -3,6 +3,7 @@ layout: datatype
 title: Sub Tabs
 category: Data Types
 description: Adds a second level of tabs, by hiding specified tabs, and toggling their contents into view based on a series of buttons, or a drop down list.
+status: current
 since_version: 4.0
 retired_version: 
 ---

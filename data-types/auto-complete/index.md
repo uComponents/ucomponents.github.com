@@ -3,6 +3,7 @@ layout: datatype
 title: Auto Complete
 category: Data Types
 description: This data-type provides a way to select multiple nodes (either Content, Media or Members) using an auto-complete interface.
+status: retired
 since_version: 1.0
 retired_version: 5.2
 ---

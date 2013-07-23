@@ -1,8 +1,10 @@
----
+﻿---
 layout: datatype
 title: Elastic TextBox
-since_version: 1.0
 category: Data Types
+description:
+status: current
+since_version: 1.0
 has_video: true
 ---
 

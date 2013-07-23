@@ -3,6 +3,7 @@ layout: datatype
 title: Image Point
 category: Data Types
 description: Place a marker on an image to store an X, Y coordinate value.
+status: current
 since_version: 6.0.0
 ---
 

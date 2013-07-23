@@ -3,6 +3,7 @@ layout: datatype
 title: CheckBox Tree
 category: Data Types
 description: Render a tree of nodes specifying which items have checkboxes for selection. It can be configured to auto select all ascendants or descendants.
+status: current
 since_version: 3.0
 retired_version: 
 ---

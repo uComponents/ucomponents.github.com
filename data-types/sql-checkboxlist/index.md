@@ -3,6 +3,7 @@ layout: datatype
 title: SQL CheckBoxList
 category: Data Types
 description: Use the results of a SQL expression to generate options for a CheckBoxList. The selected values can either be stored in a CSV or an XML fragment.
+status: current
 since_version: 4.1
 ---
 

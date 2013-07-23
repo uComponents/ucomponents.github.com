@@ -3,6 +3,7 @@ layout: datatype
 title: Relation Links
 category: Data Types
 description: Render a list of links to any content / media or members related to the current node, via a given RelationType.
+status: current
 since_version: 4.0
 ---
 

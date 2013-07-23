@@ -3,6 +3,7 @@ layout: datatype
 title: URL Picker
 category: Data Types
 description: This data-type provides a way for a user to select the type (and value) of a URL (either External URL, Content, Media or an Upload).
+status: current
 since_version: 2.0
 ---
 

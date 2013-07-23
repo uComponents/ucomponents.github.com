@@ -2,6 +2,8 @@
 layout: datatype
 title: Character Limit
 category: Data Types
+description:
+status: current
 since_version: 2.0
 ---
 

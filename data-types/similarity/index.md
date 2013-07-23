@@ -3,6 +3,7 @@ layout: datatype
 title: Similarity
 category: Data Types
 description: 
+status: current
 since_version: 2.1
 retired_version: 
 ---

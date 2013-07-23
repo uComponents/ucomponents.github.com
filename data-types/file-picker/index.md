@@ -2,6 +2,8 @@
 layout: datatype
 title: FilePicker
 category: Data Types
+description:
+status: current
 since_version: 1.0
 has_video: true
 ---

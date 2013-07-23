@@ -2,6 +2,8 @@
 layout: datatype
 title: XML DropDownList
 category: Data Types
+description:
+status: current
 since_version: 6.0.0
 ---
 

@@ -3,7 +3,7 @@ layout: datatype
 title: XPath Templatable List
 category: Data Types
 description: Use an XPath expression to specify a collection of nodes / media or members can be selected, this collection can be sorted and limited and the markup for each item defined by simple text template.
-
+status: current
 since_version: 6.0.0
 ---
 

@@ -2,6 +2,8 @@
 layout: datatype
 title: Text Image
 category: Data Types
+description:
+status: retired
 since_version: 2.1.0
 retired_version: 6.0.0
 ---

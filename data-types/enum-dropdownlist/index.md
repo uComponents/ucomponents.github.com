@@ -3,6 +3,7 @@ layout: datatype
 title: Enum DropDownList
 category: Data Types
 description: Use an Enum as the data source for a DropDownList.
+status: current
 since_version: 3.0
 retired_version: 
 ---

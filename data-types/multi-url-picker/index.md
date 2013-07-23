@@ -2,6 +2,8 @@
 layout: datatype
 title: Multi-URL Picker
 category: Data Types
+description:
+status: current
 since_version: 3.0
 ---
 

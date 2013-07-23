@@ -28,15 +28,17 @@ The value is stored as an XML fragment:
 
 	<ImagePoint x="256" y="82" width="500" height="290" />
 
-## uQuery
 
-	ImagePoint imagePoint = uQuery.GetCurrentNode().GetProperty<ImagePoint>("officeLocation");
-	int? x = imagePoint.X;
-	int? y = imagePoint.Y;
-	int width = imagePoint.Width;
-	int height = imagePoint.Height;
-	byte percentageX = imagePoint.PercentageX;
-	byte percentageY = imagePoint.PercentageY;	
+## Strongly Typed Value Model
+
+Whether you use uQuery, DynamicNode or the MVC Published Content Model a strongly typed object can be returned with the following properties:
+
+	int? 	X
+	int? 	Y
+	int 	Width
+	int 	Height
+	byte 	PercentageX
+	byte 	PercentageY
 
 _The hierarchical nature of aquiring the image allows other data to be associated with any given point, for example by using this datatype in child nodes / media of an ancestor with an image._
 

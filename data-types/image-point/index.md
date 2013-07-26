@@ -31,8 +31,9 @@ Image Point allows a marker to be placed on an image and positioned by dragging 
 
 ## Strongly Typed Model
 
-Whether you use uQuery, DynamicNode or the MVC Published Content Model a strongly typed object can be returned with the following properties:
+Whether you use uQuery, DynamicNode or the IPublishedContent Model a strongly typed object can be returned with the following properties:
 
+	bool	HasCoordinate
 	int? 	X
 	int? 	Y
 	int 	Width

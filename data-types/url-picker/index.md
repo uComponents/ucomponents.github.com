@@ -53,3 +53,25 @@ The data can be saved in CSV, XML or JSON format (the future!), the three lookin
     }
 
 Additionally, if the URL Picker is to be used in a .NET control, you can deserialize any of the above data strings to a strongly typed object - using the static method `uComponents.Core.DataTypes.UrlPicker.Dto.UrlPickerState.Deserialize` (literal values for the mode are specificed at `uComponents.Core.DataTypes.UrlPicker.UrlPickerMode`).  Nice!
+
+##Razor/C# samples
+
+If you are using Umbraco v6+ and uComponents v6+ then you can use the included property editor property converter.
+
+e.g. using the strongly typed Model:
+
+	@using uComponents.DataTypes.UrlPicker
+	@using uComponents.DataTypes.UrlPicker.Dto;
+	
+	@{                    
+	    if (Model.Content.HasValue("urlPicker"))
+	    {
+            var urlPicker = Model.Content.GetPropertyValue<UrlPickerState>("urlPicker");
+	           if (urlPicker != null)
+	           {
+	            	var urlPickerLinkTarget = (urlPicker.NewWindow) ? " target=\"_blank\"" : String.Empty;                            
+	                var urlPickerLinkUrl = urlPicker.Mode == UrlPickerMode.Content && urlPicker.NodeId != null ? Umbraco.NiceUrl((int)urlPicker.NodeId) : urlPicker.Url;
+                   <a href="@urlPickerLinkUrl" @Html.Raw(urlPickerLinkTarget)>@urlPicker.Title</a> 
+	           }
+	    }
+	}

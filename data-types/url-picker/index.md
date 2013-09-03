@@ -60,18 +60,16 @@ If you are using Umbraco v6+ and uComponents v6+ then you can use the included p
 
 e.g. using the strongly typed Model:
 
-	@using uComponents.DataTypes.UrlPicker
 	@using uComponents.DataTypes.UrlPicker.Dto;
-	
-	@{
+	@{                    
 		if (Model.Content.HasValue("urlPicker"))
 		{
-			var urlPicker = Model.Content.GetPropertyValue<UrlPickerState>("urlPicker");
-			if (urlPicker != null)
-			{
-				var urlPickerLinkTarget = (urlPicker.NewWindow) ? " target=\"_blank\"" : String.Empty;                            
-				var urlPickerLinkUrl = urlPicker.Mode == UrlPickerMode.Content && urlPicker.NodeId != null ? Umbraco.NiceUrl((int)urlPicker.NodeId) : urlPicker.Url;
-				<a href="@urlPickerLinkUrl" @Html.Raw(urlPickerLinkTarget)>@urlPicker.Title</a> 
-			}
+	        var urlPicker = Model.Content.GetPropertyValue<UrlPickerState>("urlPicker");
+		        if (urlPicker != null)
+		        {
+		            var urlPickerLinkTarget = (urlPicker.NewWindow) ? " target=\"_blank\"" : String.Empty;                            
+		            <a href="@urlPicker.Url" @Html.Raw(urlPickerLinkTarget)>@urlPicker.Title</a> 
+		        }
 		}
 	}
+ 

@@ -25,21 +25,11 @@ In the example above, the datatype has been configured to use the three oldest m
 
 **List Height** : Height in px, of the whole control - useful for when there is a sizeable amount of data in the source list; a scroll bar will be added if the height of all items exceeds this value.
 
-**Item Height** : Height in px of each item.
+**Macro** : (Optional) macro to use as the rendering mechanism for each item. The selected macro should have a parameter called 'id' of type number, and return the markup to be used for each item in the list - if the macro returns an empty string, then the item asscociated with that macro execution will be omited from the list - this allows additional configuration behaviour, eg. such as preventing items from being selectable if the current user doens't have permission etc...
 
-**Template Type** : Sets the template rendering mechanism to _Text Template_ or _Macro_.
+**Css File** : (Optional) css file used to style the list.
 
-**Text Template** : Shown when the _Template Type_ is set to _Text Template_. This textarea sets the markup to used for each item in the list - values can be injected using handlebars style syntax, and a simple token matching system allows for associated data to be rendered - for example if a node has a picker that selects a media item, then it's also possible to get at the data for this picked media item:
-
-eg. \{\{pickedMediaPropertyAlias:media:mediaPropertyAlias\}\}
-
-it's also possible to get associated members or nodes with using the same approach:
-
-eg. \{\{pickedMemberPropertyAlias:member:memberPropertyAlias\}\}
-or  \{\{pickedNodeProprtyAlias:node:nodePropertyAlias\}\}
-	
-
-**Macro Template** : Shown when the _Template Type_ is set to _Macro_, this field is a drop down list of all available macros. The selected macro should have a parameter called 'id' of type number, and return the markup to be used for each item in the list - if the macro returns an empty string, then the item asscociated with that macro execution will be omited from the list - this allows additional configuration behaviour, eg. such as preventing items from being selectable if the current user doens't have permission etc...
+**Script File** : (Optional) script to run after the data-type has finished it's initialization.
 
 **Min Items** : Number of items that must be selected. The Content Editor UI illustrates this value by drawing empty boxes as placeholders to indicate that items need to be selected.
 

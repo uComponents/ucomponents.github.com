@@ -4,7 +4,7 @@ title: Compatible Datatypes
 category: DataType Grid
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 since_version: 3.0
-sidebar: <h3>Table of contents</h3>
+sidebar: <h4>Table of contents</h4>
     <ul>
         <li><a href="../">Usage</a></li>
         <li>Compatible Datatypes</li>

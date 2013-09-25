@@ -5,8 +5,8 @@ layout: default
 <div class="page-header">
 	<h1>{{ page.title }}</h1>
 	{% if page.description %}<p>{{ page.description }}</p>{% endif %}
-	{% if page.retired_version %}<span class="label label-inverse pull-right" style="margin-left:5px;" title="Retired from uComponents in version {{ page.retired_version }}">v{{ page.retired_version }}</span> <i class="icon-arrow-right pull-right"></i> {% endif %}
-	{% if page.since_version %}<span class="label label-info pull-right" style="margin-right:5px;" title="Available since uComponents version {{ page.since_version }}">v{{ page.since_version }}</span>{% endif %}
+	{% if page.retired_version %}<span class="label label-inverse pull-right" style="margin-left:5px;" title="Retired from uComponents in version {{ page.retired_version }}">Retired in v{{ page.retired_version }}</span> <i class="icon-arrow-right pull-right"></i> {% endif %}
+	{% if page.since_version %}<span class="label label-info pull-right" style="margin-right:5px;" title="Available since uComponents version {{ page.since_version }}">Created in v{{ page.since_version }}</span>{% endif %}
 </div>
 
 <div class="row-fluid">
@@ -14,7 +14,7 @@ layout: default
 	<section class="span9">
 		{{ content }}
 	</section>
-	<aside class="span3 alert alert-block alert-info">
+	<aside class="span3 alert alert-block alert-info sidebar">
 		{{ page.sidebar }}
 	</aside>
 	{% else %}

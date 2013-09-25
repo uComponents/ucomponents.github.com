@@ -4,7 +4,7 @@ title: Razor Samples
 category: DataType Grid
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 since_version: 3.0
-sidebar: <h3>Table of contents</h3>
+sidebar: <h4>Table of contents</h4>
     <ul>
         <li><a href="../">Usage</a></li>
         <li><a href="../compatible-datatypes">Compatible Datatypes</a></li>
@@ -13,6 +13,18 @@ sidebar: <h3>Table of contents</h3>
         <li><a href="../integration">Integration</a></li>
     </ul>
 ---
+
+<h3>GetPropertyValue support</h3>
+<span class="versions">
+	<strong>Versions:</strong>
+	<span class="badge badge-warning">6.0.x</span>
+</span>
+
+You can get property values from a `GridCell` with support for `PropertyEditorValueConverter` handlers.  
+Just get a reference to a `GridCell`, and call `GetPropertyValue()` on it.
+
+    @Model.DataTypeGrid[0].Image.GetPropertyValue()
+
 
 <h3>Getting DataTypeGrid values</h3>
 <span class="versions">

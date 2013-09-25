@@ -5,7 +5,7 @@ category: Data Types
 description: DataType Grid is basically a DataType that allows you to store DataTypes in a grid-like fashion. Think Excel, but with other Datatypes instead of textboxes.
 status: current
 since_version: 3.0
-sidebar: <h3>Table of contents</h3>
+sidebar: <h4>Table of contents</h4>
     <ul>
         <li>Usage</li>
         <li><a href="compatible-datatypes">Compatible Datatypes</a></li>
@@ -17,6 +17,18 @@ sidebar: <h3>Table of contents</h3>
 ## Usage ##
 
 ### Prevalue Editor ###
+<span class="versions">
+	<strong>Versions:</strong>
+	<span class="badge badge-warning">3.0.x</span>
+	<span class="badge badge-warning">3.1.x</span>
+	<span class="badge badge-warning">4.0.x</span>
+	<span class="badge badge-warning">4.1.x</span>
+	<span class="badge badge-warning">5.0.x</span>
+	<span class="badge badge-warning">5.1.x</span>
+	<span class="badge badge-warning">5.2.x</span>
+	<span class="badge badge-warning">5.3.x</span>
+	<span class="badge badge-warning">5.4.x</span>
+</span>
 
 <img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
 

@@ -5,7 +5,7 @@ category: DataType Grid
 excerpt: DataType Grid is localizable, meaning you can make your own translation using the Dictionary in the Umbraco backoffice.<br/><br/>
     Please consult the table of aliases below to create your own translation.
 since_version: 3.0
-sidebar: <h3>Table of contents</h3>
+sidebar: <h4>Table of contents</h4>
     <ul>
         <li><a href="../">Usage</a></li>
         <li><a href="../compatible-datatypes">Compatible Datatypes</a></li>

@@ -13,9 +13,13 @@ sidebar: <h3>Table of contents</h3>
         <li><a href="../integration">Integration</a></li>
     </ul>
 ---
-### Getting DataTypeGrid values ###
 
-#### v5.4.0 ####
+<h3>Getting DataTypeGrid values</h3>
+<span class="versions">
+	<strong>Versions:</strong>
+	<span class="badge badge-warning">5.4.x</span>
+	<span class="badge badge-warning">5.5.x</span>
+</span>
 
 This example uses a document type that has the following DTG datatype:
 
@@ -94,7 +98,18 @@ This should give you the following output:
 
 <img src="../RazorSampleOutput_post54.JPG" width="500"/>
 
-#### Up until v5.4.0 ####
+<h3>Getting DataTypeGrid values</h3>
+<span class="versions">
+	<strong>Versions:</strong>
+	<span class="badge badge-warning">3.0.x</span>
+	<span class="badge badge-warning">3.1.x</span>
+	<span class="badge badge-warning">4.0.x</span>
+	<span class="badge badge-warning">4.1.x</span>
+	<span class="badge badge-warning">5.0.x</span>
+	<span class="badge badge-warning">5.1.x</span>
+	<span class="badge badge-warning">5.2.x</span>
+</span>
+
 This example uses a document type that has the following DTG datatype:
     
 <img src="../PreValueEditor_pre54.JPG" width="700" alt="Prevalue Editor"/>    

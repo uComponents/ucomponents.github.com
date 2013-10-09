@@ -425,7 +425,7 @@ sidebar: <h4>Table of contents</h4>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uTube</td>
+            <td><a href="http://our.umbraco.org/projects/website-utilities/utube">uTube</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>          

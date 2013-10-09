@@ -208,219 +208,217 @@ sidebar: <h4>Table of contents</h4>
   </thead>
   <tbody>
         <tr class="success">
-            <td>uComponents: XPath Auto Complete</td>
+            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath Auto Complete</a></td>
             <td>v6.0</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Character Limit</td>
+            <td><a href="http://ucomponents.org/data-types/character-limit/">uComponents: Character Limit</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td>uComponents: Checkbox Tree</td>
+            <td><a href="http://ucomponents.org/data-types/check-box-tree/">uComponents: Checkbox Tree</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Country Picker</td>
+            <td><a href="http://ucomponents.org/data-types/country-picker/">uComponents: Country Picker</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Dropdown CheckList</td>
+            <td><a href="http://ucomponents.org/data-types/dropdown-checklist/">uComponents: Dropdown CheckList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Elastic TextBox</td>
+            <td><a href="http://ucomponents.org/data-types/elastic-textbox/">uComponents: Elastic TextBox</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.codeplex.com/wikipage?title=Enum CheckBoxList">uComponents: Enum CheckBoxList</a></td>
+            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum CheckBoxList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>
-                <a href="http://ucomponents.codeplex.com/wikipage?title=Enum DropDownList">uComponents: Enum DropDownList </a>
-            </td>
-            <td></td>
+            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum DropDownList</a></td>
+            <td>v5.5.3</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: File DropDownList</td>
+            <td><a href="http://ucomponents.org/data-types/file-dropdownlist/">uComponents: File DropDownList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: FilePicker</td>
+            <td><a href="http://ucomponents.org/data-types/file-picker/">uComponents: FilePicker</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Incremental TextBox</td>
+            <td><a href="http://ucomponents.org/data-types/incremental-textbox/">uComponents: Incremental TextBox</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Multi-URL Picker</td>
+            <td><a href="http://ucomponents.org/data-types/multi-url-picker/">uComponents: Multi-URL Picker</a></td>
             <td>v6.0</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td>uComponents: Multiple Dates</td>
+            <td><a href="http://ucomponents.org/data-types/multiple-dates/">uComponents: Multiple Dates</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Notes</td>
+            <td><a href="http://ucomponents.org/data-types/notes/">uComponents: Notes</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="info">
-            <td>uComponents: Property Picker</td>
+            <td><a href="http://ucomponents.org/data-types/property-picker/">uComponents: Property Picker</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td>uComponents: Relation Links</td>
+            <td><a href="http://ucomponents.org/data-types/relation-links/">uComponents: Relation Links</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td>uComponents: Render Macro</td>
+            <td><a href="http://ucomponents.org/data-types/render-macro/">uComponents: Render Macro</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.codeplex.com/wikipage?title=Similarity&amp;referringTitle=Documentation">uComponents: Similarity</a></td>
+            <td><a href="http://ucomponents.org/data-types/similarity/">uComponents: Similarity</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td>uComponents: SQL AutoComplete</td>
+            <td><a href="http://ucomponents.org/data-types/sql-auto-complete/">uComponents: SQL AutoComplete</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.codeplex.com/wikipage?title=SQL DropDownList&amp;referringTitle=Documentation">uComponents: SQL DropDownList</a></td>
+            <td><a href="http://ucomponents.org/data-types/sql-dropdownlist/">uComponents: SQL DropDownList</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td>uComponents: SQL CheckBoxList</td>
+            <td><a href="http://ucomponents.org/data-types/sql-checkboxlist/">uComponents: SQL CheckBoxList</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.codeplex.com/wikipage?title=TextstringArray&amp;referringTitle=Documentation">uComponents: Textstring Array</a></td>
+            <td><a href="http://ucomponents.org/data-types/textstring-array/">uComponents: Textstring Array</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td>uComponents: ToggleBox</td>
+            <td><a href="http://ucomponents.org/data-types/toggle-box/">uComponents: ToggleBox</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td>uComponents: URL Picker</td>
+            <td><a href="http://ucomponents.org/data-types/url-picker/">uComponents: URL Picker</a></td>
             <td>v5.4.0</td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="info">
-            <td>uComponents: User Picker</td>
+            <td><a href="http://ucomponents.org/data-types/user-picker/">uComponents: User Picker</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td>uComponents: XPath AutoComplete</td>
+            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath AutoComplete</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="info">
-            <td>Digibiz Advanced Media Picker (DAMP)</td>
+            <td><a href="http://our.umbraco.org/projects/backoffice-extensions/digibiz-advanced-media-picker">Digibiz Advanced Media Picker (DAMP)</a></td>
             <td></td>
             <td></td>
             <td></td>          
             <td>X</td>
         </tr>
         <tr class="success">
-            <td>Google Maps Datatype</td>
+            <td><a href="http://our.umbraco.org/projects/backoffice-extensions/google-maps-datatype">Google Maps Datatype</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="error">
-            <td>Universal Media Picker</td>
+            <td><a href="http://our.umbraco.org/projects/backoffice-extensions/universal-media-picker">Universal Media Picker</a></td>
             <td></td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="error">
-            <td>True Color Picker</td>
+            <td><a href="http://our.umbraco.org/projects/backoffice-extensions/true-color-picker">True Color Picker</a></td>
             <td></td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="success">
-            <td>Markdown Editor (from v1.4)</td>
+            <td><a href="http://our.umbraco.org/projects/backoffice-extensions/markdown-editor">Markdown Editor (only works with v1.4 and upwards)</a></td>
             <td>v5.4.0</td>
             <td></td>
             <td></td>          

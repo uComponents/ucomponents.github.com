@@ -47,6 +47,18 @@ sidebar: <h4>Table of contents</h4>
 
 
 ### Content Editor ###
+<span class="versions">
+	<strong>Versions:</strong>
+	<span class="badge badge-warning">3.0.x</span>
+	<span class="badge badge-warning">3.1.x</span>
+	<span class="badge badge-warning">4.0.x</span>
+	<span class="badge badge-warning">4.1.x</span>
+	<span class="badge badge-warning">5.0.x</span>
+	<span class="badge badge-warning">5.1.x</span>
+	<span class="badge badge-warning">5.2.x</span>
+	<span class="badge badge-warning">5.3.x</span>
+	<span class="badge badge-warning">5.4.x</span>
+</span>
 
 #### Grid ####
 <img src="contenteditor_post54.JPG" width="700" alt="Content Editor"/>    

@@ -44,8 +44,9 @@ sidebar: <h4>Table of contents</h4>
 **DataType:** The editor datatype for the column. See [using custom datatypes](compatible-datatypes/#using_custom_datatypes) if you want to use custom (untested) datatypes.    
 **Mandatory:** Toggles whether a value must be set for this column when inserting or updating a row.   
 **Validation:** Custom Regex validation for the column value. Leave blank to disable.
-
-
+  
+  
+  
 ### Content Editor ###
 <span class="versions">
 	<strong>Versions:</strong>

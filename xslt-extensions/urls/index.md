@@ -52,7 +52,7 @@ _Returns_: Complete url with alt template merged in.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:AddAltTemplate(url, 'rss', false())" />
+	<xsl:value-of select="ucomponents.urls:AddAltTemplate(umbraco.library:NiceUrl($currentPage/@id), 'rss', false())" />
 
 *****
 
@@ -69,7 +69,7 @@ _Returns_: The updated Url
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:AppendOrUpdateQueryString(url, key, value)" />
+	<xsl:value-of select="ucomponents.urls:AppendOrUpdateQueryString(umbraco.library:NiceUrl($currentPage/@id), 'page', '2')" />
 
 *****
 
@@ -84,7 +84,7 @@ _Returns_: Returns a 'safe' URL, removing illegal characters.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:FormatUrl(input)" />
+	<xsl:value-of select="ucomponents.urls:FormatUrl($currentPage/@nodeName)" />
 
 *****
 
@@ -103,7 +103,7 @@ This method triggers the [OnBeforeNiceUrlGenerated](#onbeforeniceurlgenerated) a
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:NiceUrl(nodeId, altTemplateAlias, useQueryString)" />
+	<xsl:value-of select="ucomponents.urls:NiceUrl($currentPage/@id, 'rss', false())" />
 
 *****
 
@@ -118,7 +118,7 @@ _Returns_: Returns the hostname for the node Id.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:GetHostName(nodeId)" />
+	<xsl:value-of select="ucomponents.urls:GetHostName($currentPage/@id)" />
 
 *****
 
@@ -138,7 +138,7 @@ _Returns_: Returns the text (System.String) from a given URL.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:GetTextByUrl(url)" />
+	<xsl:value-of select="ucomponents.urls:GetTextByUrl('http://ucomponents.org/LICENSE')" />
 
 *****
 
@@ -161,7 +161,7 @@ Do not over-use this method. It makes many database calls and will be slow!
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:GuessNiceUrl(nodeId)" />
+	<xsl:value-of select="ucomponents.urls:GuessNiceUrl(1066)" />
 
 
 *****
@@ -172,12 +172,11 @@ Dispatches a BeforeNiceUrlGenerated event.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | `System.Int32@` | |
+| nodeId | `System.Int32` | |
 
-#### XSLT Example
+#### C# Example
 
-	<xsl:value-of select="ucomponents.urls:OnBeforeNiceUrlGenerated(nodeId)" />
-
+	uComponents.XsltExtensions.Urls.BeforeNiceUrlGenerated += Urls_BeforeNiceUrlGenerated;
 
 *****
 
@@ -187,13 +186,12 @@ Dispatches an AfterNiceUrlGenerated event.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | `System.Int32@` | |
-| url | `System.String@` | |
+| nodeId | `System.Int32` | |
+| url | `System.String` | |
 
-#### XSLT Example
+#### C# Example
 
-	<xsl:value-of select="ucomponents.urls:OnAfterNiceUrlGenerated(nodeId, url)" />
-
+	uComponents.XsltExtensions.Urls.AfterNiceUrlGenerated += Urls_AfterNiceUrlGenerated;
 
 *****
 

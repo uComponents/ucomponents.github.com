@@ -18,40 +18,41 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 *****
 
 ## Methods
-Here are available methods in the ```Urls``` library:
+Here are available methods in the `Urls` library:
 
-* [AppendOrUpdateQueryString](#appendorupdatequerystring)
+* [AddAltTemplate](#addalttemplate)
 * [AppendOrUpdateQueryString](#appendorupdatequerystring)
 * [FormatUrl](#formaturl)
-* [NiceUrl](#niceurl)
-* [NiceUrl](#niceurl)
-* [NiceUrl](#niceurl)
 * [GetHostName](#gethostname)
-* [GetNodeIdByUrl](#getnodeidbyurl)
+* <del>[GetNodeIdByUrl](#getnodeidbyurl)</del>
 * [GetTextByUrl](#gettextbyurl)
-* [GetXmlNodeByUrl](#getxmlnodebyurl)
+* <del>[GetXmlNodeByUrl](#getxmlnodebyurl)</del>
 * [GuessNiceUrl](#guessniceurl)
-* [ConstructQueryString](#constructquerystring)
-* [GetNiceUrl](#getniceurl)
+* [NiceUrl](#niceurl)
+
+## Events
+Here are available events in the `Urls` library:
+
 * [OnBeforeNiceUrlGenerated](#onbeforeniceurlgenerated)
 * [OnAfterNiceUrlGenerated](#onafterniceurlgenerated)
 
 *****
 
-### AppendOrUpdateQueryString
-Appends or updates a query string value to the current Url
-_Returns_: The updated Url
+### AddAltTemplate
+Appends the alternative template to the url as a querystring or folder instead of a querystring. Is "use directory urls" aware if set.
+_Returns_: Complete url with alt template merged in.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| key | ```System.String``` | |
-| value | ```System.String``` | |
+| url | `System.String` | |
+| altTemplateAlias | `System.String` | |
+| useQueryString | `System.Boolean` | |
+| useDirectoryUrls | `System.Boolean` | _(optional - defaults to `GlobalSettings.UseDirectoryUrls`)_ |
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:AppendOrUpdateQueryString(key, value)" />
-
+	<xsl:value-of select="ucomponents.urls:AddAltTemplate(url, 'rss', false())" />
 
 *****
 
@@ -62,14 +63,13 @@ _Returns_: The updated Url
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| url | ```System.String``` | |
-| key | ```System.String``` | |
-| value | ```System.String``` | |
+| url | `System.String` | _(optional - defaults to `Request.RawUrl`)_ |
+| key | `System.String` | |
+| value | `System.String` | |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:AppendOrUpdateQueryString(url, key, value)" />
-
 
 *****
 
@@ -80,63 +80,30 @@ _Returns_: Returns a 'safe' URL, removing illegal characters.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| input | ```System.String``` | |
+| input | `System.String` | |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:FormatUrl(input)" />
 
-
 *****
 
 ### NiceUrl
-Returns a nicely formated Url for a given node.
+Returns a nicely formatted Url for a given node and alternative template.
 _Returns_: The NiceUrl for the node id.
+
+This method triggers the [OnBeforeNiceUrlGenerated](#onbeforeniceurlgenerated) and[OnAfterNiceUrlGenerated](#onafterniceurlgenerated) events.
 
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | ```System.Int32``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:NiceUrl(nodeId)" />
-
-
-*****
-
-### NiceUrl
-Returns a nicely formated Url for a given node and alternative template.
-_Returns_: The NiceUrl for the node id.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| nodeId | ```System.Int32``` | |
-| altTemplateAlias | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:NiceUrl(nodeId, altTemplateAlias)" />
-
-
-*****
-
-### NiceUrl
-Returns a nicely formated Url for a given node and alternative template.
-_Returns_: The NiceUrl for the node id.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| nodeId | ```System.Int32``` | |
-| altTemplateAlias | ```System.String``` | |
-| useQueryString | ```System.Boolean``` | |
+| nodeId | `System.Int32` | |
+| altTemplateAlias | `System.String` | _(optional - defaults to `null`)_ |
+| useQueryString | `System.Boolean` | _(optional - defaults to `false`)_ |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:NiceUrl(nodeId, altTemplateAlias, useQueryString)" />
-
 
 *****
 
@@ -147,28 +114,16 @@ _Returns_: Returns the hostname for the node Id.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | ```System.Int32``` | |
+| nodeId | `System.Int32` | |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:GetHostName(nodeId)" />
 
-
 *****
 
 ### GetNodeIdByUrl
-Gets the node Id by URL.
-_Returns_: Returns the node Id.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| url | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:GetNodeIdByUrl(url)" />
-
+**Obsolete:** Please use [`ucomponents.nodes:GetNodeIdByUrl`](http://ucomponents.org/xslt-extensions/nodes/#getnodeidbyurl).
 
 *****
 
@@ -179,28 +134,16 @@ _Returns_: Returns the text (System.String) from a given URL.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| url | ```System.String``` | |
+| url | `System.String` | |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:GetTextByUrl(url)" />
 
-
 *****
 
 ### GetXmlNodeByUrl
-Gets the XML node by URL.
-_Returns_: Returns the XML for the node.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| url | ```System.String``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:GetXmlNodeByUrl(url)" />
-
+**Obsolete:** Please use [`ucomponents.nodes:GetXmlNodeByUrl`](http://ucomponents.org/xslt-extensions/nodes/#getxmlnodebyurl).
 
 *****
 
@@ -208,48 +151,17 @@ _Returns_: Returns the XML for the node.
 Guesses the NiceUrl based on the node id.
 _Returns_: Returns a guestimate of the NiceUrl for a node id.
 
+`GuessNiceUrl` is not very performant when attempting to guess the URL for unpublished nodes.
+Do not over-use this method. It makes many database calls and will be slow!
+
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | ```System.Int32``` | |
+| nodeId | `System.Int32` | |
 
 #### XSLT Example
 
 	<xsl:value-of select="ucomponents.urls:GuessNiceUrl(nodeId)" />
-
-
-*****
-
-### ConstructQueryString
-Constructs a NameValueCollection into a query string.
-_Returns_: A key/value structured query string, delimited by the specified String
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| parameters | ```System.Collections.Specialized.NameValueCollection``` | |
-| delimiter | ```System.String``` | |
-| omitEmpty | ```System.Boolean``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:ConstructQueryString(parameters, delimiter, omitEmpty)" />
-
-
-*****
-
-### GetNiceUrl
-Gets the NiceUrl.
-_Returns_: Returns the NiceUrl for the node id.
-
-#### Parameters
-| Name | Type | Notes |
-|------|------|-------|
-| nodeId | ```System.Int32``` | |
-
-#### XSLT Example
-
-	<xsl:value-of select="ucomponents.urls:GetNiceUrl(nodeId)" />
 
 
 *****
@@ -260,7 +172,7 @@ Dispatches a BeforeNiceUrlGenerated event.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | ```System.Int32@``` | |
+| nodeId | `System.Int32@` | |
 
 #### XSLT Example
 
@@ -275,8 +187,8 @@ Dispatches an AfterNiceUrlGenerated event.
 #### Parameters
 | Name | Type | Notes |
 |------|------|-------|
-| nodeId | ```System.Int32@``` | |
-| url | ```System.String@``` | |
+| nodeId | `System.Int32@` | |
+| url | `System.String@` | |
 
 #### XSLT Example
 

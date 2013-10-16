@@ -24,9 +24,9 @@ Here are available methods in the `Urls` library:
 * [AppendOrUpdateQueryString](#appendorupdatequerystring)
 * [FormatUrl](#formaturl)
 * [GetHostName](#gethostname)
-* <del>[GetNodeIdByUrl](#getnodeidbyurl)</del>
+* ~~[GetNodeIdByUrl](#getnodeidbyurl)~~
 * [GetTextByUrl](#gettextbyurl)
-* <del>[GetXmlNodeByUrl](#getxmlnodebyurl)</del>
+* ~~[GetXmlNodeByUrl](#getxmlnodebyurl)~~
 * [GuessNiceUrl](#guessniceurl)
 * [NiceUrl](#niceurl)
 

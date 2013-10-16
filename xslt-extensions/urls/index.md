@@ -24,9 +24,9 @@ Here are available methods in the `Urls` library:
 * [AppendOrUpdateQueryString](#appendorupdatequerystring)
 * [FormatUrl](#formaturl)
 * [GetHostName](#gethostname)
-* [~~GetNodeIdByUrl~~](#getnodeidbyurl)
+* [GetNodeIdByUrl](#getnodeidbyurl)
 * [GetTextByUrl](#gettextbyurl)
-* [~~GetXmlNodeByUrl~~](#getxmlnodebyurl)
+* [GetXmlNodeByUrl](#getxmlnodebyurl)
 * [GuessNiceUrl](#guessniceurl)
 * [NiceUrl](#niceurl)
 
@@ -47,7 +47,7 @@ _Returns_: Complete url with alt template merged in.
 |------|------|-------|
 | url | `System.String` | |
 | altTemplateAlias | `System.String` | |
-| useQueryString | `System.Boolean` | |
+| useQueryString | `System.Boolean` | _(optional - defaults to `false`)_ |
 | useDirectoryUrls | `System.Boolean` | _(optional - defaults to `GlobalSettings.UseDirectoryUrls`)_ |
 
 #### XSLT Example

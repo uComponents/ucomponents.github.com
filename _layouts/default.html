@@ -192,9 +192,6 @@ navigation:
 								<ul>{% for subpage in item.subnav %}
 									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
-
-
-
 									</li>{% endfor %}
 								</ul>
 							</li>{% endfor %}
@@ -209,7 +206,7 @@ navigation:
 			<hr>
 			
 			<footer>
-				<p style="float: left;">{{ site.title }} &copy; The Umbraco Community 2012</p>
+				<p style="float: left;">{{ site.title }} &copy; The Umbraco Community 2013</p>
 				<p style="float: right;">Last updated on: {{ site.time | date: "%a %d %b %Y" }}</p>
 				
 			</footer>

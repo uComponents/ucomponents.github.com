@@ -64,3 +64,4 @@ In the case of TextstringArray, the object type is a `List<string[]>` (e.g. a li
 		<xsl:value-of select="value[2]" />
 	</xsl:for-each>
 
+<!-- Advanced XSLT by @greystate : https://gist.github.com/greystate/7240897 -->

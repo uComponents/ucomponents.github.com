@@ -78,6 +78,11 @@ aside.alert h3:first-child {
     margin-top: 0;
 }
 
+.cta-btns {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
 @media screen and (max-width: 979px)
 {
 	.fork-me {display: none;}

@@ -9,22 +9,22 @@ layout: default
 	{% if page.since_version %}<span class="label label-info pull-right" style="margin-right:5px;" title="Available since uComponents version {{ page.since_version }}">Created in v{{ page.since_version }}</span>{% endif %}
 </div>
 
-<div class="sub-header">
-	<h2>{{ page.title }}</h2>
-	{% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
-</div>
-
 <div class="row-fluid">
-	{% if page.sidebar %}
 	<section class="span9">
+		<div class="sub-header">
+			<h2>{{ page.title }}</h2>
+			{% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
+		</div>
 		{{ content }}
 	</section>
-	<aside class="span3 alert alert-block alert-info sidebar">
-		{{ page.sidebar }}
-	</aside>
-	{% else %}
-	<section class="span12">
-		{{ content }}
+	<section class="span3">
+		<div class="cta-btns">
+			<a href="https://github.com/uComponents/ucomponents.github.com/edit/master{{ page.url | replace: 'index.html', 'index.md' }}" class="btn btn-primary"><i class="icon-edit icon-white"></i> Improve this doc</a>
+		</div>
+		{% if page.sidebar %}
+		<aside class="alert alert-block alert-info sidebar">
+			{{ page.sidebar }}
+		</aside>
+		{% endif %}
 	</section>
-	{% endif %}
 </div>

@@ -10,10 +10,12 @@ since_version: 4.0
 ## Prevalue Editor Settings
 
 Configuration is simply a matter of selecting a Relation Type.
+As of v6, two additional configuration options were added, the first to select a rendering direction (Horizontal or Vertical) and
+the other to specify an optional macro that can be used for templating each rendered item.
 
 ## Content Editor
 
-The configured Relation Type is queried using the id of the current node / media / member and any related nodes / media or members are rendered as a list of links.
+The configured Relation Type is queried using the id of the current node / media / member and any related nodes / media or members are rendered as a list of links
 
 
 ## External Links

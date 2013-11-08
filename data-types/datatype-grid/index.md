@@ -28,6 +28,8 @@ sidebar: <h4>Table of contents</h4>
 	<span class="badge badge-warning">5.2.x</span>
 	<span class="badge badge-warning">5.3.x</span>
 	<span class="badge badge-warning">5.4.x</span>
+	<span class="badge badge-warning">5.5.x</span>
+	<span class="badge badge-warning">6.0.x</span>
 </span>
 
 <img src="PreValueEditor_post54.JPG" width="700" alt="Prevalue Editor"/>
@@ -59,6 +61,8 @@ sidebar: <h4>Table of contents</h4>
 	<span class="badge badge-warning">5.2.x</span>
 	<span class="badge badge-warning">5.3.x</span>
 	<span class="badge badge-warning">5.4.x</span>
+	<span class="badge badge-warning">5.5.x</span>
+	<span class="badge badge-warning">6.0.x</span>
 </span>
 
 #### Grid ####

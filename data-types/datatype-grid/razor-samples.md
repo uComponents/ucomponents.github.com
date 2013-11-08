@@ -31,6 +31,7 @@ Just get a reference to a `GridCell`, and call `GetPropertyValue()` on it.
 	<strong>Versions:</strong>
 	<span class="badge badge-warning">5.4.x</span>
 	<span class="badge badge-warning">5.5.x</span>
+	<span class="badge badge-warning">6.0.x</span>
 </span>
 
 This example uses a document type that has the following DTG datatype:

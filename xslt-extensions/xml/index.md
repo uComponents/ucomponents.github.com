@@ -164,7 +164,7 @@ _Returns_: Returns an XPathNodeIterator of a random child node from the parent n
 ### RandomNode
 The ```RandomNode``` method accepts a node-set and returns a single node selected at random.
 
-It is important to note that the input node-set must be a collection of nodes, (a result tree fragment) and not a parent node.  For example, calling RandomNode($currentPage) would return itself - as there is only a single node to choose from!
+It is important to note that the input node-set must be a collection of nodes, (a result tree fragment) and not a parent node.  For example, calling `RandomNode($currentPage)` would return itself - as there is only a single node to choose from!
 
 _Returns_: Returns an System.Xml.XPath.XPathNodeIterator of a random node from the node-set.
 
@@ -181,8 +181,8 @@ _Returns_: Returns an System.Xml.XPath.XPathNodeIterator of a random node from t
 *****
 
 ### RandomSort
-Randomizes the sort order of the specified node-set, (can be limited to a specified number of nodes).<br>
-_Returns_: Returns the nodeset with a random sort order.
+Randomizes the sort order of the specified node's children, (can be limited to a specified number of nodes).<br>
+_Returns_: Returns the node with its children randomly sorted. 
 
 #### Parameters
 | Name | Type | Notes |
@@ -192,7 +192,7 @@ _Returns_: Returns the nodeset with a random sort order.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.xml:RandomSort($currentPage/*[@isDoc], 5)" />
+	<xsl:copy-of select="ucomponents.xml:RandomSort($currentPage, 5)" />
 
 *****
 

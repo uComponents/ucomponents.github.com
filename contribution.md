@@ -18,19 +18,20 @@ For general support, please use the [uComponents forum](http://our.umbraco.org/p
 ---
 
 # Development
-The uComponents team use Mercurial source-control as our repository.
 
-If you are new to Mercurial, please take time to read the guide: [Using Mercurial on CodePlex](http://codeplex.codeplex.com/wikipage?title=Using%20TortoiseHG%20with%20CodePlex&referringTitle=Source%20control%20clients&ProjectName=codeplex).
+The uComponents team use Git source-control for our repository.
+
+If you are new to Git, please take time to read the guide: [Using Git on GitHub](https://help.github.com/articles/set-up-git).
 
 ## Clone the repository
 
-To clone the uComponents project in Mercurial, use the following command:
+To clone the uComponents project from GitHub, use the following command:
 
-	hg clone https://hg.codeplex.com/ucomponents
+	git clone https://github.com/uComponents/uComponents.git
 
-Once the repository has been cloned, your local working directory will be using the `default` branch. To switch to the latest development branch, use the following command:
+Once the repository has been cloned, your local working directory will be using the `master` branch. To switch to the latest development branch, use the following command:
 
-	hg update 5.4.2-dev
+	git checkout dev-6.0.1
 
 ## Branches
 
@@ -38,19 +39,20 @@ Our branching structure is as follows:
 
 | Branch | Comment |
 |--------|---------|
-| [default](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=default) | This branch does not contain any source-code. It is used as a meta-data branch for details on how to contribute, tagging and author credits. |
-| [6.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.x) | The source-code for the upcoming v6.x release of uComponents, which will support Umbraco 6.0+. |
-| [5.x](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.x) | The source-code for the current stable v5.x releases of uComponents, which supports Umbraco 4.8+ (on .NET 4.0). |
-| [<s>4.x</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=4.x) | <s>The source-code for the 'legacy' v4.x versions of uComponents, which supports Umbraco 4.7.1 (on .NET 4.0).</s> |
-| [<s>3.x</s>](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=3.x) | <s>The source-code for the 'legacy' v3.x versions of uComponents, which supports Umbraco 4.5.2 (on .NET 3.5).</s> |
+| [master](https://github.com/uComponents/uComponents/tree/master) | This branch contains the source-code for the latest stable release. |
+| [7.x](https://github.com/uComponents/uComponents/tree/dev-7.x) | The source-code for the upcoming v7.x release of uComponents, which will support Umbraco 7.0+ (on .NET 4.5). |
+| [6.x](https://github.com/uComponents/uComponents/tree/dev-6.x) | The source-code for the current stable v6.x releases of uComponents, which will support Umbraco 6.0+ (on .NET 4.0). |
+| [5.x](https://github.com/uComponents/uComponents/tree/dev-5.x) | <s>The source-code for the 'legacy' v5.x versions of uComponents, which supports Umbraco 4.8+ (on .NET 4.0).</s> |
+| [<s>4.x</s>](https://github.com/uComponents/uComponents/tree/dev-4.x) | <s>The source-code for the 'legacy' v4.x versions of uComponents, which supports Umbraco 4.7.1 (on .NET 4.0).</s> |
+| [<s>3.x</s>](https://github.com/uComponents/uComponents/tree/dev-3.x) | <s>The source-code for the 'legacy' v3.x versions of uComponents, which supports Umbraco 4.5.2 (on .NET 3.5).</s> |
 
 
 The current developments for upcoming releases are available in their own branches.
 
 | Branch | Comment |
 |--------|---------|
-| [6.0.0-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=6.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
-| [5.4.2-dev](http://ucomponents.codeplex.com/SourceControl/list/changesets?branch=5.4.2-dev) | The latest development branch of the stable code-base. |
+| [dev-7.0.0](https://github.com/uComponents/uComponents/tree/dev-7.0.0) | The latest bleeding-edge code-base for upcoming _new_ features. |
+| [dev-6.0.1](https://github.com/uComponents/uComponents/tree/dev-6.0.1) | The latest development branch of the stable code-base. |
 
 ---
 
@@ -76,7 +78,7 @@ For Umbraco v4.9.0:
 
 * (Multi)Picker Relations
 
-For Umbraco v6.1.0 _(pending approval)_
+For Umbraco v6.2.0 _([pending approval of pull-request](https://github.com/umbraco/Umbraco-CMS/pull/133))_
 
 * Url Picker
 * Multi-Url Picker

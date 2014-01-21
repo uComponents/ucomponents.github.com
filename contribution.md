@@ -9,9 +9,9 @@ Want to contribute to uComponents? Great!
 
 There are a few ways to contribute to the uComponents project:
 
-* Raising bugs - [Create a new workitem](http://ucomponents.codeplex.com/WorkItem/Create) and we'll investigate further.
-* Submitting patches (or new features) - [Create a fork of the repository](http://ucomponents.codeplex.com/SourceControl/network/create/fork), and make a pull request.
-* Discussing ideas - [Start a new discussion thread](http://ucomponents.codeplex.com/discussions/create).
+* Raising bugs - [Create a new issue](https://github.com/uComponents/uComponents/issues) and we'll investigate further.
+* Submitting patches (or new features) - [Create a fork of the repository](https://github.com/uComponents/uComponents/fork), and make a pull request.
+* Discussing ideas - [Start a new discussion thread](https://github.com/uComponents/uComponents/issues).
 
 For general support, please use the [uComponents forum](http://our.umbraco.org/projects/backoffice-extensions/ucomponents/questionssuggestions) on Our Umbraco community website.
 

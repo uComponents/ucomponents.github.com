@@ -78,10 +78,10 @@ For Umbraco v4.9.0:
 
 * (Multi)Picker Relations
 
-For Umbraco v6.2.0 _([pending approval of pull-request](https://github.com/umbraco/Umbraco-CMS/pull/133))_
+<s>For Umbraco v6.2.0 _([pending approval of pull-request](https://github.com/umbraco/Umbraco-CMS/pull/133))_</s>
 
-* Url Picker
-* Multi-Url Picker
+* <s>Url Picker</s>
+* <s>Multi-Url Picker</s>
 
 These components are still available in uComponents, accessible in the `uComponents.Legacy` assembly.
 

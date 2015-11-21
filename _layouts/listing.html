@@ -9,7 +9,7 @@ layout: default
 {{ content }}
 
 <ul>
-{% for subpage in site.pages | sort: "title" %}{% if subpage.category == page.title %}
+{% for subpage in site.pages | sort: 'title' %}{% if subpage.category == page.title %}
 	<li>
 		<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 	</li>

@@ -8,143 +8,14 @@ navigation:
   url: /compatibility/
 - title: DataTypes
   url: /data-types/index.html
-  subnav:
-  - title: Character Limit
-    url: /data-types/character-limit/index.html
-  - title: CheckBox Tree
-    url: /data-types/check-box-tree/index.html
-  - title: Country Picker
-    url: /data-types/country-picker/index.html
-  - title: DataType Grid
-    url: /data-types/datatype-grid/index.html
-  - title: DropDown CheckList
-    url: /data-types/dropdown-checklist/index.html
-  - title: Elastic TextBox
-    url: /data-types/elastic-textbox/index.html
-  - title: Enum CheckBoxList
-    url: /data-types/enum-checkboxlist/index.html
-  - title: Enum DropDownList
-    url: /data-types/enum-dropdownlist/index.html
-  - title: File DropDownList
-    url: /data-types/file-dropdownlist/index.html
-  - title: FilePicker
-    url: /data-types/file-picker/index.html
-  - title: Image Point
-    url: /data-types/image-point/index.html
-  - title: Incremental TextBox
-    url: /data-types/incremental-textbox/index.html
-  - title: Multiple Dates
-    url: /data-types/multiple-dates/index.html
-  - title: Multi-URL Picker
-    url: /data-types/multi-url-picker/index.html
-  - title: Notes
-    url: /data-types/notes/index.html
-  - title: Property Picker
-    url: /data-types/property-picker/index.html
-  - title: Relation Links
-    url: /data-types/relation-links/index.html
-  - title: Render Macro
-    url: /data-types/render-macro/index.html
-  - title: Similarity
-    url: /data-types/similarity/index.html
-  - title: SQL Auto Complete
-    url: /data-types/sql-auto-complete/index.html
-  - title: SQL CheckBoxList
-    url: /data-types/sql-checkboxlist/index.html
-  - title: SQL DropDownList
-    url: /data-types/sql-dropdownlist/index.html
-  - title: Sub Tabs
-    url: /data-types/sub-tabs/index.html
-  - title: Textstring Array
-    url: /data-types/textstring-array/index.html
-  - title: Toggle Box
-    url: /data-types/toggle-box/index.html
-  - title: URL Picker
-    url: /data-types/url-picker/index.html
-  - title: User Picker
-    url: /data-types/user-picker/index.html
-  - title: XML DropDownList
-    url: /data-types/xml-dropdownlist/index.html
-  - title: XPath Auto Complete
-    url: /data-types/xpath-auto-complete/index.html
-  - title: XPath Templatable List
-    url: /data-types/xpath-templatable-list/index.html
-  - title: (Legacy) Auto Complete
-    url: /data-types/auto-complete/index.html
-  - title: (Legacy) Image DropDown
-    url: /data-types/image-drop-down/index.html
-  - title: (Legacy) JSON DropDown
-    url: /data-types/json-drop-down/index.html
-  - title: (Legacy) Multi Node Tree Picker
-    url: /data-types/multi-node-tree-picker/index.html
-  - title: (Legacy) Multi Picker Relations
-    url: /data-types/multi-picker-relations/index.html
-  - title: (Legacy) Multiple Textstring
-    url: /data-types/multiple-textstring/index.html
-  - title: (Legacy) RadioButtonList with Images
-    url: /data-types/radio-button-list-with-images/index.html
-  - title: (Legacy) Related Links with Media
-    url: /data-types/related-links-with-media/index.html
-  - title: (Legacy) Slider
-    url: /data-types/slider/index.html
-  - title: (Legacy) Styled TextBox
-    url: /data-types/styled-textbox/index.html
-  - title: (Legacy) Text Image
-    url: /data-types/text-image/index.html
-  - title: (Legacy) Unique Property
-    url: /data-types/unique-property/index.html
-  - title: (Legacy) XPath CheckBoxList
-    url: /data-types/xpath-checkboxlist/index.html
-  - title: (Legacy) XPath DropDownList
-    url: /data-types/xpath-dropdownlist/index.html
-
 - title: Macro Engines
   url: /macro-engines/
-  subnav:
-  - title: Static File Macro Engine
-    url: /macro-engines/static-file-macro-engine/
-  - title: XSLT Macro Engine
-    url: /macro-engines/xslt-macro-engine/
 - title: uMapper
   url: /umapper/index.html
-  subnav:
-  - title: Creating Maps
-    url: /umapper/creating-maps/index.html
-  - title: Inheritance
-    url: /umapper/inheritance/index.html
-  - title: Querying
-    url: /umapper/querying/index.html
 - title: uQuery
   url: /uquery/index.html
 - title: XSLT Extensions
   url: /xslt-extensions/index.html
-  subnav:
-  - title: CMS
-    url: /xslt-extensions/cms/index.html
-  - title: Dates
-    url: /xslt-extensions/dates/index.html
-  - title: Email
-    url: /xslt-extensions/email/index.html
-  - title: IO
-    url: /xslt-extensions/io/index.html
-  - title: Media
-    url: /xslt-extensions/media/index.html
-  - title: Members
-    url: /xslt-extensions/members/index.html
-  - title: Nodes
-    url: /xslt-extensions/nodes/index.html
-  - title: Random
-    url: /xslt-extensions/random/index.html
-  - title: Request
-    url: /xslt-extensions/request/index.html
-  - title: Search
-    url: /xslt-extensions/search/index.html
-  - title: Strings
-    url: /xslt-extensions/strings/index.html
-  - title: Urls
-    url: /xslt-extensions/urls/index.html
-  - title: Xml
-    url: /xslt-extensions/xml/index.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -189,11 +60,11 @@ navigation:
 							<li class="nav-header">Documentation</li>{% for item in page.navigation %}
 							<li{% if item.url == page.url %} class="active"{% endif %}>
 								<a href="{{ item.url | replace:'index.html','' }}">{{ item.title }}</a>
-								<ul>{% for subpage in item.subnav %}
+								{% comment %}<ul>{% for subpage in item.subnav %}
 									<li{% if subpage.url == page.url %} class="active"{% endif %}>
 										<a href="{{ subpage.url | replace:'index.html','' }}">{{ subpage.title }}</a>
 									</li>{% endfor %}
-								</ul>
+								</ul>{% endcomment %}
 							</li>{% endfor %}
 						</ul>
 					</div>
@@ -206,7 +77,7 @@ navigation:
 			<hr>
 			
 			<footer>
-				<p style="float: left;">{{ site.title }} &copy; The Umbraco Community {{ site.time | date: "%Y" }}</p>
+				<p style="float: left;">{{ site.title }} &copy; 2010-{{ site.time | date: "%Y" }} The Umbraco Community</p>
 				<p style="float: right;">Last updated on: {{ site.time | date: "%a %d %b %Y" }}</p>
 				
 			</footer>

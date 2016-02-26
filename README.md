@@ -17,7 +17,7 @@ This is the GitHub Pages repository for the _uComponents_ project.
 
 ## Where
 
-The generated documentation web-site can be viewed at: <http://ucomponents.org>.
+The generated documentation web-site can be viewed at: <http://ucomponents.github.io>.
 
 ### Collaborators
 

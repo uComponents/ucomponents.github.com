@@ -208,182 +208,182 @@ sidebar: <h4>Table of contents</h4>
   </thead>
   <tbody>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath Auto Complete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/xpath-auto-complete/">uComponents: XPath Auto Complete</a></td>
             <td>v6.0</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/character-limit/">uComponents: Character Limit</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/character-limit/">uComponents: Character Limit</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td><a href="http://ucomponents.org/data-types/check-box-tree/">uComponents: Checkbox Tree</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/check-box-tree/">uComponents: Checkbox Tree</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/country-picker/">uComponents: Country Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/country-picker/">uComponents: Country Picker</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/dropdown-checklist/">uComponents: Dropdown CheckList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/dropdown-checklist/">uComponents: Dropdown CheckList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/elastic-textbox/">uComponents: Elastic TextBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/elastic-textbox/">uComponents: Elastic TextBox</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum CheckBoxList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/enum-dropdownlist/">uComponents: Enum CheckBoxList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/enum-dropdownlist/">uComponents: Enum DropDownList</a></td>
             <td>v5.5.3</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/file-dropdownlist/">uComponents: File DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/file-dropdownlist/">uComponents: File DropDownList</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/file-picker/">uComponents: FilePicker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/file-picker/">uComponents: FilePicker</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/incremental-textbox/">uComponents: Incremental TextBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/incremental-textbox/">uComponents: Incremental TextBox</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/multi-url-picker/">uComponents: Multi-URL Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/multi-url-picker/">uComponents: Multi-URL Picker</a></td>
             <td>v6.0</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td><a href="http://ucomponents.org/data-types/multiple-dates/">uComponents: Multiple Dates</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/multiple-dates/">uComponents: Multiple Dates</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/notes/">uComponents: Notes</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/notes/">uComponents: Notes</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/property-picker/">uComponents: Property Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/property-picker/">uComponents: Property Picker</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/relation-links/">uComponents: Relation Links</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/relation-links/">uComponents: Relation Links</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/render-macro/">uComponents: Render Macro</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/render-macro/">uComponents: Render Macro</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/similarity/">uComponents: Similarity</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/similarity/">uComponents: Similarity</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="error">
-            <td><a href="http://ucomponents.org/data-types/sql-auto-complete/">uComponents: SQL AutoComplete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-auto-complete/">uComponents: SQL AutoComplete</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/sql-dropdownlist/">uComponents: SQL DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-dropdownlist/">uComponents: SQL DropDownList</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/sql-checkboxlist/">uComponents: SQL CheckBoxList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-checkboxlist/">uComponents: SQL CheckBoxList</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/textstring-array/">uComponents: Textstring Array</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/textstring-array/">uComponents: Textstring Array</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/toggle-box/">uComponents: ToggleBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/toggle-box/">uComponents: ToggleBox</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/url-picker/">uComponents: URL Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/url-picker/">uComponents: URL Picker</a></td>
             <td>v5.4.0</td>
             <td></td>
             <td></td>          
             <td></td>
         </tr>
         <tr class="info">
-            <td><a href="http://ucomponents.org/data-types/user-picker/">uComponents: User Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/user-picker/">uComponents: User Picker</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td>X</td>
         </tr>
         <tr class="success">
-            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath AutoComplete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/xpath-auto-complete/">uComponents: XPath AutoComplete</a></td>
             <td>v5.4.1</td>
             <td></td>
             <td></td>          

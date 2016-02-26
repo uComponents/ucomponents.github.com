@@ -311,152 +311,152 @@ Feel free to take a look at the [existing datatype handlers](https://ucomponents
             <td><code>umbraco.editorControls.XPathDropDownList.XPathDropDownListDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath Auto Complete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/xpath-auto-complete/">uComponents: XPath Auto Complete</a></td>
             <td><code>uComponents.DataTypes.XPathAutoComplete.XPathAutoCompleteDataType</code></td>
             <td><code>uComponents.DataTypes.XPathAutoComplete.XPathAutoCompleteDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/character-limit/">uComponents: Character Limit</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/character-limit/">uComponents: Character Limit</a></td>
             <td><code>uComponents.DataTypes.CharLimit.CharLimitDataType</code></td>
             <td><code>uComponents.DataTypes.CharLimit.CharLimitControl</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/check-box-tree/">uComponents: Checkbox Tree</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/check-box-tree/">uComponents: Checkbox Tree</a></td>
             <td><code>uComponents.DataTypes.CheckBoxTree.CheckBoxTreeDataType</code></td>
             <td><code>uComponents.DataTypes.CheckBoxTree.CheckBoxTreeDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/country-picker/">uComponents: Country Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/country-picker/">uComponents: Country Picker</a></td>
             <td><code>uComponents.DataTypes.CountryPicker.CountryPickerDataType</code></td>
             <td><code>uComponents.DataTypes.CountryPicker.CountryPickerDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/datatype-grid/">uComponents: DataType Grid</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/datatype-grid/">uComponents: DataType Grid</a></td>
             <td><code>uComponents.DataTypes.DataTypeGrid.DataType</code></td>
             <td><code>uComponents.DataTypes.DataTypeGrid.DataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/dropdown-checklist/">uComponents: Dropdown CheckList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/dropdown-checklist/">uComponents: Dropdown CheckList</a></td>
             <td><code>uComponents.DataTypes.DropdownCheckList.DDCList_DataType</code></td>
             <td><code>uComponents.DataTypes.DropdownCheckList.DDCList_DataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/elastic-textbox/">uComponents: Elastic TextBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/elastic-textbox/">uComponents: Elastic TextBox</a></td>
             <td><code>uComponents.DataTypes.ElasticTextBox.ETB_DataType</code></td>
             <td><code>uComponents.DataTypes.ElasticTextBox.ETB_Control</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum CheckBoxList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/enum-dropdownlist/">uComponents: Enum CheckBoxList</a></td>
             <td><code>uComponents.DataTypes.EnumCheckBoxList.EnumCheckBoxListDataType</code></td>
             <td><code>uComponents.DataTypes.EnumCheckBoxList.EnumCheckBoxListDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/enum-dropdownlist/">uComponents: Enum DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/enum-dropdownlist/">uComponents: Enum DropDownList</a></td>
             <td><code>uComponents.DataTypes.EnumDropDownList.EnumDropDownListDataType</code></td>
             <td><code>uComponents.DataTypes.EnumDropDownList.EnumDropDownListDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/file-dropdownlist/">uComponents: File DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/file-dropdownlist/">uComponents: File DropDownList</a></td>
             <td><code>uComponents.DataTypes.FileDropDownList.FileDropDownListDataType</code></td>
             <td><code>uComponents.DataTypes.FileDropDownList.FileDropDownListControl</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/file-picker/">uComponents: FilePicker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/file-picker/">uComponents: FilePicker</a></td>
             <td><code>uComponents.DataTypes.FilePicker.FP_DataType</code></td>
             <td><code>uComponents.DataTypes.FilePicker.FP_Control</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/file-picker/">uComponents: ImagePoint</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/file-picker/">uComponents: ImagePoint</a></td>
             <td><code>uComponents.DataTypes.ImagePoint.ImagePointDataType</code></td>
             <td><code>uComponents.DataTypes.ImagePoint.ImagePointDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/incremental-textbox/">uComponents: Incremental TextBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/incremental-textbox/">uComponents: Incremental TextBox</a></td>
             <td><code>uComponents.DataTypes.IncrementalTextBox.IT_DataType</code></td>
             <td><code>uComponents.DataTypes.IncrementalTextBox.IT_DataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/multiple-dates/">uComponents: Multiple Dates</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/multiple-dates/">uComponents: Multiple Dates</a></td>
             <td><code>uComponents.DataTypes.MultipleDates.MD_DataType</code></td>
             <td><code>uComponents.DataTypes.MultipleDates.MD_DataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/multi-url-picker/">uComponents: Multi-URL Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/multi-url-picker/">uComponents: Multi-URL Picker</a></td>
             <td><code>uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerDataType</code></td>
             <td><code>uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/notes/">uComponents: Notes</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/notes/">uComponents: Notes</a></td>
             <td><code>uComponents.DataTypes.Notes.NotesDataType</code></td>
             <td><code>uComponents.DataTypes.Notes.NotesDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/property-picker/">uComponents: Property Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/property-picker/">uComponents: Property Picker</a></td>
             <td><code>uComponents.DataTypes.PropertyPicker.PropertyPickerDataType</code></td>
             <td><code>uComponents.DataTypes.PropertyPicker.PropertyPickerDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/relation-links/">uComponents: Relation Links</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/relation-links/">uComponents: Relation Links</a></td>
             <td><code>uComponents.DataTypes.RelationLinks.RelationLinksDataType</code></td>
             <td><code>uComponents.DataTypes.RelationLinks.RelationLinksDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/render-macro/">uComponents: Render Macro</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/render-macro/">uComponents: Render Macro</a></td>
             <td><code>uComponents.DataTypes.RenderMacro.RenderMacroDataType</code></td>
             <td><code>uComponents.DataTypes.RenderMacro.RenderMacroDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/similarity/">uComponents: Similarity</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/similarity/">uComponents: Similarity</a></td>
             <td><code>uComponents.DataTypes.Similarity.SimilarityDataType</code></td>
             <td><code>uComponents.DataTypes.Similarity.SimilarityDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/sql-auto-complete/">uComponents: SQL AutoComplete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-auto-complete/">uComponents: SQL AutoComplete</a></td>
             <td><code>uComponents.DataTypes.SqlAutoComplete.SqlAutoCompleteDataType</code></td>
             <td><code>uComponents.DataTypes.SqlAutoComplete.SqlAutoCompleteDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/sql-checkboxlist/">uComponents: SQL CheckBoxList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-checkboxlist/">uComponents: SQL CheckBoxList</a></td>
             <td><code>uComponents.DataTypes.SqlCheckBoxList.SqlCheckBoxListDataType</code></td>
             <td><code>uComponents.DataTypes.SqlCheckBoxList.SqlCheckBoxListDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/sql-dropdownlist/">uComponents: SQL DropDownList</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sql-dropdownlist/">uComponents: SQL DropDownList</a></td>
             <td><code>uComponents.DataTypes.SqlDropDownList.SqlDropDownListDataType</code></td>
             <td><code>uComponents.DataTypes.SqlDropDownList.SqlDropDownListDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/sub-tabs/">uComponents: Sub Tabs</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/sub-tabs/">uComponents: Sub Tabs</a></td>
             <td><code>uComponents.DataTypes.SubTabs.SubTabsDataType</code></td>
             <td><code>uComponents.DataTypes.SubTabs.SubTabsDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/textstring-array/">uComponents: Textstring Array</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/textstring-array/">uComponents: Textstring Array</a></td>
             <td><code>uComponents.DataTypes.TextstringArray.TextstringArrayDataType</code></td>
             <td><code>uComponents.DataTypes.TextstringArray.TextstringArrayControl</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/toggle-box/">uComponents: ToggleBox</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/toggle-box/">uComponents: ToggleBox</a></td>
             <td><code>uComponents.DataTypes.ToggleBox.TB_DataType</code></td>
             <td><code>uComponents.DataTypes.ToggleBox.TB_Control</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/url-picker/">uComponents: URL Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/url-picker/">uComponents: URL Picker</a></td>
             <td><code>uComponents.DataTypes.UrlPicker.UrlPickerDataType</code></td>
             <td><code>uComponents.DataTypes.UrlPicker.UrlPickerDataEditor</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/user-picker/">uComponents: User Picker</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/user-picker/">uComponents: User Picker</a></td>
             <td><code>uComponents.DataTypes.UserPicker.UserPickerDataType</code></td>
             <td><code>uComponents.DataTypes.UserPicker.UserPickerControl</code></td>
         </tr>
         <tr>
-        	<td><a href="http://ucomponents.org/data-types/xml-dropdownlist/">uComponents: XML Dropdown List</a></td>
+        	<td><a href="http://ucomponents.github.io/data-types/xml-dropdownlist/">uComponents: XML Dropdown List</a></td>
         	<td><code>uComponents.DataTypes.XmlDropDownList.XmlDropDownListDataType</code></td>
         	<td><code>System.Web.UI.WebControls.DropDownList</code></td>
         </tr>
         <tr>
-            <td><a href="http://ucomponents.org/data-types/xpath-auto-complete/">uComponents: XPath AutoComplete</a></td>
+            <td><a href="http://ucomponents.github.io/data-types/xpath-auto-complete/">uComponents: XPath AutoComplete</a></td>
             <td><code>uComponents.DataTypes.XPathAutoComplete.XPathAutoCompleteDataType</code></td>
             <td><code>uComponents.DataTypes.XPathAutoComplete.XPathAutoCompleteDataEditor</code></td>
         </tr>

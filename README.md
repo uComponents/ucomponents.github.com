@@ -6,7 +6,7 @@ This is the GitHub Pages repository for the _uComponents_ project.
 
 * This website is a [Jekyll](http://jekyllrb.com/) project.
 * Each section is a sub-folder and individual pages is a [Markdown](http://github.github.com/github-flavored-markdown/) file.
-* The navigation (for the side-menu) is defined as a [YAML](http://en.wikipedia.org/wiki/YAML) array inside the ```_layout/default.html``` template; (_we had an issue with how Jekyll/Liquid sorts the array order_).
+* The navigation (for the side-menu) is defined as a [YAML](http://en.wikipedia.org/wiki/YAML) array inside the `_layout/default.html` template; (_we had an issue with how Jekyll/Liquid sorts the array order_).
 * Mark-up and styling is applied using [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html).
 
 ## How to Contribute

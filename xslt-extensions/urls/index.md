@@ -123,7 +123,7 @@ _Returns_: Returns the hostname for the node Id.
 *****
 
 ### GetNodeIdByUrl
-**Obsolete:** Please use [`ucomponents.nodes:GetNodeIdByUrl`](http://ucomponents.org/xslt-extensions/nodes/#getnodeidbyurl).
+**Obsolete:** Please use [`ucomponents.nodes:GetNodeIdByUrl`](http://ucomponents.github.io/xslt-extensions/nodes/#getnodeidbyurl).
 
 *****
 
@@ -138,12 +138,12 @@ _Returns_: Returns the text (System.String) from a given URL.
 
 #### XSLT Example
 
-	<xsl:value-of select="ucomponents.urls:GetTextByUrl('http://ucomponents.org/LICENSE')" />
+	<xsl:value-of select="ucomponents.urls:GetTextByUrl('http://ucomponents.github.io/LICENSE')" />
 
 *****
 
 ### GetXmlNodeByUrl
-**Obsolete:** Please use [`ucomponents.nodes:GetXmlNodeByUrl`](http://ucomponents.org/xslt-extensions/nodes/#getxmlnodebyurl).
+**Obsolete:** Please use [`ucomponents.nodes:GetXmlNodeByUrl`](http://ucomponents.github.io/xslt-extensions/nodes/#getxmlnodebyurl).
 
 *****
 
